@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class Camara : MonoBehaviour { 
-    [SerializeField]
-    Transform Target;
+    
+    public static Transform Target;
 
     [SerializeField]
     Vector3 sitioCamara;

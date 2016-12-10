@@ -16,8 +16,16 @@ public class Movimiento_Grande : MonoBehaviour
     float velCamara;
     float AxisCam = 0;
 
-    public void Update()
+    //Esconderte 
+    [SerializeField]
+    GameObject caja;
+    bool soltar=true;
+    bool escondite=false;
+
+     void Update()
     {
+        caja = Caja.caja;
+
         if (!Laser.paraMover)
         {
             YAxis = Input.GetAxis("Horizontal");
@@ -52,5 +60,51 @@ public class Movimiento_Grande : MonoBehaviour
         {
             HorizontalCamara.RotateAround(transform.position, Vector3.up * -AxisCam,velCamara );
         }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (caja.CompareTag("Caja")|| caja.CompareTag("Caja Grande") || caja.CompareTag("Caja Escondite"))
+            {
+                soltar = !soltar;
+                if (soltar)
+                {
+                    Debug.Log("Suelta");
+                    gameObject.transform.GetChild(0).GetChild(3).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
+                    gameObject.transform.GetChild(0).GetChild(3).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+                    gameObject.transform.GetChild(0).GetChild(3).GetChild(2).DetachChildren();
+                }else
+                {
+                    caja.transform.position = gameObject.transform.GetChild(0).GetChild(3).GetChild(2).position;
+                    caja.transform.parent = gameObject.transform.GetChild(0).GetChild(3).GetChild(2);              
+                    caja.GetComponent<Rigidbody>().useGravity = false;
+                }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (caja.CompareTag("Caja Escondite"))
+            {
+                escondite = !escondite;
+                if (escondite)
+                {
+                    Destroy(caja);
+                    gameObject.layer = 9;
+                    Escondido();
+                }
+            }
+        }
+    }
+
+    void Escondido()
+    {
+        StartCoroutine("Esconder", 10);
+    }
+
+    IEnumerator Esconder(int time)
+    {
+        yield return new WaitForSeconds(time);
+        gameObject.layer = 0;
+
     }
 }

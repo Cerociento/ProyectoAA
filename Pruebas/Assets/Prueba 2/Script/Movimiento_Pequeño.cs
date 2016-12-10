@@ -21,7 +21,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     int salto=0;
 
 
-    public void Update()
+     void Update()
     {       
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");

@@ -5,22 +5,38 @@ public class PilaDeCajas : MonoBehaviour
 {
     [SerializeField]
     GameObject[] Caja;
+    int activador;
+    bool coger=true;
+
+    void Update()
+    {
+        if (activador == Caja.Length)
+        {
+            Caja = new GameObject[0];
+            Destroy(this.gameObject, 2);
+        }
+    }
+
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Grande"))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log(Caja.Length);
-              
-                for (int i = Caja.Length-1; i >0; i--)
+                if (coger)
                 {
                     Transform sitioIntanciado = other.transform.GetChild(0).GetChild(3).GetChild(2);
-                    Instantiate(Caja[i], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);                  
+                    if (activador < Caja.Length)
+                    {                      
+                        Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation,sitioIntanciado);
+                        activador++;
+                    }                 
+                        coger = false;
                 }
             }
-        }
-}
-	
 
-}
+            if (Input.GetKeyUp(KeyCode.E))
+                coger = true;
+        }
+    }
+}	

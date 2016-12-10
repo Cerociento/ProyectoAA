@@ -10,6 +10,8 @@ TagManager:
   - Grande
   - "Peque\xF1o"
   - Caja
+  - Caja Escondite
+  - Caja Grande
   layers:
   - Default
   - TransparentFX
@@ -20,8 +22,8 @@ TagManager:
   - 
   - 
   - interior
-  - Ingore rotaion raycast
-  - 
+  - Escondido
+  - Cosas de jugador
   - 
   - 
   - 

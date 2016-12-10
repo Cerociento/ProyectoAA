@@ -13346,6 +13346,11 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 1904030887}
+    - target: {fileID: 114000010368074424, guid: 88c564b30b9b5854eb204ecbc817f490,
+        type: 2}
+      propertyPath: ve.m_Bits
+      value: 4294966783
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88c564b30b9b5854eb204ecbc817f490, type: 2}
   m_IsPrefabParent: 0
@@ -13733,6 +13738,11 @@ Prefab:
     - target: {fileID: 4000011794152898, guid: 45436dbab9b07274ba60cead5e5d6801, type: 2}
       propertyPath: m_LocalPosition.z
       value: -4.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010090367834, guid: 45436dbab9b07274ba60cead5e5d6801,
+        type: 2}
+      propertyPath: ve.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45436dbab9b07274ba60cead5e5d6801, type: 2}
