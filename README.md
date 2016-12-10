@@ -5,7 +5,7 @@
 
 Añadidos en la carpeta 'Fran101216':
 
-Coleccionables:
+     Coleccionables:
      Un script 'Coleccionables' que se añade a los objetos que van a coleccionarse. Al pasar por encima de ellos
      o a una distancia cercana, el objeto se destruye y sube en 1 el contador de coleccionables recogidos.
      
@@ -13,7 +13,7 @@ Coleccionables:
      Esta cuenta es sólo visible desde el menú de pausa.
      
      
-Campo de Visión e IA:
+     Campo de Visión e IA:
      El Script 'FieldOfViewRetocado' irá unido a enemigos. Funciona con un OverlapSphere. Tiene una distancia y ángulo de
      visión retocables. Si un jugador se encuentra en éste campo de visión, reaparecerá en otra posición (hay que retocar
      el script para que esa posición sea un checkpoint. De momento, lo manda a otra posición del mapa, por probar). Además, 
@@ -30,7 +30,7 @@ Campo de Visión e IA:
      NavMesh y un NavMeshAgent.
      
      
-Menú y Pausa:
+     Menú y Pausa:
      El Script 'MenuPruebas' conecta los botones del menú principal con sus correspondientes escenas. También se utiliza 
      para los botones del menú de Pausa.
 
