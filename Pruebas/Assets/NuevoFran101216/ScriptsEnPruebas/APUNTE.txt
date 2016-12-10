@@ -1,0 +1,3 @@
+El Script 'FieldOfViewRetocado' va en la carpeta Editor. No he visto ninguna,
+por eso lo adjunto por aquí. Es necesario para ver dibujado en escena el área de visión enemiga.
+Sólo funciona para ello, pero está bien para calcular.
