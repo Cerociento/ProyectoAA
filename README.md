@@ -5,39 +5,39 @@
 
 Añadidos en la carpeta 'Fran101216':
 
-     Coleccionables:
-     Un script 'Coleccionables' que se añade a los objetos que van a coleccionarse. Al pasar por encima de ellos
-     o a una distancia cercana, el objeto se destruye y sube en 1 el contador de coleccionables recogidos.
+ Coleccionables:
+   Un script 'Coleccionables' que se añade a los objetos que van a coleccionarse. Al pasar por encima de ellos
+   o a una distancia cercana, el objeto se destruye y sube en 1 el contador de coleccionables recogidos.
      
-     Un script 'ColeccionablesCuenta' lleva la cuenta de los coleccionables recogidos junto a una imagen y un texto.
-     Esta cuenta es sólo visible desde el menú de pausa.
-     
-     
-     Campo de Visión e IA:
-     El Script 'FieldOfViewRetocado' irá unido a enemigos. Funciona con un OverlapSphere. Tiene una distancia y ángulo de
-     visión retocables. Si un jugador se encuentra en éste campo de visión, reaparecerá en otra posición (hay que retocar
-     el script para que esa posición sea un checkpoint. De momento, lo manda a otra posición del mapa, por probar). Además, 
-     añade 1 al contador de veces que el jugador ha perdido (información mostrada en el menú de pausa). Para ser visto
-     el jugador debe pasar un determinado tiempo en visión. Si sale antes de que se cumpla ese tiempo, el tiempo se reinicia, 
-     dándole un pequeño tiempo de reacción para no ser cazado fácilmente.
-     
-     El Script 'FieldOfViewRetocadoEditor' sirve para poder dibujar, en escena, el área de visión.
-     
-     El Script 'vecesMuerto' lleva la cuenta de cuántas veces ha perdido (siendo visto o dañado) el jugador.
-     Hay que retocar algunos scripts para añadir cuentas a éste.
-     
-     El Script 'pruebaPatrulla' hace que los enemigos patrullen por una ruta determinada por nosotros. Usa un
-     NavMesh y un NavMeshAgent.
+   Un script 'ColeccionablesCuenta' lleva la cuenta de los coleccionables recogidos junto a una imagen y un texto.
+   Esta cuenta es sólo visible desde el menú de pausa.
      
      
-     Menú y Pausa:
-     El Script 'MenuPruebas' conecta los botones del menú principal con sus correspondientes escenas. También se utiliza 
-     para los botones del menú de Pausa.
+ Campo de Visión e IA:
+   El Script 'FieldOfViewRetocado' irá unido a enemigos. Funciona con un OverlapSphere. Tiene una distancia y ángulo de
+   visión retocables. Si un jugador se encuentra en éste campo de visión, reaparecerá en otra posición (hay que retocar
+   el script para que esa posición sea un checkpoint. De momento, lo manda a otra posición del mapa, por probar). Además, 
+   añade 1 al contador de veces que el jugador ha perdido (información mostrada en el menú de pausa). Para ser visto
+   el jugador debe pasar un determinado tiempo en visión. Si sale antes de que se cumpla ese tiempo, el tiempo se reinicia, 
+   dándole un pequeño tiempo de reacción para no ser cazado fácilmente.
+     
+   El Script 'FieldOfViewRetocadoEditor' sirve para poder dibujar, en escena, el área de visión.
+     
+   El Script 'vecesMuerto' lleva la cuenta de cuántas veces ha perdido (siendo visto o dañado) el jugador.
+   Hay que retocar algunos scripts para añadir cuentas a éste.
+     
+   El Script 'pruebaPatrulla' hace que los enemigos patrullen por una ruta determinada por nosotros. Usa un
+   NavMesh y un NavMeshAgent.
+     
+     
+ Menú y Pausa:
+   El Script 'MenuPruebas' conecta los botones del menú principal con sus correspondientes escenas. También se utiliza 
+   para los botones del menú de Pausa.
 
-     El Script 'Pausa' pausa el juego y muestra un pequeño menú. Nos informa sobre las veces que hemos perdido, los
-     coleccionables recolectados, nos da acceso al menú principal o a salir del programa, y muestra qué personajes 
-     tenemos seleccionado. Hay que retocar los scripts de personajes para acceder a este y hacer que funcione correctamente.
-     Por el momento, funciona en el nivel de prueba ('PruebaPC') cambiando uno de los campos serializables del Script.
+   El Script 'Pausa' pausa el juego y muestra un pequeño menú. Nos informa sobre las veces que hemos perdido, los
+   coleccionables recolectados, nos da acceso al menú principal o a salir del programa, y muestra qué personajes 
+   tenemos seleccionado. Hay que retocar los scripts de personajes para acceder a este y hacer que funcione correctamente.
+   Por el momento, funciona en el nivel de prueba ('PruebaPC') cambiando uno de los campos serializables del Script.
 
 
 ---------------------------------------------------------------------------------------------------------------------------
