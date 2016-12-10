@@ -11,8 +11,6 @@ public class Caja : MonoBehaviour
         {
             caja = gameObject;
         }
-    
-
     }
 
     void OnTriggerExit(Collider other)

@@ -3,28 +3,34 @@ using System.Collections;
 
 public class Movimiento_Pequeño : MonoBehaviour 
 {
+    //Movimiento
     [SerializeField]
     float velocidad = 1f;
     float ZAxis = 0f;
     float YAxis;
-
     [SerializeField]
     Transform HorizontalCamara;
     [SerializeField]
     Transform CamCamera;
+
+    //Rotacion Camara
     float AxisCam = 0;
     [SerializeField]
     float velCamara;
 
+    //Salto
     [SerializeField]
     float fSalto;
     int salto=0;
 
+    //Checpoint
+    public static Vector3 checkpoint= new Vector3 (0,1.5f,0);
 
      void Update()
     {       
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
+
             if (ZAxis > 0 && Input.GetKey(KeyCode.W))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
@@ -35,7 +41,6 @@ public class Movimiento_Pequeño : MonoBehaviour
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-
             }
 
             if (YAxis < 0 && Input.GetKey(KeyCode.A))
@@ -70,5 +75,13 @@ public class Movimiento_Pequeño : MonoBehaviour
     void OnCollisionEnter(Collision hit)
     {
         salto = 0;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Checkpoint"))
+        {
+            checkpoint = other.transform.position;
+        }
     }
 }

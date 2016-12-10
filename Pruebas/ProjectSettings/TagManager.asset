@@ -5,13 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Llave
-  - Pared
-  - Mirrors
-  - Grande
+  - Checkpoint
   - "Peque\xF1o"
   - Caja
   - Caja Escondite
   - Caja Grande
+  - Pared
+  - Mirrors
+  - Grande
   layers:
   - Default
   - TransparentFX

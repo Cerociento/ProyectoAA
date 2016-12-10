@@ -28,12 +28,19 @@ public class Laser : MonoBehaviour {
               {
                   lr.SetPosition(1, new Vector3(0, 0, hit.distance));
               }
-              if (hit.collider.CompareTag("Player"))
+
+              if (hit.collider.CompareTag("Grande"))
               {
-                  Debug.Log("Muerto");
+                hit.transform.position = Movimiento_Grande.checkpoint;
               }
-            if (num == 0)
-            {
+
+              if (hit.collider.CompareTag("Pequeño"))
+              {
+                hit.transform.position = Movimiento_Pequeño.checkpoint;
+              }
+
+                if (num == 0)
+                { 
                 if (hit.collider.CompareTag("Llave"))
                 {
                     transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
@@ -62,7 +69,7 @@ public class Laser : MonoBehaviour {
   void OnTriggerStay(Collider hit)
     {
         YAxis = Input.GetAxis("Horizontal");
-        if (hit.gameObject.CompareTag("Player"))/* && Input.GetKey(KeyCode.E)&& YAxis > 0 && Input.GetKey(KeyCode.D) || hit.gameObject.CompareTag("Player") && Input.GetKey(KeyCode.E)&& YAxis < 0 && Input.GetKey(KeyCode.A))*/
+        if (hit.gameObject.CompareTag("Grande"))
       {
             if (Input.GetKeyDown(KeyCode.E))
             {

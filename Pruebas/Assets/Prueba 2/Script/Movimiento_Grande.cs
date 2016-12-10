@@ -3,15 +3,17 @@ using System.Collections;
 
 public class Movimiento_Grande : MonoBehaviour 
 {
+    //Movimiento
     [SerializeField]
     float velocidad = 1f;
     float ZAxis = 0f;
     float YAxis;
-
     [SerializeField]
     Transform HorizontalCamara;
     [SerializeField]
     Transform CamCamera;
+
+    //Rotacion Camara
     [SerializeField]
     float velCamara;
     float AxisCam = 0;
@@ -22,25 +24,29 @@ public class Movimiento_Grande : MonoBehaviour
     bool soltar=true;
     bool escondite=false;
 
-     void Update()
+    //Checkpoint
+    public static Vector3 checkpoint = new Vector3(0, 1.5f, 0);
+
+    void Update()
     {
+        Debug.Log(checkpoint);
+
         caja = Caja.caja;
 
         if (!Laser.paraMover)
         {
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
+
             if (ZAxis > 0 && Input.GetKey(KeyCode.W))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
-
             }
             else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-
             }
 
             if (YAxis < 0 && Input.GetKey(KeyCode.A))
@@ -58,7 +64,7 @@ public class Movimiento_Grande : MonoBehaviour
         AxisCam = Input.GetAxis("Horizontal");
         if (AxisCam < 0 && Input.GetKey(KeyCode.LeftArrow) || AxisCam > 0 && Input.GetKey(KeyCode.RightArrow))
         {
-            HorizontalCamara.RotateAround(transform.position, Vector3.up * -AxisCam,velCamara );
+            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velCamara );
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -71,12 +77,15 @@ public class Movimiento_Grande : MonoBehaviour
                     Debug.Log("Suelta");
                     gameObject.transform.GetChild(0).GetChild(3).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
                     gameObject.transform.GetChild(0).GetChild(3).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+                    gameObject.transform.GetChild(0).GetChild(3).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
                     gameObject.transform.GetChild(0).GetChild(3).GetChild(2).DetachChildren();
                 }else
                 {
                     caja.transform.position = gameObject.transform.GetChild(0).GetChild(3).GetChild(2).position;
-                    caja.transform.parent = gameObject.transform.GetChild(0).GetChild(3).GetChild(2);              
+                    caja.transform.parent = gameObject.transform.GetChild(0).GetChild(3).GetChild(2);
+                    caja.GetComponent<BoxCollider>().enabled = false;           
                     caja.GetComponent<Rigidbody>().useGravity = false;
+                    caja.GetComponent<Rigidbody>().isKinematic = true;
                 }
             }
         }
@@ -106,5 +115,13 @@ public class Movimiento_Grande : MonoBehaviour
         yield return new WaitForSeconds(time);
         gameObject.layer = 0;
 
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Checkpoint"))
+        {
+            checkpoint = other.transform.position;
+        }
     }
 }
