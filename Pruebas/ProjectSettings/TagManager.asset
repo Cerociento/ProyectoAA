@@ -11,7 +11,7 @@ TagManager:
   - Caja Escondite
   - Caja Grande
   - Pared
-  - Mirrors
+  - Escondido
   - Grande
   layers:
   - Default
@@ -25,9 +25,9 @@ TagManager:
   - interior
   - Escondido
   - Cosas de jugador
-  - 
-  - 
-  - 
+  - Player
+  - Checkpoint
+  - Punto mapa
   - 
   - 
   - 

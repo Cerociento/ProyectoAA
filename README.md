@@ -1,11 +1,18 @@
 ﻿# ProyectoAA
 
+**~Cerociento 11/12/2016~**
 
--Fran 10/12/2016-
+  Reorganización del proyecto.
+
+  Reestructuracion de niveles y scripts para un buen funcionamiento.
+
+--------------------------------------------------------------------------------------
+
+**-Fran 10/12/2016-**
 
 Añadidos en la carpeta 'Fran101216':
 
-    Coleccionables:
+    *Coleccionables:
       Un script 'Coleccionables' que se añade a los objetos que van a coleccionarse. 
       Al pasar por encima de ellos o a una distancia cercana, el objeto se destruye y 
       sube en 1 el contador de coleccionables recogidos.
@@ -14,7 +21,8 @@ Añadidos en la carpeta 'Fran101216':
       junto a una imagen y un texto. Esta cuenta es sólo visible desde el menú de pausa.
      
      
-    Campo de Visión e IA:
+    *Campo de Visión e IA:
+
       El Script 'FieldOfViewRetocado' irá unido a enemigos. Funciona con un OverlapSphere. 
       Tiene una distancia y ángulo de visión retocables. Si un jugador se encuentra en éste 
       campo de visión, reaparecerá en otra posición (hay que retocar el script para que esa 
@@ -33,7 +41,7 @@ Añadidos en la carpeta 'Fran101216':
       nosotros. Usa un NavMesh y un NavMeshAgent.
      
      
-    Menú y Pausa:
+    *Menú y Pausa:
       El Script 'MenuPruebas' conecta los botones del menú principal con sus correspondientes 
       escenas. También se utiliza  para los botones del menú de Pausa.
 
@@ -48,45 +56,45 @@ Añadidos en la carpeta 'Fran101216':
 ---------------------------------------------------------------------------------------------------------------------------
 
 
-~Cerociento 10/12/2016~
+**~Cerociento 10/12/2016~**
 
-Añadidos:
+*Añadidos:
      
-     Botones: 
+     *Botones: 
            "E" para interactuar (coger/soltar o pulsar botones/tirar de palancas)
            "Espacio" para habilidad unica (Saltar o Esconderse)
            "A/W/S/D" mover al personaje.
            "Flechas izq/der" rotar cámara.
 
-     Coger/Soltar cajas: 
+     *Coger/Soltar cajas: 
             Coge cajas (marrones) de un montón de cajas al pulsar "E".
             Este montón de cajas da un numero determinado de cajas y después se destruye.
             Se sueltan al pulsar "E" de nuevo.
 
-     Enviar cajas: 
+     *Enviar cajas: 
             Al soltar cajas en un lunar determinado,las manda a donde quiera.
              
             Creado prefab llamado "Envío de cajas", a este se le pasa las direcciones. 
             Distingue entre cajas grandes y pequeñas, así podemos decirle que y donde lo queremos. 
 
-     Esconderse:
+     *Esconderse:
             Se esconde si lleva una caja especial (amarilla) y pulsa espacio.
             Al pulsar,esta se destruye y el personaje se queda escondido durante x tiempo.
 
-     Checkpoints: 
+     *Checkpoints: 
             Creado prefab “checkpoint” para guardar progreso del jugador.
  
-     Daño láser y trampas (lava,ácido...):
+     *Daño láser y trampas (lava,ácido...):
             Ya no mueres. Así evitamos la perdida de ritmo excesiva.
             Al cruzar por un láser o caer en una trampa, lo devuelve al ultimo checkpoint.
 
-     Revisada IA no humana (cámaras,drones...):
+     *Revisada IA no humana (cámaras,drones...):
             Ya no pierdes. Así evitamos la perdida de ritmo excesiva.
             Al detectarte te devuelve al ultimo checkpoint.
 
 -------------------------------------------------------------------------------------------
 
-~Cerociento  9/12/2016~
+**~Cerociento  9/12/2016~**
 
 En el proyecto que he subido a github es el del otro dia,con añadidos. Hay una escena mas para pruebas.
 
