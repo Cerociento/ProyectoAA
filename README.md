@@ -10,9 +10,10 @@
 
 **-Fran 10/12/2016-**
 
-*Añadidos en la carpeta 'Fran101216':
+* Añadidos en la carpeta 'Fran101216':
 
    * Coleccionables:
+   
       Un script 'Coleccionables' que se añade a los objetos que van a coleccionarse. 
       Al pasar por encima de ellos o a una distancia cercana, el objeto se destruye y 
       sube en 1 el contador de coleccionables recogidos.
