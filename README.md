@@ -10,7 +10,7 @@
 
 **-Fran 10/12/2016-**
 
-Añadidos en la carpeta 'Fran101216':
+*Añadidos en la carpeta 'Fran101216':
 
    * Coleccionables:
       Un script 'Coleccionables' que se añade a los objetos que van a coleccionarse. 
@@ -42,6 +42,7 @@ Añadidos en la carpeta 'Fran101216':
      
      
    * Menú y Pausa:
+   
       El Script 'MenuPruebas' conecta los botones del menú principal con sus correspondientes 
       escenas. También se utiliza  para los botones del menú de Pausa.
 
@@ -61,34 +62,40 @@ Añadidos en la carpeta 'Fran101216':
 * Añadidos:
      
     * Botones: 
+    
            "E" para interactuar (coger/soltar o pulsar botones/tirar de palancas)
            "Espacio" para habilidad unica (Saltar o Esconderse)
            "A/W/S/D" mover al personaje.
            "Flechas izq/der" rotar cámara.
 
     * Coger/Soltar cajas: 
+    
             Coge cajas (marrones) de un montón de cajas al pulsar "E".
             Este montón de cajas da un numero determinado de cajas y después se destruye.
             Se sueltan al pulsar "E" de nuevo.
 
     * Enviar cajas: 
-            Al soltar cajas en un lunar determinado,las manda a donde quiera.
-             
+    
+            Al soltar cajas en un lunar determinado,las manda a donde quiera.             
             Creado prefab llamado "Envío de cajas", a este se le pasa las direcciones. 
             Distingue entre cajas grandes y pequeñas, así podemos decirle que y donde lo queremos. 
 
     * Esconderse:
+    
             Se esconde si lleva una caja especial (amarilla) y pulsa espacio.
             Al pulsar,esta se destruye y el personaje se queda escondido durante x tiempo.
 
     * Checkpoints: 
+    
             Creado prefab “checkpoint” para guardar progreso del jugador.
  
     * Daño láser y trampas (lava,ácido...):
+    
             Ya no mueres. Así evitamos la perdida de ritmo excesiva.
             Al cruzar por un láser o caer en una trampa, lo devuelve al ultimo checkpoint.
 
     * Revisada IA no humana (cámaras,drones...):
+    
             Ya no pierdes. Así evitamos la perdida de ritmo excesiva.
             Al detectarte te devuelve al ultimo checkpoint.
 
