@@ -21,9 +21,9 @@ GameObject:
   - 4: {fileID: 4000010527559020}
   - 33: {fileID: 33000011575319086}
   - 23: {fileID: 23000010412174732}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000013499431136}
   - 33: {fileID: 33000012532099264}
   - 23: {fileID: 23000011349762954}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: visor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - 4: {fileID: 4000012684313576}
   - 33: {fileID: 33000014279753556}
   - 23: {fileID: 23000012648528888}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cresta
   m_TagString: Untagged
   m_Icon: {fileID: 0}

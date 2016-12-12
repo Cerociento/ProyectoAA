@@ -1,6 +1,11 @@
 ﻿# ProyectoAA
 
 **~Cerociento 11/12/2016~**
+  
+    Añadido movimiento vertical de cámara.
+
+
+**~Cerociento 11/12/2016~**
 
   Reorganización del proyecto.
 

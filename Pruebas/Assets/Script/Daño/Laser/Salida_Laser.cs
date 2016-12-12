@@ -10,18 +10,19 @@ public class Salida_Laser : MonoBehaviour {
    
     public static int numLlaves;
     int numContador=0;
-	
-	void Update () {
-    
+
+    void Update()
+    {
+
         if (numLlaves == numeroLlaves)
         {
-           numContador++;
+            numContador++;
             if (numContador > 300)
             {
                 Destroy(SalidaNivel, 4);
                 numLlaves = 0;
             }
-            return;         
+            return;
         }
         else
         {
@@ -32,16 +33,5 @@ public class Salida_Laser : MonoBehaviour {
         {
             numLlaves = 0;
         }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            cambioNivel();
-        }
-	}
-
-    public void cambioNivel()
-    {
-        Debug.Log("Carga");
-        SceneManager.LoadScene(0);
     }
 }

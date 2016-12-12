@@ -40,9 +40,11 @@ public class Camara : MonoBehaviour {
 
         }
 
+   
     }
     void LateUpdate()
     {       
         transform.position = Target.position + sitioCamara;
+       
     }
 }

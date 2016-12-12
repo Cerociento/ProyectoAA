@@ -17,6 +17,7 @@ public class Movimiento_Grande : MonoBehaviour
     [SerializeField]
     float velCamara;
     float AxisCam = 0;
+   
 
     //Esconderte 
     [SerializeField]
