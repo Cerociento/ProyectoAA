@@ -1,12 +1,5 @@
 ﻿# ProyectoAA
 
-**~Cerociento 13/12/2016~**
- 
-    Retoque de tutorial.
-
----------------------------------------------------------------------
-
-
 **~Cerociento 11/12/2016~**
   
     Añadido movimiento vertical de cámara.

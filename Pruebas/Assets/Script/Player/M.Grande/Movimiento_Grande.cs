@@ -28,11 +28,6 @@ public class Movimiento_Grande : MonoBehaviour
     //Checkpoint
     public static Vector3 checkpointGrande = new Vector3(0, 1.5f, 0);
 
-    void Start()
-    {
-        CamCamera.LookAt(transform.position);
-    }
-
     void Update()
     {
         caja = Caja.caja;
