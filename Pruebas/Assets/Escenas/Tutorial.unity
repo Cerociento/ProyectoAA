@@ -2179,7 +2179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tinyDoor: {fileID: 0}
-  texto: Salta (Espacio) por las plataformas para llegar al otro lado.
+  texto: "Salta (Espacio) por las cajas que te proporcionara tu compa\xF1ero para
+    llegar al otro lado."
   tuto: {fileID: 1937344787}
 --- !u!23 &724876996
 MeshRenderer:
