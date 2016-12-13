@@ -4029,30 +4029,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 629314939}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &646744253 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000013306088136, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
-    type: 2}
-  m_PrefabInternal: {fileID: 1954995301}
 --- !u!20 &646744254 stripped
 Camera:
   m_PrefabParentObject: {fileID: 20000010378705170, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
     type: 2}
   m_PrefabInternal: {fileID: 1954995301}
---- !u!114 &646744259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 646744253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 488d58e2f26da744f9adeeddeb92e7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 980230332}
-  velocidadArrow: 1
-  velocidadScroll: 10
 --- !u!1 &657441872
 GameObject:
   m_ObjectHideFlags: 0
@@ -15191,21 +15172,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012452309108, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
-        type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012452309108, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
-        type: 2}
-      propertyPath: Target1
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012452309108, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
-        type: 2}
-      propertyPath: Target2
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 114000013465006176, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
         type: 2}
       propertyPath: TargetCam
@@ -15231,11 +15197,11 @@ Prefab:
       propertyPath: "Peque\xF1o"
       value: 
       objectReference: {fileID: 268099949}
-    - target: {fileID: 20000010378705170, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
+    - target: {fileID: 114000010761927242, guid: 35d2d5ee6fcb23d48be3d11075fcf427,
         type: 2}
-      propertyPath: m_CullingMask.m_Bits
-      value: 4294963199
-      objectReference: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 980230332}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35d2d5ee6fcb23d48be3d11075fcf427, type: 2}
   m_IsPrefabParent: 0

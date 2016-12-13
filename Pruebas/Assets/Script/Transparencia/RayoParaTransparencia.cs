@@ -15,6 +15,8 @@ public class RayoParaTransparencia : MonoBehaviour {
 
     void Update()
     {
+        TargetCam = Camara.Target;
+
         if (Physics.Linecast(transform.position, TargetCam.position, out rayo))
         {
             Debug.DrawLine(transform.position, TargetCam.position, Color.green);

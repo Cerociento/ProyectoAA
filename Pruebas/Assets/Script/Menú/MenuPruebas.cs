@@ -4,11 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuPruebas : MonoBehaviour {
 
-    /*[SerializeField]
-	GameObject instrucciones;
-	[SerializeField]
-	GameObject controles;*/
-
     [SerializeField]
     int level;  
 
@@ -21,15 +16,8 @@ public class MenuPruebas : MonoBehaviour {
         Debug.Log("Ha salido del juego");
 	}
 
-	/*public void Controles(){
-		instrucciones.SetActive(false);
-		controles.SetActive(true);
-	}
-
-	public void Instrucciones(){
-		instrucciones.SetActive(true);
-		controles.SetActive(false);
-	}*/
-		
-
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }

@@ -1,23 +1,47 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class SalirEsfera : MonoBehaviour {
+public class Textos_Tutorial : MonoBehaviour {
 
-	[SerializeField]
-	GameObject tinyDoor;
+    [SerializeField]
+    GameObject tinyDoor;
+    [TextArea (5,10)]
+    [SerializeField]
+    string texto;
 
-	// Use this for initialization
-	void Start () {
+    [SerializeField]
+    GameObject tuto;
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    bool inicia = false;
+    float segundos = 5f;
+    
 
-	void OnTriggerExit(Collider col){
+    void Update()
+    {
+     if (inicia)
+          {
+            if (segundos <= 5)
+            {
+                segundos -= 1 * Time.deltaTime;
+                tuto.SetActive(true);
+            }
+            if (segundos <= 0)
+            {
+                segundos = 0;
+                tuto.SetActive(false);
+                inicia = false;
+            }
+            Debug.Log(segundos);
+        }
+          else
+          {
+              segundos = 5;
+          }
+    }
+
+    /*void OnTriggerExit(Collider col){
 		if(gameObject.CompareTag("EsferaSalida")){
 		Tutorial.cadenaTexto=" ";
 		Destroy(gameObject);
@@ -28,10 +52,11 @@ public class SalirEsfera : MonoBehaviour {
 			Destroy(gameObject);
 		}
 
-	}
+	}*/
 
-	void OnTriggerEnter(Collider col){
-		if(gameObject.CompareTag("GirarCamaraEntrada")){
+    void OnTriggerEnter(Collider col){
+        
+        /*if(gameObject.CompareTag("GirarCamaraEntrada")){
 			Tutorial.cadenaTexto="Pulsa las flechas de dirección o los botones del ratón para girar la cámara";
 			Destroy(gameObject);
 		}
@@ -47,11 +72,11 @@ public class SalirEsfera : MonoBehaviour {
 		}
 
 		if(gameObject.CompareTag("PreCaja")){
-			Tutorial.cadenaTexto=" ";
+		
 			Destroy(tinyDoor);
 			Destroy(gameObject);
 		}
-
+       
 		if(gameObject.CompareTag("EnCaja")){
 			Tutorial.cadenaTexto="Tu Compañero necesita ayuda. Mándale una caja cogiéndola del montón ('E') y suéltala en el cajón de la derecha ('E')";
 			Destroy(gameObject);
@@ -80,12 +105,19 @@ public class SalirEsfera : MonoBehaviour {
 		if(gameObject.CompareTag("FinTut")){
 			Tutorial.cadenaTexto="Has completado el tutorial. Súbete en la plataforma para comenzar el primer nivel.";
 			Destroy(gameObject);
-		}
+		}*/
 
-		if(gameObject.CompareTag("Fin")){
-			Tutorial.cadenaTexto=" ";
+		if(gameObject.CompareTag("Finish")){
 			SceneManager.LoadScene(1);
 
 		}
+
+        if (col.CompareTag("Grande")||col.CompareTag("Pequeño"))
+        {
+            segundos = 5;
+            tuto.transform.GetChild(0).GetComponent<Text>().text = texto;
+            inicia = true;         
+        }
 	}
+
 }

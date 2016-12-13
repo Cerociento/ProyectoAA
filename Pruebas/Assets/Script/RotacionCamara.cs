@@ -12,8 +12,10 @@ public class RotacionCamara : MonoBehaviour
     float velocidadScroll;
     float Camar;
     Vector3 rango;
+    Vector3 rotacion;
 
-    float verticalAxis;
+    float verticalAxis;   
+
 
     void Update()
     {
@@ -34,6 +36,8 @@ public class RotacionCamara : MonoBehaviour
             rango.y = Mathf.Clamp(transform.position.y, 3, 20);
             rango.z = Mathf.Clamp(transform.position.z, transform.parent.position.z, transform.parent.position.z);
             transform.position = rango;
+            
+            transform.LookAt(player);
         }
 
        if (verticalAxis > 0 && Input.GetKey(KeyCode.UpArrow) ||verticalAxis < 0 && Input.GetKey(KeyCode.DownArrow))
@@ -44,9 +48,10 @@ public class RotacionCamara : MonoBehaviour
             rango.y = Mathf.Clamp(transform.position.y, 3, 20);
             rango.z = Mathf.Clamp(transform.position.z, transform.parent.position.z, transform.parent.position.z);
             transform.position = rango;
+            transform.LookAt(player);
         }
 
-        transform.LookAt(player);
+       // transform.LookAt(player);
 
     }
 

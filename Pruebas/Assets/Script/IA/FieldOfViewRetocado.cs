@@ -35,8 +35,7 @@ public class FieldOfViewRetocado : MonoBehaviour {
 			Transform target = targetsInViewRadius [i].transform;
 			Vector3 dirToTarget = (target.position - transform.position).normalized;
 			if (Vector3.Angle (transform.forward, dirToTarget) < viewAngle / 2) {
-                //float dstToTarget = transform.position.sqrMagnitude-target.position.sqrMagnitude;
-		float dstToTarget=Vector3.Distance(transform.position, target.position);
+                float dstToTarget = transform.position.sqrMagnitude-target.position.sqrMagnitude;
                 timer+=Time.time;
 
                 if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)&&timer>=5f) {
