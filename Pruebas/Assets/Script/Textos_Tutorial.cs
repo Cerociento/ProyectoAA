@@ -33,7 +33,6 @@ public class Textos_Tutorial : MonoBehaviour {
                 tuto.SetActive(false);
                 inicia = false;
             }
-            Debug.Log(segundos);
         }
           else
           {

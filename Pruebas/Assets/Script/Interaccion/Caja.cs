@@ -5,7 +5,7 @@ public class Caja : MonoBehaviour
 {
     public static GameObject caja;
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Grande"))
         {

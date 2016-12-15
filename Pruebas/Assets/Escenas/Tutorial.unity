@@ -1794,6 +1794,10 @@ Prefab:
       propertyPath: m_Radius
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014011990074, guid: 055cf9d813f23d84b801c852baa12543, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 055cf9d813f23d84b801c852baa12543, type: 2}
   m_IsPrefabParent: 0
@@ -5485,6 +5489,11 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54000011348619796, guid: 1c054ebcd540ea14f9d4e59f9f49cc09,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c054ebcd540ea14f9d4e59f9f49cc09, type: 2}
