@@ -1,4 +1,12 @@
-﻿# ProyectoAA
+﻿﻿# ProyectoAA
+
+**~Cerociento 06/01/2017~**
+
+* En proceso de creacion de niveles.
+* Scripts retocados para hacerlos funcionales con los nuevos modelos.
+
+---------------------------------------------------------------------
+
 
 **~Cerociento 13/12/2016~**
  
