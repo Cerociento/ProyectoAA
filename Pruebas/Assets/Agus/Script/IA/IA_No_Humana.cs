@@ -14,7 +14,6 @@ public class IA_No_Humana : MonoBehaviour {
     {
         ve = ~((1<<9)|(1<<10));
         target = Camara.Target;
-
     }
 
     void Update()

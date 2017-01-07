@@ -11,10 +11,7 @@ public class Laser : MonoBehaviour {
     float YAxis = 0f;
     [SerializeField]
     int num = 0;
-
-    [SerializeField]
-    float ajusteLaser;
-
+    
     public static bool paraMover;
 
     void Start()
@@ -31,7 +28,8 @@ public class Laser : MonoBehaviour {
           {
               if (hit.collider)
               {
-                  lr.SetPosition(1, new Vector3(0, 0, hit.distance+ajusteLaser));
+                  lr.SetPosition(0, Vector3.zero);
+                  lr.SetPosition(1, new Vector3(0, 0, hit.distance));
               }
 
               if (hit.collider.CompareTag("Grande"))

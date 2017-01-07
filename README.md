@@ -1,5 +1,21 @@
 ﻿﻿# ProyectoAA
 
+**~Cerociento 07/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 1 completo a falta de retoques e inclusion de nuevos modelos.
+* Modificada camara de seguridad.
+
+---------------------------------------------------------------------
+
+**~Fran 07/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 2 casi completado. En proceso de testeo y retoque.
+
+---------------------------------------------------------------------
+
+
 **~Cerociento 06/01/2017~**
 
 * En proceso de creacion de niveles.
@@ -130,4 +146,3 @@ En el proyecto que he subido a github es el del otro dia,con añadidos. Hay una 
 En esta escena, hay lineas negras en el suelo. Estas lineas son paredes que se pueden levantar a antojo para probar cosas y tener un nivel de prueba "personalizable".
 
 Tambien hay varias carpetas nuevas. Una llamada Prueba  y otra Pruebas 2. En la primera estan las cosas de la primera vez, en la segunda estan las cosas nuevas o las cosas antiguas retocadas y funcionales.
-

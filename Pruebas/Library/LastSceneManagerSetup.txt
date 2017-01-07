@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Agus/Escenas/Nivel 1 Def.unity
+- path: Assets/Agus/Escenas/Nivel 1.unity
   isLoaded: 1
   isActive: 1
