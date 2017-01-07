@@ -1,5 +1,6 @@
 ﻿﻿# ProyectoAA
 
+<<<<<<< HEAD
 **~Cerociento 07/01/2017~**
 
 * En proceso de creacion de niveles.
@@ -8,6 +9,8 @@
 
 ---------------------------------------------------------------------
 
+=======
+>>>>>>> origin/master
 **~Fran 07/01/2017~**
 
 * En proceso de creacion de niveles.
