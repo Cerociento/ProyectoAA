@@ -1,5 +1,13 @@
 ﻿﻿# ProyectoAA
 
+**~Fran 07/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 2 casi completado. En proceso de testeo y retoque.
+
+---------------------------------------------------------------------
+
+
 **~Cerociento 06/01/2017~**
 
 * En proceso de creacion de niveles.
