@@ -1,6 +1,13 @@
 ﻿﻿# ProyectoAA
 
 <<<<<<< HEAD
+
+**~Fran 08/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 3 en fase de testeo. Casi definitivo.
+
+---------------------------------------------------------------------
 **~Cerociento 07/01/2017~**
 
 * En proceso de creacion de niveles.
