@@ -2,6 +2,23 @@
 
 <<<<<<< HEAD
 
+
+**~Fran 11/01/2017~**
+
+* En proceso de pruebas de Diseño de Sonido. Sonido añadido a:
+* -Personajes (pasos y salto)
+* -Enemigos (pasos y alarmas)
+* -Cámaras (funcionamiento y alarmas)
+* -Trampa de pinchos (Activación y muerte)
+* -Lava (Muerte)
+* -Botones para las puertas (Activación)
+* -Cajas (Instanciado y envío de las mismas)
+* -Coleccionables (Recogida)
+* -Menú Principal (Música de fondo, interacción con los botones)
+* -Pausa (Activación e interacción con los botones)
+
+
+---------------------------------------------------------------------
 **~Fran 08/01/2017~**
 
 * En proceso de creacion de niveles.
