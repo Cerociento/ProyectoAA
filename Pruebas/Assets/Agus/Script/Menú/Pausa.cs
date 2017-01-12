@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Pausa : MonoBehaviour {
+
     //Pausa
 	public bool pausado;
 	[SerializeField]

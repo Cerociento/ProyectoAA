@@ -142,6 +142,7 @@ public class Movimiento_Grande : MonoBehaviour
         if (AxisCam < 0 || AxisCam > 0)
         {
             HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velCamara );
+           // HorizontalCamara.localPosition = Vector3.zero;
         }
 
         if (Input.GetKeyDown(KeyCode.E))

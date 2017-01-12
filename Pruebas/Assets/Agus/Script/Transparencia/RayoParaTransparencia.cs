@@ -17,7 +17,7 @@ public class RayoParaTransparencia : MonoBehaviour {
       {
           TargetCam = Camara.Target;
 
-          if (Physics.Linecast(transform.position, TargetCam.position, out rayo))
+         /* if (Physics.Linecast(transform.position, TargetCam.position, out rayo))
           {
               Debug.DrawLine(transform.position, TargetCam.position, Color.green);
           }
@@ -28,7 +28,7 @@ public class RayoParaTransparencia : MonoBehaviour {
           if (Input.GetKeyDown(KeyCode.Alpha2))
           {
               TargetCam = Target2;        
-          }
+          }*/
       }
 
     ParedPersiana paredPersiana;

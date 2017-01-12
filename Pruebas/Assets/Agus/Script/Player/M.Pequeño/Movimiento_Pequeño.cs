@@ -64,6 +64,8 @@ public class Movimiento_Pequeño : MonoBehaviour
         if (AxisCam < 0 ||  AxisCam > 0)
         {
             HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velCamara);
+           // HorizontalCamara.localPosition = Vector3.zero;
+
         }
 
         /*alturaCamara = Input.GetAxis("Vertical");
