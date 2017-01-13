@@ -2030,6 +2030,8 @@ MonoBehaviour:
   Caja:
   - {fileID: 1000014061532084, guid: aaa896791f267294aaa231c7befbab72, type: 2}
   - {fileID: 1000012352033960, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
+  sonido: {fileID: 82000013616074726}
+  sonidoCaja: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
 --- !u!135 &135000013093070272
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -11,6 +11,11 @@ public class Envio_De_Cajas : MonoBehaviour
     Transform[] destinoCajasGrandes;
     int destinoGrandes=0; 
 
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip sonidoEnvio;
+
     void Update()
     {
         if (destinoChicas >= destinoCajasChicas.Length)
@@ -34,6 +39,7 @@ public class Envio_De_Cajas : MonoBehaviour
 
                 hit.transform.position = destinoCajasChicas[destinoChicas].position;
                 destinoChicas++;
+				sonido.PlayOneShot(sonidoEnvio);
             }
         }
 
@@ -45,6 +51,7 @@ public class Envio_De_Cajas : MonoBehaviour
             {
                 hit.transform.position = destinoCajasGrandes[destinoGrandes].position;
                 destinoGrandes++;
+				sonido.PlayOneShot(sonidoEnvio);
             }
         }
     }

@@ -260,7 +260,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 10
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -338,6 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cbd52e3f79ce0e42b5afb587527663a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 82000010469723382}
+  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
   viewRadius: 19.08
   viewAngle: 61
   targetMask:

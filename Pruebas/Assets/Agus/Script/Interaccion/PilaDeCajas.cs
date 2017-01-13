@@ -7,6 +7,10 @@ public class PilaDeCajas : MonoBehaviour
     GameObject[] Caja;
     int activador;
     bool coger=true;
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip sonidoCaja;
 
     void Update()
     {
@@ -25,6 +29,7 @@ public class PilaDeCajas : MonoBehaviour
             {
                 if (coger)
                 {
+					sonido.PlayOneShot(sonidoCaja);
                     Transform sitioIntanciado = other.transform.GetChild(0).GetChild(2).GetChild(2);
                     if (activador < Caja.Length)
                     {                      

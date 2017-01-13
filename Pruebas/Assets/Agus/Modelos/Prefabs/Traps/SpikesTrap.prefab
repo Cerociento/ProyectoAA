@@ -409,6 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c611f9584237c54aa7c815c755714cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 82000012445420900}
+  sonidoMuerte: {fileID: 8300000, guid: b2a3982345d76406b95b6784300191c3, type: 3}
 --- !u!114 &114000011568796782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,6 +422,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14475a0bcc5b4e640ad367f1cedc2131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 82000010741364126}
+  pinchosEntran: {fileID: 8300000, guid: 7df71dc4f0cc8b34f9c415966f38daf2, type: 3}
+  pinchosSalen: {fileID: 8300000, guid: 7a3a923cd682af74bbcb11681cda27fa, type: 3}
   alwaysActive: 0
   deactivatedTime: 2
   activatedTime: 1

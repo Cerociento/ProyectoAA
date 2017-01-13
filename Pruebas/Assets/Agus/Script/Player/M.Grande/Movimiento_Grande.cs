@@ -37,6 +37,10 @@ public class Movimiento_Grande : MonoBehaviour
     //Checkpoint
     public static Vector3 checkpointGrande = new Vector3(0, 1.5f, 0);
 
+	//Audio 13-01-2017
+	[SerializeField]
+	AudioSource sonido;
+
     void Start()
     {
         colorAlfa = transform.GetChild(0).GetComponent<Renderer>().material.color;
@@ -95,24 +99,39 @@ public class Movimiento_Grande : MonoBehaviour
              {
                  transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
                  transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
              }
              else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
              {
 
                  transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
                  transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
              }
 
              if (YAxis < 0 && Input.GetKey(KeyCode.A))
               {
                   transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
                   transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
               }
               else if (YAxis > 0 && Input.GetKey(KeyCode.D))
               {
                   transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
                   transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
               }
+			if(YAxis==0 && ZAxis==0){
+				sonido.Stop();
+			}
 
             //exper
 

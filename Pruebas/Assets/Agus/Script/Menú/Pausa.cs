@@ -4,6 +4,15 @@ using UnityEngine.UI;
 
 public class Pausa : MonoBehaviour {
 
+	//Audio 13-01-2017
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip sonidoPausa;
+	[SerializeField]
+	AudioClip sonidoSeleccion;
+
+
     //Pausa
 	public bool pausado;
 	[SerializeField]
@@ -41,6 +50,7 @@ public class Pausa : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.P)||Input.GetKeyDown(KeyCode.Escape))
         {
+			sonido.PlayOneShot(sonidoPausa);
             pausado = !pausado;
         }
 
@@ -71,5 +81,9 @@ public class Pausa : MonoBehaviour {
 		Time.timeScale=1;
 		pausado=false;
 		menuPausa.SetActive(false);
+	}
+
+	public void OnHover(){
+		sonido.PlayOneShot(sonidoSeleccion);
 	}
 }

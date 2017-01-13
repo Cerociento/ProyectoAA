@@ -3,6 +3,14 @@ using System.Collections;
 
 public class TimedTrap : MonoBehaviour {
 
+	//Audio
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip pinchosEntran;
+	[SerializeField]
+	AudioClip pinchosSalen;
+
 	/// <summary>
 	/// Is this trap always active?
 	/// </summary>
@@ -106,6 +114,7 @@ public class TimedTrap : MonoBehaviour {
 		yield return new WaitForSeconds (this.activatedTime);
 		this._animator.SetTrigger (Tags.TOGGLE);
 		this.StartCoroutine (DeactivateAnimation ());
+		sonido.PlayOneShot(pinchosEntran);
 	}
 
 	/// <summary>
@@ -117,6 +126,7 @@ public class TimedTrap : MonoBehaviour {
 		yield return new WaitForSeconds (this.deactivatedTime);
 		this._animator.SetTrigger (Tags.TOGGLE);
 		this.StartCoroutine (ActivateAnimation ());
+		sonido.PlayOneShot(pinchosSalen);
 	}
 
 	/// <summary>

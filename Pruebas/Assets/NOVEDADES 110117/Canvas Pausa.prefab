@@ -512,6 +512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ea37e220dfeeb4f8cb59addcd49a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 0}
+  hover: {fileID: 0}
+  aceptar: {fileID: 0}
   level: 0
 --- !u!114 &114000010202153636
 MonoBehaviour:

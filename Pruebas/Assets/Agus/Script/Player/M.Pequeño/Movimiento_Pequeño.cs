@@ -30,6 +30,13 @@ public class Movimiento_Pequeño : MonoBehaviour
     //Checpoint
     public static Vector3 checkpointPequeño= new Vector3 (0,1.5f,0);
 
+	//Audio
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioSource sonidoBis;
+	[SerializeField]
+	AudioClip sonidoSalto;
 
      void Update()
     {       
@@ -40,24 +47,38 @@ public class Movimiento_Pequeño : MonoBehaviour
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
-
+			if(!sonido.isPlaying){
+				sonido.Play();}
             }
             else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-            }
+			if(!sonido.isPlaying){
+				sonido.Play();}    
+		}
 
             if (YAxis < 0 && Input.GetKey(KeyCode.A))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
                 transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
-            }
+			if(!sonido.isPlaying){
+				sonido.Play();}    
+		}
             else if (YAxis > 0 && Input.GetKey(KeyCode.D))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
                 transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
-            }
+			if(!sonido.isPlaying){
+				sonido.Play();}    
+		}
+
+		if(YAxis==0 && ZAxis==0){
+			sonido.Stop();
+		}
+		if(salto!=0){
+			sonido.Stop();
+		}
 
         AxisCam = Input.GetAxis("Rotacion");
         
@@ -82,6 +103,7 @@ public class Movimiento_Pequeño : MonoBehaviour
                 GetComponent<Rigidbody>().AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
                 Debug.Log("salto");
                 salto++;
+				sonidoBis.PlayOneShot(sonidoSalto);
             }
         }
     }
