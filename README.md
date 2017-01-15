@@ -2,6 +2,8 @@
 
 **~Cerociento 15/01/2017~**
 
+*Diversos retoques y mejoras.
+
 *Completada union de niveles.
 
 *Creacion de script de guardado en cada checkpoint.
@@ -13,7 +15,6 @@
                          *Ultimo nivel
                          *Coleccionables recogidos.
                          
-*Diversos retoques y mejoras.
 ---------------------------------------------------------------------
 
 **~Fran 11/01/2017~** 
