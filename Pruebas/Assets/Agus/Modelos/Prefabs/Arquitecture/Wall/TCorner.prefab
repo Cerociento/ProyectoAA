@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000010411503994}
   - 33: {fileID: 33000013783994452}
   - 23: {fileID: 23000011560123840}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000014062884238}
   - 33: {fileID: 33000013490090170}
   - 23: {fileID: 23000013060482208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012500081156}
   - 65: {fileID: 65000013891715152}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: TCorner
   m_TagString: Background
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}
@@ -71,7 +71,7 @@ GameObject:
   - 4: {fileID: 4000012963726408}
   - 33: {fileID: 33000013683226686}
   - 23: {fileID: 23000013386744100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 4: {fileID: 4000013207855278}
   - 33: {fileID: 33000013615214456}
   - 23: {fileID: 23000014065014190}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - 4: {fileID: 4000010591509360}
   - 33: {fileID: 33000012606779714}
   - 23: {fileID: 23000013940931610}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - 4: {fileID: 4000011535447926}
   - 33: {fileID: 33000014070845168}
   - 23: {fileID: 23000012658810614}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - 4: {fileID: 4000013521887572}
   - 33: {fileID: 33000011046854080}
   - 23: {fileID: 23000012557496464}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - 4: {fileID: 4000010116755482}
   - 33: {fileID: 33000012748489404}
   - 23: {fileID: 23000011283236820}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (2)
   m_TagString: Background
   m_Icon: {fileID: 0}

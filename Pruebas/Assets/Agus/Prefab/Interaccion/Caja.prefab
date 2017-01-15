@@ -25,7 +25,7 @@ GameObject:
   - 114: {fileID: 114000012519979962}
   - 54: {fileID: 54000010492499608}
   - 135: {fileID: 135000012540348528}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Caja
   m_TagString: Caja
   m_Icon: {fileID: 0}

@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000011759283590}
   - 33: {fileID: 33000010141229206}
   - 23: {fileID: 23000012484110374}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000013323576646}
   - 33: {fileID: 33000012100717544}
   - 23: {fileID: 23000012554967070}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000011603507948}
   - 33: {fileID: 33000011635790854}
   - 23: {fileID: 23000014013702434}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midTile (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012175833882}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - 4: {fileID: 4000013372427236}
   - 33: {fileID: 33000012992850976}
   - 23: {fileID: 23000012345460340}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midTile (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - 4: {fileID: 4000010488410390}
   - 65: {fileID: 65000012399441480}
   - 114: {fileID: 114000012192208390}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: DoubleTile
   m_TagString: Background
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}
@@ -121,7 +121,7 @@ GameObject:
   - 4: {fileID: 4000011135036720}
   - 33: {fileID: 33000011477217700}
   - 23: {fileID: 23000011008685246}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - 4: {fileID: 4000011518396286}
   - 33: {fileID: 33000012056284244}
   - 23: {fileID: 23000012662751656}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - 4: {fileID: 4000011247297334}
   - 33: {fileID: 33000010747865546}
   - 23: {fileID: 23000010080435232}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - 4: {fileID: 4000012009163616}
   - 33: {fileID: 33000010733445710}
   - 23: {fileID: 23000010161800956}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midTile (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

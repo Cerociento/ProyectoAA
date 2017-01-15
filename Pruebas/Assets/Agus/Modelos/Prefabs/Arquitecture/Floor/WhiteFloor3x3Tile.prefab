@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000011212662950}
   - 33: {fileID: 33000013685911338}
   - 23: {fileID: 23000010123173180}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (4)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000011732197372}
   - 33: {fileID: 33000011151842442}
   - 23: {fileID: 23000012569117520}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (8)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000014106518620}
   - 33: {fileID: 33000013443510658}
   - 23: {fileID: 23000012937215342}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (6)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - 4: {fileID: 4000010957296990}
   - 33: {fileID: 33000011399014002}
   - 23: {fileID: 23000011756966120}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012098560852}
   - 65: {fileID: 65000013929214604}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: WhiteFloor3x3Tile
   m_TagString: Untagged
   m_Icon: {fileID: 1862873201189522682, guid: 0000000000000000d000000000000000, type: 0}
@@ -105,7 +105,7 @@ GameObject:
   - 4: {fileID: 4000011460628872}
   - 33: {fileID: 33000011056072854}
   - 23: {fileID: 23000012356320088}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - 4: {fileID: 4000014103413052}
   - 33: {fileID: 33000011500061828}
   - 23: {fileID: 23000010818030928}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   - 4: {fileID: 4000012831245920}
   - 33: {fileID: 33000011067479818}
   - 23: {fileID: 23000013821465296}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - 4: {fileID: 4000011150132460}
   - 33: {fileID: 33000013852695502}
   - 23: {fileID: 23000012309585496}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (7)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - 4: {fileID: 4000011482163878}
   - 33: {fileID: 33000014093176680}
   - 23: {fileID: 23000010488898322}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (5)
   m_TagString: Background
   m_Icon: {fileID: 0}

@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000013835388088}
   - 33: {fileID: 33000010207564416}
   - 23: {fileID: 23000012898879456}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000013996207974}
   - 33: {fileID: 33000012437411224}
   - 23: {fileID: 23000010832223296}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000010014698488}
   - 33: {fileID: 33000011942350994}
   - 23: {fileID: 23000013493676658}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - 4: {fileID: 4000011713545506}
   - 33: {fileID: 33000012398058362}
   - 23: {fileID: 23000012526382324}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010729489628}
   - 65: {fileID: 65000013348966234}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BlueInnerCorner
   m_TagString: Background
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}

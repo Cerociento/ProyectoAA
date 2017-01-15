@@ -675,7 +675,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014011990074}
   m_LocalRotation: {x: -0, y: -0.72391695, z: -0, w: 0.68988717}
-  m_LocalPosition: {x: 12.69, y: -1.925879, z: 9.89}
+  m_LocalPosition: {x: 18.543005, y: 0.005, z: -34.214462}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_LocalEulerAnglesHint: {x: 0, y: -92.677, z: 0}
   m_Children:
@@ -1999,16 +1999,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Caja:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  sonido: {fileID: 82000012921739746}
+  sonidoCaja: {fileID: 8300000, guid: 40757f510c5c51843b3fc41d8092f4e9, type: 3}
 --- !u!135 &135000010160348636
 SphereCollider:
   m_ObjectHideFlags: 1

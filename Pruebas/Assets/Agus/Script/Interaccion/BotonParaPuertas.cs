@@ -3,6 +3,12 @@ using System.Collections;
 
 public class BotonParaPuertas : MonoBehaviour {
 
+	//AUDIO
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip sonidoBoton;
+
     [SerializeField]
     GameObject[] abrePuerta;
 
@@ -24,6 +30,7 @@ public class BotonParaPuertas : MonoBehaviour {
                     transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
                     transform.GetChild(0).GetComponent<MeshFilter>().mesh = botonVerde;
                     transform.GetComponent<BoxCollider>().enabled = false;
+					sonido.PlayOneShot(sonidoBoton);
                 }
                 if(Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Mouse0))
                 {                   

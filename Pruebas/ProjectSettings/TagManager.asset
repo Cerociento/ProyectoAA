@@ -15,6 +15,7 @@ TagManager:
   - Grande
   - Background
   - Interactive
+  - Plataforma Movil
   layers:
   - Default
   - TransparentFX
@@ -24,12 +25,12 @@ TagManager:
   - UI
   - 
   - 
-  - interior
+  - Ascensor
   - Escondido
   - Cosas de jugador
   - Player
   - Checkpoint
-  - 
+  - Cajas
   - 
   - 
   - 

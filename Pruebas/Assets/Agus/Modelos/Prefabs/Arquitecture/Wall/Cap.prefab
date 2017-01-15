@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000011711112408}
   - 33: {fileID: 33000013468942536}
   - 23: {fileID: 23000011186369480}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topOuterCorner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000014207875754}
   - 33: {fileID: 33000013851364246}
   - 23: {fileID: 23000013233745484}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botOuterCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000011284790284}
   - 33: {fileID: 33000012520703008}
   - 23: {fileID: 23000010148159034}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botOuterCorner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - 4: {fileID: 4000010165717890}
   - 33: {fileID: 33000012069225580}
   - 23: {fileID: 23000011564727750}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midOuterCorner (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000014089638334}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - 4: {fileID: 4000013962621528}
   - 33: {fileID: 33000012153440716}
   - 23: {fileID: 23000012791493306}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midOuterCorner (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - 4: {fileID: 4000013239949948}
   - 33: {fileID: 33000010866863274}
   - 23: {fileID: 23000010357275654}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midOuterCorner (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - 4: {fileID: 4000010240285442}
   - 33: {fileID: 33000014189950278}
   - 23: {fileID: 23000013693150364}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midOuterCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - 4: {fileID: 4000010663252362}
   - 65: {fileID: 65000010989817968}
   - 114: {fileID: 114000013149463610}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cap
   m_TagString: Background
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}
@@ -172,7 +172,7 @@ GameObject:
   - 4: {fileID: 4000012952303894}
   - 33: {fileID: 33000012708721976}
   - 23: {fileID: 23000013206783802}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topOuterCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

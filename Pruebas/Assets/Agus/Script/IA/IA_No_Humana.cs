@@ -3,6 +3,11 @@ using System.Collections;
 
 public class IA_No_Humana : MonoBehaviour {
 
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip alarma;
+
     RaycastHit ray = new RaycastHit();
     [SerializeField]
     Transform target;
@@ -25,19 +30,22 @@ public class IA_No_Humana : MonoBehaviour {
     {
         if (hit.transform.CompareTag("Grande")|| hit.transform.CompareTag("Pequeño"))
         {
-            if(Physics.Linecast(transform.position,target.position,out ray,ve))
+            if(Physics.Linecast(transform.GetChild(0).position,target.position,out ray,ve))
             {
-                Debug.Log(gameObject.name);       
+                Debug.Log(gameObject.name);
+                Debug.DrawLine(transform.position, target.position, Color.red,10);   
                 if (ray.transform.CompareTag("Grande"))
                 {
                     target.transform.position = Movimiento_Grande.checkpointGrande;
                     Pausa.vecesVisto++;
+					sonido.PlayOneShot(alarma);
                 }
 
                 if (ray.transform.CompareTag("Pequeño"))
                 {
                     target.transform.position = Movimiento_Pequeño.checkpointPequeño;
                     Pausa.vecesVisto++;
+					sonido.PlayOneShot(alarma);
                 }
             }
         }

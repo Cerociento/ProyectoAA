@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000013532986578}
   - 33: {fileID: 33000013039232722}
   - 23: {fileID: 23000012901223466}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: redFloor (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013862028466}
   - 65: {fileID: 65000012737880952}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: RedFloor1x3Tile
   m_TagString: Untagged
   m_Icon: {fileID: 1862873201189522682, guid: 0000000000000000d000000000000000, type: 0}
@@ -54,7 +54,7 @@ GameObject:
   - 4: {fileID: 4000011331018626}
   - 33: {fileID: 33000011635548038}
   - 23: {fileID: 23000010227712602}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: redFloor (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - 4: {fileID: 4000011077563030}
   - 33: {fileID: 33000013555310910}
   - 23: {fileID: 23000010266390100}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: redFloor
   m_TagString: Background
   m_Icon: {fileID: 0}

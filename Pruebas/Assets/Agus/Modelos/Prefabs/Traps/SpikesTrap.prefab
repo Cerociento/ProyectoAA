@@ -39,6 +39,8 @@ GameObject:
   - 65: {fileID: 65000011650058930}
   - 114: {fileID: 114000010337505380}
   - 82: {fileID: 82000012445420900}
+  - 114: {fileID: 114000013064706456}
+  - 114: {fileID: 114000010307332232}
   m_Layer: 9
   m_Name: Spikes
   m_TagString: Background
@@ -89,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012650060608}
   m_LocalRotation: {x: 1.0165751e-15, y: 1, z: -0.000000021855694, w: 0.00000004371139}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.04, y: -3.37, z: 0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -105,7 +107,7 @@ Transform:
   m_GameObject: {fileID: 1000012013881070}
   m_LocalRotation: {x: -2.3486764e-23, y: 2.6865725e-16, z: 0.00000008742278, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.060000006, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012907408256}
@@ -244,7 +246,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -278,7 +280,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.3
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -300,7 +302,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 1
+      value: 0.39
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -398,6 +400,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114000010307332232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012013881070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c611f9584237c54aa7c815c755714cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 0}
+  sonidoMuerte: {fileID: 0}
 --- !u!114 &114000010337505380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,6 +424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c611f9584237c54aa7c815c755714cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 82000012445420900}
+  sonidoMuerte: {fileID: 8300000, guid: fd12f6bb1a3c2a74dad37c1f25d166d3, type: 3}
 --- !u!114 &114000011568796782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,9 +437,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14475a0bcc5b4e640ad367f1cedc2131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido: {fileID: 82000010741364126}
+  pinchosEntran: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+  pinchosSalen: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
   alwaysActive: 0
   deactivatedTime: 2
   activatedTime: 1
   initialDelay: 0
   initiallyActivated: 0
   deathTrigger: {fileID: 65000011650058930}
+--- !u!114 &114000013064706456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012013881070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c611f9584237c54aa7c815c755714cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido: {fileID: 82000012445420900}
+  sonidoMuerte: {fileID: 0}

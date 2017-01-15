@@ -25,7 +25,7 @@ GameObject:
   - 114: {fileID: 114000013046972844}
   - 54: {fileID: 54000010244021174}
   - 135: {fileID: 135000013457750590}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Caja Escondite
   m_TagString: Caja Escondite
   m_Icon: {fileID: 0}

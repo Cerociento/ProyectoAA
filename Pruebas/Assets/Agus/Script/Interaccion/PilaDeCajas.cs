@@ -6,7 +6,11 @@ public class PilaDeCajas : MonoBehaviour
     [SerializeField]
     GameObject[] Caja;
     int activador;
-    bool coger=true;
+    bool coger = false;
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip sonidoCaja;
 
     void Update()
     {
@@ -15,28 +19,29 @@ public class PilaDeCajas : MonoBehaviour
             Caja = new GameObject[0];
             Destroy(this.gameObject, 2);
         }
-    }
 
-    void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Grande"))
+        if (coger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            Movimiento_Grande.soltar = false;
+            sonido.PlayOneShot(sonidoCaja);
+            Transform sitioIntanciado = GameObject.FindWithTag("Grande").transform.GetChild(0).GetChild(2).GetChild(2);
+            if (activador < Caja.Length)
             {
-                if (coger)
-                {
-                    Transform sitioIntanciado = other.transform.GetChild(0).GetChild(2).GetChild(2);
-                    if (activador < Caja.Length)
-                    {                      
-                        Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation,sitioIntanciado);
-                        activador++;
-                    }                 
-                        coger = false;
-                }
+                Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
+                activador++;
+
             }
 
-            if (Input.GetKeyUp(KeyCode.E))
-                coger = true;
-        }
+            coger = false;
+        }         
+        }   
+    
+
+    void OnTriggerStay(Collider other)
+  {
+    if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.E))
+    {
+            coger = true;
     }
+ }   
 }	

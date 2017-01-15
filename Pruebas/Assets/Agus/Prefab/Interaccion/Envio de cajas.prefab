@@ -479,3 +479,5 @@ MonoBehaviour:
   - {fileID: 0}
   destinoCajasGrandes:
   - {fileID: 0}
+  sonido: {fileID: 82000012341497950}
+  sonidoEnvio: {fileID: 8300000, guid: 1a0841dbea3845e41aadbab9d97d6fbe, type: 3}

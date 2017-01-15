@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class RayoParaTransparencia : MonoBehaviour {
-     [SerializeField] 
-     Transform TargetCam;
+    // [SerializeField] 
+    // Transform TargetCam;
 
       [SerializeField]
       Transform Target1;
@@ -15,7 +15,7 @@ public class RayoParaTransparencia : MonoBehaviour {
 
       void Update()
       {
-          TargetCam = Camara.Target;
+        //  TargetCam = Camara.Target;
 
          /* if (Physics.Linecast(transform.position, TargetCam.position, out rayo))
           {
@@ -30,13 +30,6 @@ public class RayoParaTransparencia : MonoBehaviour {
               TargetCam = Target2;        
           }*/
       }
-
-    ParedPersiana paredPersiana;
-
-    void Start()
-    {
-        paredPersiana = GetComponent<ParedPersiana>(); 
-    }
 
     void OnTriggerEnter(Collider other)
     {

@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000014258831274}
   - 33: {fileID: 33000012951353850}
   - 23: {fileID: 23000011746467846}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000012868440644}
   - 33: {fileID: 33000013498074090}
   - 23: {fileID: 23000011902524644}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010166692700}
   - 65: {fileID: 65000013895984694}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: WhiteFloor1x3Tile
   m_TagString: Untagged
   m_Icon: {fileID: 1862873201189522682, guid: 0000000000000000d000000000000000, type: 0}
@@ -71,7 +71,7 @@ GameObject:
   - 4: {fileID: 4000013663148788}
   - 33: {fileID: 33000012055242096}
   - 23: {fileID: 23000012654598688}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: whiteFloor (1)
   m_TagString: Background
   m_Icon: {fileID: 0}

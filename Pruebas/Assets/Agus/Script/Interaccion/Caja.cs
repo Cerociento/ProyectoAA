@@ -5,11 +5,17 @@ public class Caja : MonoBehaviour
 {
     public static GameObject caja;
 
-    void OnTriggerEnter(Collider other)
+    void Start()
+    {
+        caja = null;
+    }
+
+    void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Grande"))
         {
             caja = gameObject;
+            other.GetComponent<Rigidbody>().Sleep();
         }
     }
 

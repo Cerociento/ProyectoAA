@@ -4,6 +4,12 @@ using System.Collections.Generic;
 
 public class FieldOfViewRetocado : MonoBehaviour {
 
+	//Audio
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip alarma;
+
 	public float viewRadius;
 	[Range(0,360)]
 	public float viewAngle;
@@ -46,6 +52,7 @@ public class FieldOfViewRetocado : MonoBehaviour {
 
                                Pausa.vecesVisto++;
                                target.transform.position=Movimiento_Grande.checkpointGrande;
+						sonido.PlayOneShot(alarma);
                            }
 
                            if (target.CompareTag("Pequeño"))
@@ -53,6 +60,7 @@ public class FieldOfViewRetocado : MonoBehaviour {
                                Debug.Log("Visto");
                                Pausa.vecesVisto++;
                                target.transform.position = Movimiento_Pequeño.checkpointPequeño;
+						sonido.PlayOneShot(alarma);
                            }
                     }
 			}else{

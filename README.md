@@ -1,9 +1,19 @@
 ﻿﻿# ProyectoAA
 
-<<<<<<< HEAD
+**~Cerociento 15/01/2017~**
 
+*Completada union de niveles.
+*Creacion de script de guardado en cada checkpoint.
+             **Solo para edicion (F1 Guarda, F2 Carga, F3 Borra)**
+           -Guarda:
+                         *Ultimo checkpoint.
+                         *Veces descubierto.
+                         *Ultimo nivel
+                         *Coleccionables recogidos.
+*Diversos retoques y mejoras.
+---------------------------------------------------------------------
 
-**~Fran 11/01/2017~**
+**~Fran 11/01/2017~** 
 
 * En proceso de pruebas de Diseño de Sonido. Sonido añadido a:
 * -Personajes (pasos y salto)
@@ -25,6 +35,7 @@
 * Nivel 3 en fase de testeo. Casi definitivo.
 
 ---------------------------------------------------------------------
+
 **~Cerociento 07/01/2017~**
 
 * En proceso de creacion de niveles.
@@ -33,8 +44,7 @@
 
 ---------------------------------------------------------------------
 
-=======
->>>>>>> origin/master
+
 **~Fran 07/01/2017~**
 
 * En proceso de creacion de niveles.
@@ -173,3 +183,4 @@ En el proyecto que he subido a github es el del otro dia,con añadidos. Hay una 
 En esta escena, hay lineas negras en el suelo. Estas lineas son paredes que se pueden levantar a antojo para probar cosas y tener un nivel de prueba "personalizable".
 
 Tambien hay varias carpetas nuevas. Una llamada Prueba  y otra Pruebas 2. En la primera estan las cosas de la primera vez, en la segunda estan las cosas nuevas o las cosas antiguas retocadas y funcionales.
+

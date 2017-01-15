@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000011913861248}
   - 33: {fileID: 33000011454278510}
   - 23: {fileID: 23000013806825702}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blueFloor (8)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000012093588506}
   - 33: {fileID: 33000011362488988}
   - 23: {fileID: 23000010971763622}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blueFloor (6)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000011234092458}
   - 33: {fileID: 33000011376061146}
   - 23: {fileID: 23000012025853890}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blueFloor (5)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010018560300}
   - 65: {fileID: 65000013368906072}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: BlueFloor1x5Tile
   m_TagString: Untagged
   m_Icon: {fileID: 1862873201189522682, guid: 0000000000000000d000000000000000, type: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 4: {fileID: 4000013682848346}
   - 33: {fileID: 33000012090982888}
   - 23: {fileID: 23000012541414002}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blueFloor (7)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - 4: {fileID: 4000011166029824}
   - 33: {fileID: 33000011036004936}
   - 23: {fileID: 23000010339322038}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: blueFloor (4)
   m_TagString: Background
   m_Icon: {fileID: 0}

@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000012590991262}
   - 33: {fileID: 33000014147713406}
   - 23: {fileID: 23000013304715174}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (5)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000011037514458}
   - 33: {fileID: 33000010749185852}
   - 23: {fileID: 23000013240672226}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - 4: {fileID: 4000014242217562}
   - 33: {fileID: 33000011521415870}
   - 23: {fileID: 23000013031504002}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - 4: {fileID: 4000013336477456}
   - 33: {fileID: 33000010175032886}
   - 23: {fileID: 23000012502611268}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (7)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - 4: {fileID: 4000012819466420}
   - 33: {fileID: 33000012580705246}
   - 23: {fileID: 23000011643909816}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - 4: {fileID: 4000010348519100}
   - 33: {fileID: 33000010204011708}
   - 23: {fileID: 23000014234716856}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - 4: {fileID: 4000011079881908}
   - 33: {fileID: 33000010725727428}
   - 23: {fileID: 23000012154708174}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   - 4: {fileID: 4000013998210018}
   - 33: {fileID: 33000010041882084}
   - 23: {fileID: 23000012775770134}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - 4: {fileID: 4000011548232588}
   - 33: {fileID: 33000013009543390}
   - 23: {fileID: 23000012728692174}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - 4: {fileID: 4000013185948134}
   - 33: {fileID: 33000011469783906}
   - 23: {fileID: 23000013392249840}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (6)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   - 4: {fileID: 4000010032053704}
   - 33: {fileID: 33000011724011882}
   - 23: {fileID: 23000013236582876}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - 4: {fileID: 4000012007820202}
   - 33: {fileID: 33000011876436388}
   - 23: {fileID: 23000012318918208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botInnerCorner (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011167554582}
   - 65: {fileID: 65000011165530484}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: XCorner
   m_TagString: Background
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}
@@ -241,7 +241,7 @@ GameObject:
   - 4: {fileID: 4000013332163720}
   - 33: {fileID: 33000011824824048}
   - 23: {fileID: 23000012617461960}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - 4: {fileID: 4000014123612074}
   - 33: {fileID: 33000012917962648}
   - 23: {fileID: 23000010926316548}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   - 4: {fileID: 4000011158138482}
   - 33: {fileID: 33000011464165694}
   - 23: {fileID: 23000012374055360}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topInnerCorner (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - 4: {fileID: 4000012629344038}
   - 33: {fileID: 33000010826499374}
   - 23: {fileID: 23000010584397272}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midInnerCorner (4)
   m_TagString: Background
   m_Icon: {fileID: 0}

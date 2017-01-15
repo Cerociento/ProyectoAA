@@ -2,10 +2,12 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Manager : MonoBehaviour 
+public class Manager : MonoBehaviour
 {
-
+    [SerializeField]
     public bool nivelMas;
+    [SerializeField]
+    GameObject desactivar;
 
     void Awake()
     {
@@ -15,31 +17,29 @@ public class Manager : MonoBehaviour
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
-    }
+    }  
 
-     public void LoadAdditive()
-    {
-
-       /* if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
-        }
-        if (Input.GetKeyDown(KeyCode.RightControl))
-        {
-            SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
-        }*/
-    }	  
-    
     void FixedUpdate()
     {
         if (nivelMas)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
             {
-                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);               
+                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
                 nivelMas = false;
             }
         }
-    } 
+    }    
 
+    void OnLevelWasLoaded()
+    {
+        if (SceneManager.GetActiveScene().buildIndex==0)
+        {
+            desactivar.SetActive(false);
+        }
+        else
+        {
+            desactivar.SetActive(true);
+        }
+    }
 }

@@ -21,7 +21,7 @@ GameObject:
   - 4: {fileID: 4000012697146356}
   - 33: {fileID: 33000010115593662}
   - 23: {fileID: 23000013751626206}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: botTile
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - 4: {fileID: 4000010112803516}
   - 33: {fileID: 33000014226293680}
   - 23: {fileID: 23000011815058718}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midTile
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012541190790}
   - 65: {fileID: 65000012984588204}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: GreenTile
   m_TagString: Background
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}
@@ -71,7 +71,7 @@ GameObject:
   - 4: {fileID: 4000011569256760}
   - 33: {fileID: 33000012135914696}
   - 23: {fileID: 23000013894327712}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: topTile
   m_TagString: Background
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 4: {fileID: 4000012207214922}
   - 33: {fileID: 33000012506647990}
   - 23: {fileID: 23000011209907504}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: midTile (1)
   m_TagString: Background
   m_Icon: {fileID: 0}

@@ -12,12 +12,12 @@ public class Movimiento_Grande : MonoBehaviour
     Transform HorizontalCamara;
     [SerializeField]
     Transform CamCamera;
-    float rango = 1;
+   // float rango = 1;
 
     //Rotacion Personaje
-    float maxAnguloHorizontal = 180.0f;
-    Quaternion rotacionBase;
-    Quaternion rotacionDeseada;
+  //  float maxAnguloHorizontal = 180.0f;
+   // Quaternion rotacionBase;
+   // Quaternion rotacionDeseada;
 
 
     //Rotacion Camara
@@ -26,25 +26,31 @@ public class Movimiento_Grande : MonoBehaviour
     float AxisCam = 0;
    
 
-    //Esconderte 
+    //Cajas 
     [SerializeField]
     GameObject caja;
-    bool soltar=true;
+    [SerializeField]
+    public static bool soltar = false;
     bool escondite=false;
-   public static Vector3 posicion;
+    public static Vector3 posicion;
     Color colorAlfa;
 
     //Checkpoint
     public static Vector3 checkpointGrande = new Vector3(0, 1.5f, 0);
+
+	//Audio 13-01-2017
+	[SerializeField]
+	AudioSource sonido;
 
     void Start()
     {
         colorAlfa = transform.GetChild(0).GetComponent<Renderer>().material.color;
         posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z+5);
         CamCamera.LookAt(posicion);
-
-        rotacionBase = transform.rotation;
-        rotacionDeseada = Quaternion.identity;
+        soltar = false;
+       // rotacionBase = transform.rotation;
+      //  rotacionDeseada = Quaternion.identity;
+        caja = null;
     }
 
     void Update()
@@ -95,24 +101,39 @@ public class Movimiento_Grande : MonoBehaviour
              {
                  transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
                  transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
              }
              else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
              {
 
                  transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
                  transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
              }
 
              if (YAxis < 0 && Input.GetKey(KeyCode.A))
               {
                   transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
                   transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
               }
               else if (YAxis > 0 && Input.GetKey(KeyCode.D))
               {
                   transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
                   transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
+				if(!sonido.isPlaying){
+					sonido.Play();
+				}
               }
+			if(YAxis==0 && ZAxis==0){
+				sonido.Stop();
+			}
 
             //exper
 
@@ -147,23 +168,33 @@ public class Movimiento_Grande : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (caja.CompareTag("Caja")|| caja.CompareTag("Caja Grande") || caja.CompareTag("Caja Escondite"))
+            print("antes "+soltar);
+            if (caja)
             {
                 soltar = !soltar;
+                print(soltar);
+                gameObject.GetComponent<Rigidbody>().Sleep();
                 if (soltar)
                 {
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
-                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
-                }else
+                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();              
+                }
+                else
                 {
                     caja.transform.position = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).position;
                     caja.transform.parent = gameObject.transform.GetChild(0).GetChild(2).GetChild(2);
                     caja.GetComponent<BoxCollider>().enabled = false;           
                     caja.GetComponent<Rigidbody>().useGravity = false;
                     caja.GetComponent<Rigidbody>().isKinematic = true;
+                    caja.GetComponent<Rigidbody>().Sleep();
                 }
+                
+            }
+            else
+            {
+                Debug.Log("Ninguna caja cerca");
             }
         }
 
@@ -179,6 +210,10 @@ public class Movimiento_Grande : MonoBehaviour
                     gameObject.tag = "Escondido";
                     Escondido();
                 }
+            }
+            else
+            {
+                Debug.Log("Ninguna caja cerca");
             }
         }
     }
@@ -206,6 +241,13 @@ public class Movimiento_Grande : MonoBehaviour
         if (other.CompareTag("Checkpoint"))
         {
             checkpointGrande = other.transform.position;
+            StartCoroutine("Guarda");
         }
+    }
+
+    IEnumerator Guarda()
+    {
+        yield return new WaitForSeconds(1);
+        GameObject.Find("Manager").GetComponent<CargarGuardar>().Guardar();
     }
 }
