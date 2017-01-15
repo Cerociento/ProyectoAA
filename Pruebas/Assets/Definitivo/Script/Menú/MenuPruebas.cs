@@ -32,12 +32,12 @@ public class MenuPruebas : MonoBehaviour {
         }
         else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
-            Continuar.GetComponent<Text>().text = "Nuevo Juego";
+            Continuar.GetComponent<Text>().text = "Continuar";
         }
     }
 
 
-	public void LoadScene(){
+	public void LoadSceneContinuar(){
         if(File.Exists(Application.persistentDataPath + "/monosave.af"))
         {
            
@@ -54,6 +54,11 @@ public class MenuPruebas : MonoBehaviour {
 
         SceneManager.LoadScene(0);
         }
+
+	public void NuevoJuego (){
+
+		SceneManager.LoadScene(1);
+	}
 
 	public void Salir(){
 		Application.Quit();
