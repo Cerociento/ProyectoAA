@@ -14,7 +14,7 @@ public class Caja : MonoBehaviour
     {
         if (other.CompareTag("Grande"))
         {
-            caja = gameObject;
+            caja = gameObject;                 
             other.GetComponent<Rigidbody>().Sleep();
         }
     }

@@ -168,34 +168,44 @@ public class Movimiento_Grande : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            print("antes "+soltar);
             if (caja)
-            {
-                soltar = !soltar;
-                print(soltar);
-                gameObject.GetComponent<Rigidbody>().Sleep();
+            {     
+                soltar = !soltar;                
                 if (soltar)
                 {
+                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
-                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();              
+                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
                 }
                 else
                 {
                     caja.transform.position = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).position;
                     caja.transform.parent = gameObject.transform.GetChild(0).GetChild(2).GetChild(2);
-                    caja.GetComponent<BoxCollider>().enabled = false;           
+                    caja.GetComponent<BoxCollider>().enabled = false;
+                    caja.GetComponent<SphereCollider>().enabled = false;
                     caja.GetComponent<Rigidbody>().useGravity = false;
                     caja.GetComponent<Rigidbody>().isKinematic = true;
-                    caja.GetComponent<Rigidbody>().Sleep();
-                }
-                
+                }             
             }
             else
             {
                 Debug.Log("Ninguna caja cerca");
             }
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
+            {       if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
+                {
+                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
+                }
+        } else
+        {
+            Debug.Log("No hijo");
+        }
         }
 
         if (Input.GetKeyDown(KeyCode.Space))

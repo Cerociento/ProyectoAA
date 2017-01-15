@@ -3254,6 +3254,7 @@ MonoBehaviour:
   barreraFinalGrande: {fileID: 379049614}
   "sueloPeque\xF1o": {fileID: 671685925}
   sueloGrande: {fileID: 147389712}
+  finDelJuego: 0
 --- !u!23 &67694252
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6701,7 +6702,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -12.93
+      value: -12.84
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -52334,19 +52335,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012139027556, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.43
+      value: 11.64
       objectReference: {fileID: 0}
     - target: {fileID: 4000012139027556, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.28
+      value: 6.74
       objectReference: {fileID: 0}
     - target: {fileID: 4000011433712326, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 11.47
+      value: 11.74
       objectReference: {fileID: 0}
     - target: {fileID: 4000011433712326, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 15.01
+      value: 14.44
       objectReference: {fileID: 0}
     - target: {fileID: 4000012820978380, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -52423,11 +52424,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011433712326, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.788
+      value: 7.82
       objectReference: {fileID: 0}
     - target: {fileID: 4000012139027556, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.518
+      value: 12.55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}

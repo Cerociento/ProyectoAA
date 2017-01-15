@@ -33,7 +33,7 @@ public class Manager : MonoBehaviour
 
     void OnLevelWasLoaded()
     {
-        if (SceneManager.GetActiveScene().buildIndex==0)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             desactivar.SetActive(false);
         }

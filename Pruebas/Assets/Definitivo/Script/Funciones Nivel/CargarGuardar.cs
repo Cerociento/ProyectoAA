@@ -45,6 +45,7 @@ public class CargarGuardar : MonoBehaviour
         nivel = SceneManager.GetActiveScene().buildIndex;
         vecesVisto = Pausa.vecesVisto;
         colecionables = Pausa.recogidos;
+    
 
 #if UNITY_EDITOR 
         if (Input.GetKeyDown(KeyCode.F1))
@@ -85,7 +86,7 @@ public class CargarGuardar : MonoBehaviour
         datos.colecionables = colecionables;
         save.Serialize(file, datos);
         file.Close();
-        print("Guardado ");
+        print("Guardado nivel" +nivel);
         imagenGuardado.SetActive(true);
         StartCoroutine("Imagen");
     } 
