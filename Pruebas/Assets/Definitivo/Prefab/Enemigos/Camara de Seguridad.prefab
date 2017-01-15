@@ -231,7 +231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011835987494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.64, y: -5.88, z: -1.89}
+  m_LocalPosition: {x: 1.1, y: 3.53, z: -2.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -258,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013379088740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.71, y: -5.88, z: -4.15}
+  m_LocalPosition: {x: 3.31, y: 3.16, z: -1.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -285,7 +285,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013052790740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.72, y: -5.88, z: 0.45}
+  m_LocalPosition: {x: 5.63, y: 2.78, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -311,7 +311,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011247267052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.88, y: -5.88, z: -4.42}
+  m_LocalPosition: {x: 1.1, y: 3.53, z: -2.11}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1.0000001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -336,10 +336,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011878506608}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.81517756, y: 0.8151769, z: 0.81517696}
-  m_LocalEulerAnglesHint: {x: 4.178, y: -74.123, z: 210.49399}
+  m_LocalRotation: {x: 0.6075152, y: 0.11420274, z: 0.73848724, w: -0.2692948}
+  m_LocalPosition: {x: -8.358138, y: -14.37636, z: 1.6580634}
+  m_LocalScale: {x: 0.8151781, y: 0.81517786, z: 0.8151773}
+  m_LocalEulerAnglesHint: {x: -47.32388, y: -285.443, z: -198.76405}
   m_Children:
   - {fileID: 4000013641963968}
   - {fileID: 4000010127085962}
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 82000011883157686}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
