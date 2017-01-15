@@ -3,13 +3,16 @@
 **~Cerociento 15/01/2017~**
 
 *Completada union de niveles.
+
 *Creacion de script de guardado en cada checkpoint.
-             **Solo para edicion (F1 Guarda, F2 Carga, F3 Borra)**
+            
+            **Solo para edicion (F1 Guarda, F2 Carga, F3 Borra)**
            -Guarda:
                          *Ultimo checkpoint.
                          *Veces descubierto.
                          *Ultimo nivel
                          *Coleccionables recogidos.
+                         
 *Diversos retoques y mejoras.
 ---------------------------------------------------------------------
 
