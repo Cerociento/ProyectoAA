@@ -226,7 +226,13 @@ public class Movimiento_Grande : MonoBehaviour
                 Debug.Log("Ninguna caja cerca");
             }
         }
-    }
+
+		if(Input.GetKeyDown(KeyCode.R)){
+			transform.position = checkpointGrande;
+			Pausa.vecesVisto++;
+		}
+			
+		}
 
     void Escondido()
     {
