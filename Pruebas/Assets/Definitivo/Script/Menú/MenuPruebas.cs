@@ -19,7 +19,9 @@ public class MenuPruebas : MonoBehaviour {
 
     //Reposicionamiento de personajes
     [SerializeField]
-    GameObject Continuar;
+    GameObject ContinuarBoton;
+    [SerializeField]
+    GameObject NuevojuegoBoton;
     [SerializeField]
     bool estamosEnElMenuPrincipal;
    
@@ -28,11 +30,13 @@ public class MenuPruebas : MonoBehaviour {
     {
         if (File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
-            Continuar.GetComponent<Text>().text = "Continuar";
+            NuevojuegoBoton.transform.localPosition = Vector3.zero;
+            ContinuarBoton.SetActive(true);
         }
         else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
-            Continuar.GetComponent<Text>().text = "Continuar";
+            NuevojuegoBoton.transform.position = ContinuarBoton.transform.position;
+            ContinuarBoton.SetActive(false);
         }
     }
 
@@ -58,7 +62,8 @@ public class MenuPruebas : MonoBehaviour {
 	public void NuevoJuego (){
 
 		SceneManager.LoadScene(1);
-	}
+        GameObject.Find("Manager").GetComponent<CargarGuardar>().Borrar();
+    }
 
 	public void Salir(){
 		Application.Quit();

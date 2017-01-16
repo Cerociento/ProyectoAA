@@ -17,6 +17,11 @@ public class Manager : MonoBehaviour
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            desactivar.SetActive(false);
+        }
     }  
 
     void FixedUpdate()
