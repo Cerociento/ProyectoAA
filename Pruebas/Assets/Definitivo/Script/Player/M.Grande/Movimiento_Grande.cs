@@ -12,12 +12,12 @@ public class Movimiento_Grande : MonoBehaviour
     Transform HorizontalCamara;
     [SerializeField]
     Transform CamCamera;
-   // float rango = 1;
+    //float rango = 1;
 
     //Rotacion Personaje
-  //  float maxAnguloHorizontal = 180.0f;
-   // Quaternion rotacionBase;
-   // Quaternion rotacionDeseada;
+    //float maxAnguloHorizontal = 180.0f;
+    //Quaternion rotacionBase;
+    //Quaternion rotacionDeseada;
 
 
     //Rotacion Camara
@@ -34,6 +34,8 @@ public class Movimiento_Grande : MonoBehaviour
     bool escondite=false;
     public static Vector3 posicion;
     Color colorAlfa;
+    [SerializeField]
+    bool asignarCaja;
 
     //Checkpoint
     public static Vector3 checkpointGrande = new Vector3(0, 1.5f, 0);
@@ -55,7 +57,8 @@ public class Movimiento_Grande : MonoBehaviour
 
     void Update()
     {
-        caja = Caja.caja;
+        if(asignarCaja)
+           caja = Caja.caja;
         
         if (!Laser.paraMover)
         {
@@ -173,20 +176,24 @@ public class Movimiento_Grande : MonoBehaviour
                 soltar = !soltar;                
                 if (soltar)
                 {
+                    asignarCaja = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
+                    
                 }
                 else
                 {
+                    asignarCaja = false;
                     caja.transform.position = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).position;
                     caja.transform.parent = gameObject.transform.GetChild(0).GetChild(2).GetChild(2);
                     caja.GetComponent<BoxCollider>().enabled = false;
                     caja.GetComponent<SphereCollider>().enabled = false;
                     caja.GetComponent<Rigidbody>().useGravity = false;
                     caja.GetComponent<Rigidbody>().isKinematic = true;
+                   
                 }             
             }
             else
@@ -198,8 +205,12 @@ public class Movimiento_Grande : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.E))
         {
             if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
-            {       if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
+            {
+                asignarCaja = false;
+                if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
                 {
+                    
+                    caja = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).gameObject;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
                 }
         } else
@@ -215,9 +226,13 @@ public class Movimiento_Grande : MonoBehaviour
                 escondite = !escondite;
                 if (escondite)
                 {
+                    caja.SetActive(false);
                     Destroy(caja);
+                    asignarCaja = true;
                     gameObject.layer = 9;
                     gameObject.tag = "Escondido";
+                    escondite = false;
+                    soltar = true;
                     Escondido();
                 }
             }
@@ -226,11 +241,16 @@ public class Movimiento_Grande : MonoBehaviour
                 Debug.Log("Ninguna caja cerca");
             }
         }
-    }
+
+		if(Input.GetKeyDown(KeyCode.R)){
+			transform.position = checkpointGrande;
+			Pausa.vecesVisto++;
+		}
+			
+		}
 
     void Escondido()
     {
-
         colorAlfa.a = 0.1f;
         gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = colorAlfa;
         StartCoroutine("Esconder", 10);

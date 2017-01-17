@@ -12,7 +12,7 @@ public class Caja : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Grande"))
+        if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
             caja = gameObject;                 
             other.GetComponent<Rigidbody>().Sleep();
@@ -21,7 +21,7 @@ public class Caja : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Grande"))
+        if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
             caja = null;
         }

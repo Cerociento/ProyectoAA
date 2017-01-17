@@ -106,6 +106,11 @@ public class Movimiento_Pequeño : MonoBehaviour
 				sonidoBis.PlayOneShot(sonidoSalto);
             }
         }
+
+		if(Input.GetKeyDown(KeyCode.R)){
+			transform.position = checkpointPequeño;
+			Pausa.vecesVisto++;
+		}
     }
 
     void OnCollisionEnter(Collision hit)

@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692594, g: 0.49678788, b: 0.575086, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692534, g: 0.4967872, b: 0.57508564, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3804,6 +3804,15 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 114000012192208390, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
@@ -4283,6 +4292,15 @@ Prefab:
     - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -7116,6 +7134,15 @@ Prefab:
     - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -11696,6 +11723,15 @@ Prefab:
     - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -18456,6 +18492,15 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 114000012192208390, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
@@ -19161,6 +19206,10 @@ Prefab:
     - target: {fileID: 1000013242235072, guid: 20f8f97639def534c9e001b40b880163, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013242235072, guid: 20f8f97639def534c9e001b40b880163, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -21031,6 +21080,15 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 114000012192208390, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
@@ -22680,6 +22738,15 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 114000012192208390, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
@@ -23913,6 +23980,15 @@ Prefab:
     - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -32104,6 +32180,15 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 114000012192208390, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
@@ -37366,6 +37451,15 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 114000012192208390, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
@@ -40581,6 +40675,15 @@ Prefab:
     - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012399441480, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011748745864, guid: 83ed72294b37a7640ba341e2ae1a9a5b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
