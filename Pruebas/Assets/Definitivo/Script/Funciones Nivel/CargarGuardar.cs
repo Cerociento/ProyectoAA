@@ -7,7 +7,7 @@ using System.IO;
 
 public class CargarGuardar : MonoBehaviour 
 { 
-     float posicionPequeñoX,posicionPequeñoY,posicionPequeñoZ;
+     float posicionPequeñoX, posicionPequeñoY, posicionPequeñoZ;
      float posicionGrandeX, posicionGrandeY, posicionGrandeZ;
     [SerializeField]
      int nivel;
@@ -18,7 +18,8 @@ public class CargarGuardar : MonoBehaviour
     datosJuego datos = new datosJuego();
     [SerializeField]
     GameObject imagenGuardado;
-
+    [SerializeField]
+    GameObject desactivar;
 
     void Awake()
     {
@@ -45,7 +46,15 @@ public class CargarGuardar : MonoBehaviour
         nivel = SceneManager.GetActiveScene().buildIndex;
         vecesVisto = Pausa.vecesVisto;
         colecionables = Pausa.recogidos;
-    
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            desactivar.SetActive(false);
+        }
+        else
+        {
+            desactivar.SetActive(true);
+        }
 
 #if UNITY_EDITOR 
         if (Input.GetKeyDown(KeyCode.F1))
@@ -110,6 +119,7 @@ public class CargarGuardar : MonoBehaviour
             print("Cargado");
 
             SceneManager.LoadScene(nivel);
+            desactivar.SetActive(true);
             GameObject.FindWithTag("Pequeño").transform.position = new Vector3(posicionPequeñoX, posicionPequeñoY, posicionPequeñoZ);
             GameObject.FindWithTag("Grande").transform.position  = new Vector3(posicionGrandeX, posicionGrandeY, posicionGrandeZ);
             Pausa.vecesVisto = vecesVisto;

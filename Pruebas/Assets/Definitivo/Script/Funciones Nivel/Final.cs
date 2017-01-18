@@ -39,7 +39,6 @@ public class Final : MonoBehaviour
             {
                 barreraFinalPequeño.SetActive(true);
                 subePequeño = true;
-                //Destroy(gameObject);
                 GameObject.FindWithTag("Grande").transform.Translate(Vector3.up);
                
                 
@@ -47,13 +46,12 @@ public class Final : MonoBehaviour
 
         }
 
-        if (other.CompareTag("Grande"))
+        if (other.CompareTag("Grande")||other.CompareTag("Escondido"))
         {
             if (!subeGrande)
             {
                 barreraFinalGrande.SetActive(true);
                 subeGrande = true;
-                //Destroy(gameObject);
                 GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up);
             }
         }

@@ -6,13 +6,15 @@ public class Inicio : MonoBehaviour
 {
     [SerializeField]
     bool unload;
+    [SerializeField]
+    GameObject activar;
 
     void Update()
     {
         if (unload)
         {
-            Debug.Log("Hola");
             SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
+            GameObject.Find("ActivarInicio").SetActive(true);
         }
     }
 

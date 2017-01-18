@@ -6,8 +6,8 @@ public class Manager : MonoBehaviour
 {
     [SerializeField]
     public bool nivelMas;
-    [SerializeField]
-    GameObject desactivar;
+   /* [SerializeField]
+    GameObject desactivar;*/
 
     void Awake()
     {
@@ -20,7 +20,7 @@ public class Manager : MonoBehaviour
 
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
-            desactivar.SetActive(false);
+           // desactivar.SetActive(false);
         }
     }  
 
@@ -31,12 +31,13 @@ public class Manager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
             {
                 SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
+                GameObject.Find("ActivarInicio").SetActive(false);
                 nivelMas = false;
             }
         }
     }    
 
-    void OnLevelWasLoaded()
+  /*  void OnLevelWasLoaded()
     {
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
@@ -46,5 +47,5 @@ public class Manager : MonoBehaviour
         {
             desactivar.SetActive(true);
         }
-    }
+    }*/
 }
