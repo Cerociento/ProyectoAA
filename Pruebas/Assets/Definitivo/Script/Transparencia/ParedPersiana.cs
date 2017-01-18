@@ -12,8 +12,10 @@ public class ParedPersiana : MonoBehaviour
     {
         if (persiana)
         {
-            if (transform.GetChild(0).localPosition.y >= -4f)
-                transform.GetChild(0).Translate(0, -1 * velocidad * Time.deltaTime, 0);           
+            if (transform.GetChild(0).localPosition.y >= -3.5f)
+                transform.GetChild(0).Translate(0, -1 * velocidad * Time.deltaTime, 0); 
+            if(transform.GetChild(0).localPosition.y < -3.5f)
+                transform.GetChild(0).localPosition = new Vector3 (0,-3.5f,0);
         }
         else
         {

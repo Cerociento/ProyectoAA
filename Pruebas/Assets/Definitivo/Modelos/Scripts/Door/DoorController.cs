@@ -8,7 +8,7 @@ public class DoorController : MonoBehaviour {
 	/// The door collider.
 	/// </summary>
 	public Collider[] doorColliders;
-
+  
 	/// <summary>
 	/// The animator.
 	/// </summary>

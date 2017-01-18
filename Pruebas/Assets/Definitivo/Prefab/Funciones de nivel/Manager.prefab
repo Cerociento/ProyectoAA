@@ -329,7 +329,7 @@ GameObject:
   - 54: {fileID: 54000012518244618}
   m_Layer: 1
   m_Name: Persiana
-  m_TagString: Untagged
+  m_TagString: Detector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2073,6 +2073,7 @@ MonoBehaviour:
   vecesVisto: 0
   colecionables: 0
   imagenGuardado: {fileID: 1000013957237112}
+  desactivar: {fileID: 0}
 --- !u!114 &114000011410184040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2085,7 +2086,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivelMas: 0
-  desactivar: {fileID: 1000010689382312}
 --- !u!114 &114000011487456212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2745,6 +2745,7 @@ MonoBehaviour:
   CamCamera: {fileID: 4000013131601498}
   velCamara: 2
   caja: {fileID: 0}
+  asignarCaja: 0
   sonido: {fileID: 82000010668686324}
 --- !u!124 &124000011408718056
 Behaviour:
