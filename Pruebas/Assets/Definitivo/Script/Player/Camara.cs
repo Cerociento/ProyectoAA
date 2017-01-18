@@ -17,9 +17,13 @@ public class Camara : MonoBehaviour
 
     void Start()
     {
-        Target = Grande;
+        Target = Pequeño;
         sitioCamara = transform.position - Target.position;
-        Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = false;
+<<<<<<< HEAD
+		Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
+=======
+        Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
+>>>>>>> origin/master
     }
 
     void Update()
