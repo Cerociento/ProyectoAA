@@ -11,13 +11,17 @@ public class PilaDeCajas : MonoBehaviour
 	AudioSource sonido;
 	[SerializeField]
 	AudioClip sonidoCaja;
+    [SerializeField]
+    GameObject texto;
 
     void Update()
     {
         if (activador == Caja.Length)
         {
             Caja = new GameObject[0];
+            Destroy(texto, 1);
             Destroy(this.gameObject, 2);
+            
         }
 
         if (coger)
@@ -42,6 +46,7 @@ public class PilaDeCajas : MonoBehaviour
     if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.E)|| other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse2))
     {
             coger = true;
+            texto.SetActive(false);
     }
  }   
 }	

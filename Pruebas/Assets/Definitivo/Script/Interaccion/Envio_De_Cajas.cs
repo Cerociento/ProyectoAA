@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Envio_De_Cajas : MonoBehaviour 
@@ -6,27 +7,41 @@ public class Envio_De_Cajas : MonoBehaviour
     [SerializeField]
     Transform[] destinoCajasChicas;
     int destinoChicas=0;
+    [SerializeField]
+    GameObject textoPequeña;
 
     [SerializeField]
     Transform[] destinoCajasGrandes;
-    int destinoGrandes=0; 
+    int destinoGrandes=0;
+    [SerializeField]
+    GameObject textoGrande;
 
-	[SerializeField]
+    [SerializeField]
 	AudioSource sonido;
 	[SerializeField]
 	AudioClip sonidoEnvio;
+
+    void Start()
+    {
+        textoPequeña.GetComponent<Text>().text = destinoCajasChicas.Length.ToString();
+        textoGrande.GetComponent<Text>().text = destinoCajasGrandes.Length.ToString();
+    }
+
 
     void Update()
     {
         if (destinoChicas >= destinoCajasChicas.Length)
         {
             destinoCajasChicas = new Transform[0];
+            
         }
 
         if (destinoGrandes >= destinoCajasGrandes.Length)
         {
             destinoCajasGrandes = new Transform[0];
         }
+
+       
     }
 
     void OnCollisionEnter(Collision hit)
@@ -39,7 +54,9 @@ public class Envio_De_Cajas : MonoBehaviour
 
                 hit.transform.position = destinoCajasChicas[destinoChicas].position;
                 destinoChicas++;
-				sonido.PlayOneShot(sonidoEnvio);
+                textoPequeña.GetComponent<Text>().text = destinoCajasChicas.Length.ToString();
+
+                sonido.PlayOneShot(sonidoEnvio);
             }
         }
 
