@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Detector
+  - Checkpoint
+  - "Peque\xF1o"
   - Caja
   - Caja Escondite
   - Caja Grande
@@ -14,7 +16,6 @@ TagManager:
   - Background
   - Interactive
   - Plataforma Movil
-  - Puerta
   layers:
   - Default
   - TransparentFX

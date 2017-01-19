@@ -45,8 +45,8 @@ public class Movimiento_Pequeño : MonoBehaviour
 
             if (ZAxis > 0 && Input.GetKey(KeyCode.W))
             {
-                transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-                transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
+            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+            transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}
             }
@@ -86,7 +86,6 @@ public class Movimiento_Pequeño : MonoBehaviour
         {
             HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velCamara);
            // HorizontalCamara.localPosition = Vector3.zero;
-
         }
 
         /*alturaCamara = Input.GetAxis("Vertical");

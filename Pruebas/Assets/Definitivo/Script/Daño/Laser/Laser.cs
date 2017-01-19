@@ -23,54 +23,34 @@ public class Laser : MonoBehaviour {
     }
 
     void Update()
-    {
-        if (Physics.Raycast(transform.position, transform.forward, out hit))
-        {
-            if (hit.collider)
-            {
-                lr.SetPosition(0, Vector3.zero);
-                lr.SetPosition(1, new Vector3(0, 0, hit.distance));
-            }
+      {
+          if(Physics.Raycast(transform.position,transform.forward,out hit))
+          {
+              if (hit.collider)
+              {
+                  lr.SetPosition(0, Vector3.zero);
+                  lr.SetPosition(1, new Vector3(0, 0, hit.distance));
+              }
 
-            if (hit.collider.CompareTag("Grande"))
-            {
+              if (hit.collider.CompareTag("Grande"))
+              {
                 hit.transform.position = Movimiento_Grande.checkpointGrande;
                 Pausa.vecesVisto++;
             }
 
             if (hit.collider.CompareTag("Pequeño"))
-            {
+              {
                 hit.transform.position = Movimiento_Pequeño.checkpointPequeño;
                 Pausa.vecesVisto++;
             }
-
-            /* if (num == 0)
-                 { 
-                 if (hit.collider.CompareTag("Llave"))
-                 {
-                     transform.GetChild(0).GetComponent<Renderer>().material.color = Color.green;
-                     Salida_Laser.numLlaves++;
-                     num++;
-                 }
-             }
-
-             if(hit.collider.tag!=("Llave"))
-             {
-                 if (num > 0)
-                 {
-                     transform.GetChild(0).GetComponent<Renderer>().material.color = Color.red;
-                     Salida_Laser.numLlaves--;
-                     num = 0;
-                 }
-             }*/
-         }
-           else
-           {
-               lr.SetPosition(1, new Vector3(0, 0, 200));
-           }
-
-            // drawLaser(transform.position, 3);
         }
+          else
+          {
+              lr.SetPosition(1, new Vector3(0, 0, 200));
+          }
+
+     // drawLaser(transform.position, 3);
+  }
   void OnTriggerStay(Collider hit)
     {
         YAxis = Input.GetAxis("Horizontal");

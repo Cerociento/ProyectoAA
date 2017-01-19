@@ -1165,15 +1165,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4000014138303174, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011243079720, guid: 19a6bd89975b1ed4dbd213462411a1aa,
-        type: 2}
-      propertyPath: desactivar
-      value: 
-      objectReference: {fileID: 797238542}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
   m_IsPrefabParent: 0
@@ -1713,11 +1704,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 638559775}
---- !u!1 &797238542 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000010689382312, guid: 19a6bd89975b1ed4dbd213462411a1aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 403884621}
 --- !u!1 &826316862
 GameObject:
   m_ObjectHideFlags: 0

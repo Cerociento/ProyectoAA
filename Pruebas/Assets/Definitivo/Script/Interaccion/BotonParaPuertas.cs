@@ -22,7 +22,7 @@ public class BotonParaPuertas : MonoBehaviour {
         for (int i = 0; i < abrePuerta.Length; i++)
             if (activar)
             {
-                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Mouse2))
                 {
                     Debug.Log(i);
                     abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
@@ -32,7 +32,7 @@ public class BotonParaPuertas : MonoBehaviour {
                     transform.GetComponent<BoxCollider>().enabled = false;
 					sonido.PlayOneShot(sonidoBoton);
                 }
-                if(Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Mouse0))
+                if(Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Mouse2))
                 {                   
                     activar = false;
                 }

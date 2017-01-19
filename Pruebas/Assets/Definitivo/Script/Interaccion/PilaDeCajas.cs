@@ -39,7 +39,7 @@ public class PilaDeCajas : MonoBehaviour
 
     void OnTriggerStay(Collider other)
   {
-    if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.E))
+    if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.E)|| other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse2))
     {
             coger = true;
     }

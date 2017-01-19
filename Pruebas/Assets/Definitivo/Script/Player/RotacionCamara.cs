@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RotacionCamara : MonoBehaviour 
+/*public class RotacionCamara : MonoBehaviour 
 {
     [SerializeField]
     Transform player;
@@ -58,4 +58,4 @@ public class RotacionCamara : MonoBehaviour
 
 
 
-}
+}*/

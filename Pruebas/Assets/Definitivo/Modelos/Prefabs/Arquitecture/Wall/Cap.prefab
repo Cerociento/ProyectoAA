@@ -154,10 +154,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010663252362}
   - 65: {fileID: 65000010989817968}
-  - 114: {fileID: 114000013149463610}
   m_Layer: 0
   m_Name: Cap
-  m_TagString: Background
+  m_TagString: Untagged
   m_Icon: {fileID: -4738709637730668739, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,10 +210,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013242235072}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0.05}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 179.74, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -7.97, y: 0, z: 0.48}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children:
   - {fileID: 4000014089638334}
   m_Father: {fileID: 0}
@@ -616,18 +615,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4, z: 0.5}
-  m_Center: {x: 0, y: 2, z: 0.25}
---- !u!114 &114000013149463610
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013242235072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d19a83a5063e7f7408c7a6fd9c1792e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  persiana: 0
-  velocidad: 8
+  m_Size: {x: 1.38586, y: 4, z: 0.5}
+  m_Center: {x: 0.052329607, y: 2, z: 0.25000003}

@@ -32,7 +32,7 @@ public class Movimiento_Grande : MonoBehaviour
     [SerializeField]
     public static bool soltar = false;
     bool escondite=false;
-    public static Vector3 posicion;
+   // public static Vector3 posicion;
     Color colorAlfa;
     [SerializeField]
     bool asignarCaja;
@@ -47,8 +47,8 @@ public class Movimiento_Grande : MonoBehaviour
     void Start()
     {
         colorAlfa = transform.GetChild(0).GetComponent<Renderer>().material.color;
-        posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z+5);
-        CamCamera.LookAt(posicion);
+       // posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z+5);
+       // CamCamera.LookAt(posicion);
         soltar = false;
        // rotacionBase = transform.rotation;
       //  rotacionDeseada = Quaternion.identity;
@@ -169,7 +169,7 @@ public class Movimiento_Grande : MonoBehaviour
            // HorizontalCamara.localPosition = Vector3.zero;
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)|| Input.GetKeyUp(KeyCode.Mouse2))
         {
             if (caja)
             {     
@@ -202,7 +202,7 @@ public class Movimiento_Grande : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.E)|| Input.GetKeyUp(KeyCode.Mouse2))
         {
             if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
             {
