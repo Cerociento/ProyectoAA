@@ -1133,6 +1133,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 4000010663252362, guid: 20f8f97639def534c9e001b40b880163, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20f8f97639def534c9e001b40b880163, type: 2}
   m_IsPrefabParent: 0
@@ -13587,6 +13591,10 @@ Prefab:
     - target: {fileID: 1000013242235072, guid: 20f8f97639def534c9e001b40b880163, type: 2}
       propertyPath: m_Name
       value: Cap (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010663252362, guid: 20f8f97639def534c9e001b40b880163, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20f8f97639def534c9e001b40b880163, type: 2}
@@ -39164,6 +39172,10 @@ Prefab:
       propertyPath: velocidad
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 4000010663252362, guid: 20f8f97639def534c9e001b40b880163, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20f8f97639def534c9e001b40b880163, type: 2}
   m_IsPrefabParent: 0
@@ -40210,6 +40222,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011433712326, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 12.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011433712326, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 10.66
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
   m_IsPrefabParent: 0
@@ -40586,6 +40606,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: velocidad
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010663252362, guid: 20f8f97639def534c9e001b40b880163, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 20f8f97639def534c9e001b40b880163, type: 2}
