@@ -16,6 +16,7 @@ TagManager:
   - Background
   - Interactive
   - Plataforma Movil
+  - ActivadorSuelo
   layers:
   - Default
   - TransparentFX
