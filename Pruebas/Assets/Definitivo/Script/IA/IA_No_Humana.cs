@@ -36,14 +36,14 @@ public class IA_No_Humana : MonoBehaviour {
                 Debug.DrawLine(transform.position, target.position, Color.red,10);   
                 if (ray.transform.CompareTag("Grande"))
                 {
-                    target.transform.position = Movimiento_Grande.checkpointGrande;
+                    Manager.muertoGrande = true;
                     Pausa.vecesVisto++;
 					sonido.PlayOneShot(alarma);
                 }
 
                 if (ray.transform.CompareTag("Pequeño"))
                 {
-                    target.transform.position = Movimiento_Pequeño.checkpointPequeño;
+                    Manager.muertoPequeño = true;
                     Pausa.vecesVisto++;
 					sonido.PlayOneShot(alarma);
                 }

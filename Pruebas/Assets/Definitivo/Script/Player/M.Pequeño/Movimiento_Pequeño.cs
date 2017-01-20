@@ -12,7 +12,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     Transform HorizontalCamara;
     [SerializeField]
     Transform CamCamera;
-
+    float velocidadMovi;
     //Rotacion Camara
     float AxisCam = 0;
     [SerializeField]
@@ -38,8 +38,13 @@ public class Movimiento_Pequeño : MonoBehaviour
 	[SerializeField]
 	AudioClip sonidoSalto;
 
+    void Start()
+    {
+        velocidadMovi = velocidad;
+    }
+
      void Update()
-    {       
+    {
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
 

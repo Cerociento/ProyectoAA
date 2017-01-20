@@ -33,6 +33,11 @@ public class FieldOfViewRetocado : MonoBehaviour {
         }
     }
 
+    void Update()
+    {
+        
+    }
+
 	void FindVisibleTargets() {
 		visibleTargets.Clear ();
 		Collider[] targetsInViewRadius = Physics.OverlapSphere (transform.position, viewRadius, targetMask);
@@ -49,18 +54,16 @@ public class FieldOfViewRetocado : MonoBehaviour {
 					visibleTargets.Add (target);
                         Debug.Log("Visto");
                          if (target.CompareTag("Grande")){
-
                                Pausa.vecesVisto++;
-                               target.transform.position=Movimiento_Grande.checkpointGrande;
-						sonido.PlayOneShot(alarma);
+                               Manager.muertoGrande = true;
+						       sonido.PlayOneShot(alarma);
                            }
 
                            if (target.CompareTag("Pequeño"))
                            {
-                               Debug.Log("Visto");
                                Pausa.vecesVisto++;
-                               target.transform.position = Movimiento_Pequeño.checkpointPequeño;
-						sonido.PlayOneShot(alarma);
+                               Manager.muertoPequeño = true;
+						       sonido.PlayOneShot(alarma);
                            }
                     }
 			}else{
@@ -68,7 +71,6 @@ public class FieldOfViewRetocado : MonoBehaviour {
 			}
 		}
 	}
-
 
 	public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal) {
 		if (!angleIsGlobal) {

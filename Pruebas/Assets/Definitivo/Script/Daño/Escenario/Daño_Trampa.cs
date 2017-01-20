@@ -12,16 +12,16 @@ public class Daño_Trampa : MonoBehaviour
     {
         if (other.CompareTag("Grande"))
         {
-            other.transform.position = Movimiento_Grande.checkpointGrande;
+            Manager.muertoGrande = true;
             Pausa.vecesVisto++;
-			sonido.PlayOneShot(sonidoMuerte);
+            sonido.PlayOneShot(sonidoMuerte);
         }
 
         if (other.CompareTag("Pequeño"))
         {
-            other.transform.position = Movimiento_Pequeño.checkpointPequeño;
+            Manager.muertoPequeño = true;
             Pausa.vecesVisto++;
-			sonido.PlayOneShot(sonidoMuerte);
+            sonido.PlayOneShot(sonidoMuerte);
         }
     }
 }

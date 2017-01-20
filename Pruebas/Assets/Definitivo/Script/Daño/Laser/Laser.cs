@@ -24,7 +24,7 @@ public class Laser : MonoBehaviour {
 
     void Update()
       {
-          if(Physics.Raycast(transform.position,transform.forward,out hit))
+        if (Physics.Raycast(transform.position,transform.forward,out hit))
           {
               if (hit.collider)
               {
@@ -34,13 +34,13 @@ public class Laser : MonoBehaviour {
 
               if (hit.collider.CompareTag("Grande"))
               {
-                hit.transform.position = Movimiento_Grande.checkpointGrande;
+                Manager.muertoGrande = true;
                 Pausa.vecesVisto++;
             }
 
             if (hit.collider.CompareTag("Pequeño"))
               {
-                hit.transform.position = Movimiento_Pequeño.checkpointPequeño;
+                Manager.muertoPequeño = true;
                 Pausa.vecesVisto++;
             }
         }

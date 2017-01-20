@@ -6,8 +6,14 @@ public class Manager : MonoBehaviour
 {
     [SerializeField]
     public bool nivelMas;
-   /* [SerializeField]
-    GameObject desactivar;*/
+    /* [SerializeField]
+     GameObject desactivar;*/
+
+    public static bool muertoGrande;
+    public static bool muertoPequeño;
+    GameObject grande;
+    GameObject pequeño;
+
 
     void Awake()
     {
@@ -18,10 +24,9 @@ public class Manager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-           // desactivar.SetActive(false);
-        }
+        grande = GameObject.Find("Grande");
+        pequeño = GameObject.Find("Pequeño");
+
     }  
 
     void FixedUpdate()
@@ -48,4 +53,29 @@ public class Manager : MonoBehaviour
             desactivar.SetActive(true);
         }
     }*/
+
+    void Update()
+    {
+        if (muertoGrande)
+        {
+            grande.SetActive(false);
+            grande.transform.position = Vector3.MoveTowards(grande.transform.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
+            if (grande.transform.position == Movimiento_Grande.checkpointGrande)
+            {
+                grande.SetActive(true);
+                muertoGrande = false;
+            }
+        }
+
+        if (muertoPequeño)
+        {
+            pequeño.SetActive(false);
+            pequeño.transform.position = Vector3.MoveTowards(pequeño.transform.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
+            if (pequeño.transform.position == Movimiento_Pequeño.checkpointPequeño)
+            {
+                pequeño.SetActive(true);
+                muertoPequeño = false;
+            }
+        }
+    }
 }
