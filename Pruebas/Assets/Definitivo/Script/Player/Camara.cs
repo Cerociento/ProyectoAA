@@ -14,6 +14,7 @@ public class Camara : MonoBehaviour
 
     [SerializeField]
     Transform Pequeño;
+
     [SerializeField]
     float reasignado;
 
