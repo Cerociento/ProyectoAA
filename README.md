@@ -1,5 +1,12 @@
 ﻿﻿# ProyectoAA
 
+**~Fran 20/01/2017~**
+
+*Pequeña corrección. Añadido un script para que los monos no atraviesen el suelo al subir en el ascensor. Ahora, el suelo aparece cuando ya han subido.
+                         
+---------------------------------------------------------------------
+
+
 **~Cerociento 15/01/2017~**
 
 *Diversos retoques y mejoras.
