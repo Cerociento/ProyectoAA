@@ -3,6 +3,10 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 public class Final : MonoBehaviour 
 {
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip fanfarria;
     [SerializeField]
     GameObject barreraFinalPequeño;
     [SerializeField]
@@ -25,6 +29,9 @@ public class Final : MonoBehaviour
         {
             sueloPequeño.transform.Translate(Vector3.up * Time.deltaTime);
             sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
+			sonido.PlayOneShot(fanfarria);
+
+
             if (finDelJuego)
                 SceneManager.LoadScene(0);
         }

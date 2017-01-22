@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Movimiento_Grande : MonoBehaviour 
 {
+
+
     //Movimiento
     [SerializeField]
     float velocidad = 1f;

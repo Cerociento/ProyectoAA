@@ -61,6 +61,7 @@ public class MenuPruebas : MonoBehaviour {
 
 	public void NuevoJuego (){
 
+		Timer.tiempo=0;
 		SceneManager.LoadScene(1);
         GameObject.Find("Manager").GetComponent<CargarGuardar>().Borrar();
     }
