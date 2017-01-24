@@ -1,5 +1,6 @@
 ﻿﻿# ProyectoAA
 
+<<<<<<< HEAD
 **~Cerociento 24/01/2017~**
 
 *Añadida informacion en nivel
@@ -21,6 +22,15 @@
 
 ---------------------------------------------------------------------
 
+=======
+**~Fran 22/01/2017~**
+
+*Hecho Script que muestra estadísticas al final de cada fase. Muertes y tiempo transcurrido. Corregidas las cajas que se instancian en los montones de cajas.
+                         
+---------------------------------------------------------------------
+
+
+>>>>>>> origin/master
 **~Fran 20/01/2017~**
 
 *Pequeña corrección. Añadido un script para que los monos no atraviesen el suelo al subir en el ascensor. Ahora, el suelo aparece cuando ya han subido.

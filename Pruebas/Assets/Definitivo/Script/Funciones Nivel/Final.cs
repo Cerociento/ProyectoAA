@@ -29,8 +29,14 @@ public class Final : MonoBehaviour
         {
             sueloPequeño.transform.Translate(Vector3.up * Time.deltaTime);
             sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
+<<<<<<< HEAD
             MenuFinNivel.prueba = true;
             Timer.tiempoFunciona1 = false;
+=======
+			sonido.PlayOneShot(fanfarria);
+
+
+>>>>>>> origin/master
             if (finDelJuego)
                 SceneManager.LoadScene(0);
 
