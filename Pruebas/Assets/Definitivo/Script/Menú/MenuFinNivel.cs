@@ -7,12 +7,8 @@ public class MenuFinNivel : MonoBehaviour {
 	[SerializeField]
 	Text vecesDescubierto;
 	[SerializeField]
-<<<<<<< HEAD
 	Text tiempoTardado,tiempoTotal;
   
-=======
-	Text tiempoTardado;
->>>>>>> origin/master
 	[SerializeField]
 	static public GameObject texto1;
 	[SerializeField]
@@ -22,25 +18,15 @@ public class MenuFinNivel : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-<<<<<<< HEAD
         panel.SetActive(false);
-=======
->>>>>>> origin/master
 	}
 	
 	// Update is called once per frame
 	void Update () {
-<<<<<<< HEAD
 		vecesDescubierto.text = "Has perdido " + Pausa.vecesVisto + " veces";
 		tiempoTardado.text="Has tardado "+(int)Timer.tiempo/60+" m "+(int)Timer.tiempo%60.0f+" s";
         tiempoTotal.text = "Tiempo jugado " + (int)Timer.tiempoTotal / 60 + " m " + (int)Timer.tiempoTotal % 60.0f + " s";
         if (prueba){
-=======
-
-		vecesDescubierto.text = "Has perdido " + Pausa.vecesVisto + " veces";
-		tiempoTardado.text="Has tardado "+(int)Timer.tiempo/60+"m"+(int)Timer.tiempo%60.0f+"s";
-		if(prueba){
->>>>>>> origin/master
 			panel.SetActive(true);
 		}else{
 			panel.SetActive(false);
