@@ -17,6 +17,7 @@ TagManager:
   - Interactive
   - Plataforma Movil
   - ActivadorSuelo
+  - DetectorMonos
   layers:
   - Default
   - TransparentFX

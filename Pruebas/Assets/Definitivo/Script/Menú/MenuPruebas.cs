@@ -32,6 +32,7 @@ public class MenuPruebas : MonoBehaviour {
         {
             NuevojuegoBoton.transform.localPosition = Vector3.zero;
             ContinuarBoton.SetActive(true);
+            //ContinuarBoton.transform.GetChild(1).GetComponent<Text>().text=
         }
         else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
@@ -61,6 +62,7 @@ public class MenuPruebas : MonoBehaviour {
 
 	public void NuevoJuego (){
 
+		Timer.tiempo=0;
 		SceneManager.LoadScene(1);
         GameObject.Find("Manager").GetComponent<CargarGuardar>().Borrar();
     }

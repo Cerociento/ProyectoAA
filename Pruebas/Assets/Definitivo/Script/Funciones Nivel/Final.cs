@@ -3,6 +3,10 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 public class Final : MonoBehaviour 
 {
+	[SerializeField]
+	AudioSource sonido;
+	[SerializeField]
+	AudioClip fanfarria;
     [SerializeField]
     GameObject barreraFinalPequeño;
     [SerializeField]
@@ -25,8 +29,11 @@ public class Final : MonoBehaviour
         {
             sueloPequeño.transform.Translate(Vector3.up * Time.deltaTime);
             sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
+            MenuFinNivel.prueba = true;
+            Timer.tiempoFunciona1 = false;
             if (finDelJuego)
                 SceneManager.LoadScene(0);
+
         }
             
     }
@@ -39,9 +46,7 @@ public class Final : MonoBehaviour
             {
                 barreraFinalPequeño.SetActive(true);
                 subePequeño = true;
-                GameObject.FindWithTag("Grande").transform.Translate(Vector3.up);
-               
-                
+                GameObject.FindWithTag("Grande").transform.Translate(Vector3.up);              
             }
 
         }
@@ -56,7 +61,4 @@ public class Final : MonoBehaviour
             }
         }
     }
-
-	
-
 }

@@ -21,6 +21,11 @@ public class CargarGuardar : MonoBehaviour
     [SerializeField]
     GameObject desactivar;
 
+    float tiempoTotal;
+    float tiempoNivel;
+
+    public static float TTotal;
+    public static float TNivel;
     void Awake()
     {
         nivel = SceneManager.GetActiveScene().buildIndex;
@@ -33,6 +38,7 @@ public class CargarGuardar : MonoBehaviour
         posicionGrandeX = Movimiento_Grande.checkpointGrande.x;
         posicionGrandeY = Movimiento_Grande.checkpointGrande.y;
         posicionGrandeZ = Movimiento_Grande.checkpointGrande.z;
+
     }
 
     void Update()
@@ -46,6 +52,10 @@ public class CargarGuardar : MonoBehaviour
         nivel = SceneManager.GetActiveScene().buildIndex;
         vecesVisto = Pausa.vecesVisto;
         colecionables = Pausa.recogidos;
+        tiempoTotal = Timer.tiempoTotal;
+        tiempoNivel = Timer.tiempo;
+        TTotal = tiempoTotal;
+        TNivel = tiempoNivel;
 
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
@@ -93,6 +103,8 @@ public class CargarGuardar : MonoBehaviour
         datos.nivel = nivel;
         datos.vecesVisto = vecesVisto;
         datos.colecionables = colecionables;
+        datos.tiempoTotal = tiempoTotal;
+        datos.tiempoNivel = tiempoNivel;
         save.Serialize(file, datos);
         file.Close();
         print("Guardado nivel" +nivel);
@@ -116,6 +128,8 @@ public class CargarGuardar : MonoBehaviour
             vecesVisto = datos.vecesVisto;
             colecionables = datos.colecionables;
             nivel = datos.nivel;
+            tiempoNivel = datos.tiempoNivel;
+            tiempoTotal = datos.tiempoTotal;
             print("Cargado");
 
             SceneManager.LoadScene(nivel);
@@ -155,4 +169,6 @@ public class datosJuego : System.Object
     public int nivel;
     public int vecesVisto;
     public int colecionables;
+    public float tiempoTotal;
+    public float tiempoNivel;
 }

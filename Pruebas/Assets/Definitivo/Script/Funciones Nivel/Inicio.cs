@@ -23,6 +23,9 @@ public class Inicio : MonoBehaviour
         if(other.CompareTag("Finish"))
         {
             unload = true;
+            MenuFinNivel.prueba = false;
+            Timer.tiempoFunciona1 = true;
+            Timer.tiempo = 0;
         }
     }
 

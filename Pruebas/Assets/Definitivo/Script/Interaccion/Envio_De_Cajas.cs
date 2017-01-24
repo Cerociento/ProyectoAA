@@ -8,23 +8,28 @@ public class Envio_De_Cajas : MonoBehaviour
     Transform[] destinoCajasChicas;
     int destinoChicas=0;
     [SerializeField]
-    GameObject textoPequeña;
+    Text textoPequeña;
 
     [SerializeField]
     Transform[] destinoCajasGrandes;
     int destinoGrandes=0;
     [SerializeField]
-    GameObject textoGrande;
+    Text textoGrande;
 
     [SerializeField]
 	AudioSource sonido;
 	[SerializeField]
 	AudioClip sonidoEnvio;
 
+    int indiceChicas;
+    int indiceGrandes;
+
     void Start()
     {
-        textoPequeña.GetComponent<Text>().text = destinoCajasChicas.Length.ToString();
-        textoGrande.GetComponent<Text>().text = destinoCajasGrandes.Length.ToString();
+        textoPequeña.text =destinoCajasChicas.Length.ToString();
+        textoGrande.text = destinoCajasGrandes.Length.ToString();
+        indiceChicas = destinoCajasChicas.Length;
+        indiceGrandes = destinoCajasGrandes.Length;
     }
 
 
@@ -33,15 +38,12 @@ public class Envio_De_Cajas : MonoBehaviour
         if (destinoChicas >= destinoCajasChicas.Length)
         {
             destinoCajasChicas = new Transform[0];
-            
         }
 
         if (destinoGrandes >= destinoCajasGrandes.Length)
         {
             destinoCajasGrandes = new Transform[0];
-        }
-
-       
+        }       
     }
 
     void OnCollisionEnter(Collision hit)
@@ -51,11 +53,10 @@ public class Envio_De_Cajas : MonoBehaviour
             if (destinoChicas < destinoCajasChicas.Length)
             {
                 Debug.Log("Entra Chica");
-
                 hit.transform.position = destinoCajasChicas[destinoChicas].position;
                 destinoChicas++;
-                textoPequeña.GetComponent<Text>().text = destinoCajasChicas.Length.ToString();
-
+                indiceChicas--;
+                textoPequeña.text = indiceChicas.ToString();
                 sonido.PlayOneShot(sonidoEnvio);
             }
         }
@@ -68,7 +69,9 @@ public class Envio_De_Cajas : MonoBehaviour
             {
                 hit.transform.position = destinoCajasGrandes[destinoGrandes].position;
                 destinoGrandes++;
+                indiceGrandes--;
 				sonido.PlayOneShot(sonidoEnvio);
+                textoGrande.text = indiceGrandes.ToString();
             }
         }
     }
