@@ -1,18 +1,31 @@
 ﻿﻿# ProyectoAA
 
-<<<<<<< HEAD
 **~Cerociento 24/01/2017~**
 
 *Añadida informacion en nivel
 *Arreglos de script final de nivel
 *Hace dias se hicieron cambios en como se representa el daño
 
+
+          **Segunda subida 15:40**
+ 
+
+*Arreglo daño: 
+     Creado Script Alma por seguridad.
+     Retocado objeto "Alma".
+
+*Retoques en script "CargarGuardar":
+       Ya guarda el tiempo de cada nivel y el tiempo total.
+
+*Añadido boton "Reinicio" en los menús de pausa.
+*Añadida representacion del ultimo nivel y el tiempo total en "Menu Inicio".
+
+
+
 ---------------------------------------------------------------------
 
 
 **~Fran 22/01/2017~**
-
-
 
 *Hecho Script que muestra estadísticas al final de cada fase. 
    Muertes y tiempo transcurrido. 
@@ -22,15 +35,12 @@
 
 ---------------------------------------------------------------------
 
-=======
 **~Fran 22/01/2017~**
 
 *Hecho Script que muestra estadísticas al final de cada fase. Muertes y tiempo transcurrido. Corregidas las cajas que se instancian en los montones de cajas.
                          
 ---------------------------------------------------------------------
 
-
->>>>>>> origin/master
 **~Fran 20/01/2017~**
 
 *Pequeña corrección. Añadido un script para que los monos no atraviesen el suelo al subir en el ascensor. Ahora, el suelo aparece cuando ya han subido.

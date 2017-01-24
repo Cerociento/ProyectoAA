@@ -128,6 +128,7 @@ public class Movimiento_Pequeño : MonoBehaviour
         {
             checkpointPequeño = other.transform.position;
             StartCoroutine("Guarda");
+            print(other.transform.position + "    "+ transform.position); 
         }
 
         if(other.CompareTag("Plataforma Movil"))

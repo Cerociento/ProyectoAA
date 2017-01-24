@@ -9,11 +9,11 @@ public class Manager : MonoBehaviour
 
     public static bool muertoGrande;
     public static bool muertoPequeño;
-    GameObject grande;
-    GameObject pequeño;
+    protected GameObject grande;
+    protected GameObject pequeño;
 
     [SerializeField]
-    GameObject Alma;
+    protected GameObject alma;
 
 
     void Awake()
@@ -48,12 +48,12 @@ public class Manager : MonoBehaviour
         if (muertoGrande)
         {
             grande.SetActive(false);
-            Alma.SetActive(true);
+            alma.SetActive(true);
             grande.transform.position = Vector3.MoveTowards(grande.transform.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
 
             if (grande.transform.position == Movimiento_Grande.checkpointGrande)
             {
-                Alma.SetActive(false);
+                alma.SetActive(false);
                 grande.SetActive(true);
                 muertoGrande = false;
             }
@@ -62,12 +62,14 @@ public class Manager : MonoBehaviour
         if (muertoPequeño)
         {
             pequeño.SetActive(false);
-            Alma.SetActive(true);
+            alma.SetActive(true);
             pequeño.transform.position = Vector3.MoveTowards(pequeño.transform.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
 
+             print("hola 1");
             if (pequeño.transform.position == Movimiento_Pequeño.checkpointPequeño)
             {
-                Alma.SetActive(false);
+                print("hola");
+                alma.SetActive(false);
                 pequeño.SetActive(true);
                 muertoPequeño = false;
             }

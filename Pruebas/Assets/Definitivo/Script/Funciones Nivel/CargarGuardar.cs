@@ -26,10 +26,28 @@ public class CargarGuardar : MonoBehaviour
 
     public static float TTotal;
     public static float TNivel;
+    public static int NNivel;
+
     void Awake()
     {
         nivel = SceneManager.GetActiveScene().buildIndex;
+
+        if (File.Exists(Application.persistentDataPath + "/monosave.af") && SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            BinaryFormatter load = new BinaryFormatter();
+            FileStream file = File.OpenRead(Application.persistentDataPath + "/monosave.af");
+            datos = load.Deserialize(file) as datosJuego;
+            nivel = datos.nivel;
+            tiempoNivel = datos.tiempoNivel;
+            tiempoTotal = datos.tiempoTotal;
+            colecionables = datos.colecionables;
+           
+        }
+        NNivel = nivel;
+        TTotal = tiempoTotal;
+        TNivel = tiempoNivel;
     }
+
     void Start()
     {
         posicionPequeñoX = Movimiento_Pequeño.checkpointPequeño.x;
@@ -38,7 +56,11 @@ public class CargarGuardar : MonoBehaviour
         posicionGrandeX = Movimiento_Grande.checkpointGrande.x;
         posicionGrandeY = Movimiento_Grande.checkpointGrande.y;
         posicionGrandeZ = Movimiento_Grande.checkpointGrande.z;
-
+        TTotal = tiempoTotal;
+        TNivel = tiempoNivel;
+        print("Cargado datos minimos//  " +
+               TTotal + " " +
+               TNivel);
     }
 
     void Update()
@@ -150,6 +172,8 @@ public class CargarGuardar : MonoBehaviour
         if (File.Exists(Application.persistentDataPath + "/monosave.af"))
         {
             File.Delete(Application.persistentDataPath + "/monosave.af");
+            TTotal = 0;
+            TNivel = 0;
             print("Borrado");
         }
     }

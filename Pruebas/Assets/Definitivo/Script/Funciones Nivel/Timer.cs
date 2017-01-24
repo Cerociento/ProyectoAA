@@ -11,21 +11,20 @@ public class Timer : MonoBehaviour {
 
     void Awake()
     {
-        tiempo = CargarGuardar.TNivel;
-        tiempoTotal = CargarGuardar.TTotal;
-        print(tiempo);
-        print(tiempoTotal);
+        
     }
 	// Use this for initialization
 	void Start () {
-		tiempoFunciona1=true;
+        tiempo = CargarGuardar.TNivel;
+        tiempoTotal = CargarGuardar.TTotal;
+        tiempoFunciona1 =true;
         TNivel = tiempo;
         TTotal = tiempoTotal;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if(tiempoFunciona1){
+        if (tiempoFunciona1){
 			tiempo += Time.deltaTime;
             tiempoTotal += Time.deltaTime;
 	   }
