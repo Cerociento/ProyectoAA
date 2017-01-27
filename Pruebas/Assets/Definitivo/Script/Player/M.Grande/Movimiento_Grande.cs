@@ -24,7 +24,7 @@ public class Movimiento_Grande : MonoBehaviour
 
     //Rotacion Camara
     [SerializeField]
-    float velCamara;
+    float velRotacion;
     float AxisCam = 0;
    
 
@@ -64,112 +64,60 @@ public class Movimiento_Grande : MonoBehaviour
         
         if (!Laser.paraMover)
         {
-            
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
 
-            /*if (ZAxis > 0 && Input.GetKey(KeyCode.W)|| ZAxis < 0 && Input.GetKey(KeyCode.S))
-            {              
-                transform.Rotate(new Vector3(0, 1 * ZAxis, 0));
-
-                if(ZAxis < 0 && transform.eulerAngles.y<=180 && transform.eulerAngles.y>=0)
+            if (ZAxis > 0 && Input.GetKey(KeyCode.W) || ZAxis < 0 && Input.GetKey(KeyCode.S))
+            {
+                transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+                //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+                // transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
+                if (!sonido.isPlaying)
                 {
-                    transform.eulerAngles = new Vector3(0, 180, 0);             
-                    transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
-                }
-
-                if (ZAxis > 0 && transform.eulerAngles.y >= 0 && transform.eulerAngles.y <= 180)
-                {
-                    transform.eulerAngles = new Vector3(0, 0, 0);
-                    transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+                    sonido.Play();
                 }
             }
+            /* else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
+             {
+             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
+             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+             transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
+             if(!sonido.isPlaying){
+                 sonido.Play();}    
+         }*/
 
-            if (YAxis > 0 && Input.GetKey(KeyCode.D) || YAxis < 0 && Input.GetKey(KeyCode.A))
+            if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
             {
-                transform.Rotate(new Vector3(0, 1 * YAxis, 0));
-
-                if (YAxis < 0 && transform.eulerAngles.y <= 270 && transform.eulerAngles.y >= 90)
+                //transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
+                //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+                //transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
+                transform.Rotate(Vector3.up * velRotacion * YAxis);
+                if (!sonido.isPlaying)
                 {
-                    transform.eulerAngles = new Vector3(0, -90, 0);
-                    transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
+                    sonido.Play();
                 }
-
-                if (YAxis > 0 && transform.eulerAngles.y >= 90 && transform.eulerAngles.y <= 270)
-                {
-                    transform.eulerAngles = new Vector3(0, 90, 0);
-                    transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
-                }
-            }*/
-
-             if (ZAxis > 0 && Input.GetKey(KeyCode.W))
+            }
+            /* else if (YAxis > 0 && Input.GetKey(KeyCode.D))
              {
-                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
-				if(!sonido.isPlaying){
-					sonido.Play();
-				}
-             }
-             else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
-             {
+             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
+             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+             transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
+             if(!sonido.isPlaying){
+                 sonido.Play();}    
+         }*/
 
-                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
-                 transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-				if(!sonido.isPlaying){
-					sonido.Play();
-				}
-             }
-
-             if (YAxis < 0 && Input.GetKey(KeyCode.A))
-              {
-                  transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
-                  transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
-				if(!sonido.isPlaying){
-					sonido.Play();
-				}
-              }
-              else if (YAxis > 0 && Input.GetKey(KeyCode.D))
-              {
-                  transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
-                  transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
-				if(!sonido.isPlaying){
-					sonido.Play();
-				}
-              }
-			if(YAxis==0 && ZAxis==0){
-				sonido.Stop();
-			}
-
-            //exper
-
-            /*  rotacionDeseada = Quaternion.Euler(0, Input.GetAxis("Horizontal") * 20, 0);
-
-              float anguloDeseado = Quaternion.Angle(rotacionBase, transform.rotation * rotacionDeseada);
-
-              if (YAxis < 0 && Input.GetKey(KeyCode.A)|| YAxis > 0 && Input.GetKey(KeyCode.D))
-              {
-                  if (anguloDeseado > maxAnguloHorizontal)
-                  {
-                      transform.rotation = Quaternion.RotateTowards(transform.rotation * rotacionDeseada, rotacionBase, anguloDeseado - maxAnguloHorizontal);
-                      transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime);
-                  }
-                  else
-                  {
-                      transform.rotation = Quaternion.Slerp(transform.rotation,transform.rotation * rotacionDeseada, 0.25f);                   
-                  }
-
-
-
-              }*/
-
+            if (YAxis == 0 && ZAxis == 0)
+            {
+                sonido.Stop();
+            }
         }
 
-        AxisCam = Input.GetAxis("Rotacion");
+      /*  AxisCam = Input.GetAxis("Rotacion");
         if (AxisCam < 0 || AxisCam > 0)
         {
-            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velCamara );
+            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velRotacion );
            // HorizontalCamara.localPosition = Vector3.zero;
-        }
+        }*/
 
         if (Input.GetKeyDown(KeyCode.E)|| Input.GetKeyUp(KeyCode.Mouse2))
         {

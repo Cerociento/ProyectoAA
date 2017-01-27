@@ -20,31 +20,33 @@ public class Camara : MonoBehaviour
 
     void Start()
     {
-        Target = Pequeño;
-        sitioCamara = transform.position - Target.position;
+        //Target = Pequeño;
+        transform.localPosition = sitioCamara;
 		Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
     }
 
 
     void Update()
-    {
-        reasignado = Input.GetAxis("Mouse ScrollWheel");
-
-        if (Input.GetKeyDown(KeyCode.Alpha1) || reasignado > 0.3)
+    {    
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Target = Pequeño;
-            transform.position = Target.position + sitioCamara;
+            //Target = Pequeño;
+            transform.parent = Pequeño;
+            transform.localPosition = sitioCamara;
+            transform.localEulerAngles = Vector3.zero;
             Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
             Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = true;
-            Pausa.nPersonaje = 2;
+            Pausa.nPersonaje = 1;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) || reasignado < -0.3)
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Target = Grande;
-            transform.position = Target.position + sitioCamara;
+            //Target = Grande;            
+            transform.parent = Grande;
+            transform.localPosition = sitioCamara;
+            transform.localEulerAngles = Vector3.zero;
             Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = true;
             Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = false;
-            Pausa.nPersonaje = 1;
+            Pausa.nPersonaje = 2;
 
         }
 
@@ -52,6 +54,6 @@ public class Camara : MonoBehaviour
     }
     void LateUpdate()
     {
-        transform.position = Target.position + sitioCamara;
+        //transform.position = Target.position + sitioCamara;
     }
 }

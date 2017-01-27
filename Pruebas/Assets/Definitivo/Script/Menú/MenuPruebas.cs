@@ -31,6 +31,11 @@ public class MenuPruebas : MonoBehaviour {
     {
         cargaGuarda = GameObject.Find("Manager").GetComponent<CargarGuardar>();
     }
+    void Start()
+    {
+        ContinuarBoton.transform.GetChild(0).gameObject.SetActive(false);
+    }
+
 
     void Update()
     {
@@ -38,8 +43,8 @@ public class MenuPruebas : MonoBehaviour {
         {
             NuevojuegoBoton.transform.localPosition = Vector3.zero;
             ContinuarBoton.SetActive(true);
-            ContinuarBoton.transform.GetChild(1).GetComponent<Text>().text = "Tiempo jugado " + (int)Timer.tiempoTotal / 60 + " m " + (int)Timer.tiempoTotal % 60.0f + " s";
-            ContinuarBoton.transform.GetChild(2).GetComponent<Text>().text = "Nivel " + CargarGuardar.NNivel;
+            ContinuarBoton.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "Tiempo jugado " + (int)Timer.tiempoTotal / 60 + " m " + (int)Timer.tiempoTotal % 60.0f + " s";
+            ContinuarBoton.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "Nivel " + CargarGuardar.NNivel;
         }
         else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {

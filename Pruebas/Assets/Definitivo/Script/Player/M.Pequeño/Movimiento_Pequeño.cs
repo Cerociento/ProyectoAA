@@ -17,7 +17,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     //Rotacion Camara
     float AxisCam = 0;
     [SerializeField]
-    float velCamara;
+    float velRotacion;
 
     [Range(-5f, 5f)]
     [SerializeField]
@@ -49,47 +49,40 @@ public class Movimiento_Pequeño : MonoBehaviour
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
 
-            if (ZAxis > 0 && Input.GetKey(KeyCode.W))
+            if (ZAxis > 0 && Input.GetKey(KeyCode.W)|| ZAxis < 0 && Input.GetKey(KeyCode.S))
             {
             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-            velocidad = velocidadMovi;
             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-            transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
+           // transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}
             }
-            else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
-            {
-            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
-            velocidad = velocidadMovi;
-            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-            transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-			if(!sonido.isPlaying){
-				sonido.Play();}    
-		}
+        /* else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
+         {
+         transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
+         //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+         transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
+         if(!sonido.isPlaying){
+             sonido.Play();}    
+     }*/
 
-            if (YAxis < 0 && Input.GetKey(KeyCode.A))
+        if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
             {
-            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
-            velocidad = velocidadMovi;
+            //transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-            transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
+            //transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
+            transform.Rotate(Vector3.up*velRotacion*YAxis);
 			if(!sonido.isPlaying){
 				sonido.Play();}    
 		}
-            else if (YAxis > 0 && Input.GetKey(KeyCode.D))
+           /* else if (YAxis > 0 && Input.GetKey(KeyCode.D))
             {
             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
-            velocidad = velocidadMovi;
             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
             transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}    
-		}
-        else if (YAxis < 0 && Input.GetKeyUp(KeyCode.A)|| YAxis > 0 && Input.GetKeyUp(KeyCode.D) || ZAxis > 0 && Input.GetKeyUp(KeyCode.W) || ZAxis < 0 && Input.GetKeyUp(KeyCode.S))
-        {
-            GetComponent<Rigidbody>().Sleep();
-        }
+		}*/
 
 		if(YAxis==0 && ZAxis==0){
 			sonido.Stop();
@@ -98,18 +91,11 @@ public class Movimiento_Pequeño : MonoBehaviour
 			sonido.Stop();
 		}
 
-        AxisCam = Input.GetAxis("Rotacion");
+       /* AxisCam = Input.GetAxis("Rotacion");
         
         if (AxisCam < 0 ||  AxisCam > 0)
         {
-            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velCamara);
-           // HorizontalCamara.localPosition = Vector3.zero;
-        }
-
-        /*alturaCamara = Input.GetAxis("Vertical");
-        if (alturaCamara < 0 && Input.GetKey(KeyCode.Mouse1) || alturaCamara > 0 && Input.GetKey(KeyCode.Mouse0))
-        {
-            CamCamera.Rotate(Vector3.right,transform.position.x*alturaCamara);
+            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velRotacion);
         }*/
 
         if (Input.GetKeyDown(KeyCode.Space))

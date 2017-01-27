@@ -37,7 +37,8 @@ public class Manager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
             {
-                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
+                //SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
+                Debug.Log("Holas");
                 GameObject.Find("ActivarInicio").SetActive(false);
                 nivelMas = false;
             }
