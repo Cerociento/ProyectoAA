@@ -224,6 +224,7 @@ public class Movimiento_Grande : MonoBehaviour
             StartCoroutine("Guarda");
         }
     }
+		
 
     IEnumerator Guarda()
     {

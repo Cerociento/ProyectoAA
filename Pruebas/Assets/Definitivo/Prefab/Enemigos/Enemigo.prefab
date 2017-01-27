@@ -446,9 +446,11 @@ GameObject:
   - 195: {fileID: 195000013971884450}
   - 114: {fileID: 114000011569554792}
   - 114: {fileID: 114000011112245044}
+  - 135: {fileID: 135000012902565204}
+  - 114: {fileID: 114000013073060998}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,9 +1200,9 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011945869132}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.7135944, y: -11.478125, z: -10.393903}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 14.573594, y: -11.478125, z: 0.9760971}
+  m_LocalScale: {x: 0.7000002, y: 0.7, z: 0.7000002}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_Children:
   - {fileID: 4000013664600850}
   m_Father: {fileID: 0}
@@ -1955,7 +1957,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011636095906}
-  m_LocalRotation: {x: 0.24758601, y: -0.70926285, z: -0.17024441, w: 0.6377024}
+  m_LocalRotation: {x: 0.24758598, y: -0.7092628, z: -0.1702444, w: 0.63770235}
   m_LocalPosition: {x: -0.000012192074, y: 0.002266571, z: 0.00008291}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2098,16 +2100,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonido: {fileID: 82000012602906300}
   alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
-  viewRadius: 4
+  viewRadius: 6
   viewAngle: 61
   targetMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 3072
   obstacleMask:
     serializedVersion: 2
     m_Bits: 768
   timer: 0
   visibleTargets: []
+--- !u!114 &114000013073060998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011945869132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82af260251145e4d8c315718a759629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &135000012902565204
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011945869132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137000013009588208
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -18,6 +18,8 @@ TagManager:
   - Plataforma Movil
   - ActivadorSuelo
   - Alma
+  - DetectorMonos
+  - Enemigo
   layers:
   - Default
   - TransparentFX
