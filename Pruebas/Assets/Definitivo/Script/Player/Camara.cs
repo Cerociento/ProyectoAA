@@ -20,7 +20,7 @@ public class Camara : MonoBehaviour
 
     void Start()
     {
-        //Target = Pequeño;
+        Target = Pequeño;
         transform.localPosition = sitioCamara;
 		Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
     }
@@ -30,7 +30,7 @@ public class Camara : MonoBehaviour
     {    
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            //Target = Pequeño;
+            Target = Pequeño;
             transform.parent = Pequeño;
             transform.localPosition = sitioCamara;
             transform.localEulerAngles = Vector3.zero;
@@ -40,7 +40,7 @@ public class Camara : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            //Target = Grande;            
+            Target = Grande;            
             transform.parent = Grande;
             transform.localPosition = sitioCamara;
             transform.localEulerAngles = Vector3.zero;

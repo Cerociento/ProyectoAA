@@ -8,6 +8,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     public float velocidad = 1f;
     float ZAxis = 0f;
     float YAxis;
+    float LAxis;
     [SerializeField]
     Transform HorizontalCamara;
     [SerializeField]
@@ -46,7 +47,8 @@ public class Movimiento_Pequeño : MonoBehaviour
 
      void Update()
     {
-            YAxis = Input.GetAxis("Horizontal");
+        #region MovimientoNormal
+        YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
 
             if (ZAxis > 0 && Input.GetKey(KeyCode.W)|| ZAxis < 0 && Input.GetKey(KeyCode.S))
@@ -90,13 +92,18 @@ public class Movimiento_Pequeño : MonoBehaviour
 		if(salto!=0){
 			sonido.Stop();
 		}
+        #endregion
+        /* AxisCam = Input.GetAxis("Rotacion");
 
-       /* AxisCam = Input.GetAxis("Rotacion");
-        
-        if (AxisCam < 0 ||  AxisCam > 0)
-        {
-            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velRotacion);
-        }*/
+         if (AxisCam < 0 ||  AxisCam > 0)
+         {
+             HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velRotacion);
+         }*/
+
+
+        LAxis = Input.GetAxis("Lateral");
+        if (LAxis < 0 || LAxis > 0)
+            transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

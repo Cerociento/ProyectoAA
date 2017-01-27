@@ -20,7 +20,9 @@ public class Alma : MonoBehaviour {
              {
                     gameObject.SetActive(false);
                     grande.SetActive(true);
-                    Manager.muertoPequeño = false;            
+                    Manager.muertoGrande = false;
+                    grande.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
+                    grande.transform.parent.GetComponent<Rigidbody>().useGravity = true;
             }
         }
     }

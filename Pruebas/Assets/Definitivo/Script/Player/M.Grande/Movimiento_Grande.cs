@@ -10,10 +10,12 @@ public class Movimiento_Grande : MonoBehaviour
     float velocidad = 1f;
     float ZAxis = 0f;
     float YAxis;
+    float LAxis;
     [SerializeField]
     Transform HorizontalCamara;
     [SerializeField]
     Transform CamCamera;
+  
     //float rango = 1;
 
     //Rotacion Personaje
@@ -25,7 +27,7 @@ public class Movimiento_Grande : MonoBehaviour
     //Rotacion Camara
     [SerializeField]
     float velRotacion;
-    float AxisCam = 0;
+   // float AxisCam = 0;
    
 
     //Cajas 
@@ -112,14 +114,19 @@ public class Movimiento_Grande : MonoBehaviour
             }
         }
 
-      /*  AxisCam = Input.GetAxis("Rotacion");
-        if (AxisCam < 0 || AxisCam > 0)
-        {
-            HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velRotacion );
-           // HorizontalCamara.localPosition = Vector3.zero;
-        }*/
+        /*  AxisCam = Input.GetAxis("Rotacion");
+          if (AxisCam < 0 || AxisCam > 0)
+          {
+              HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velRotacion );
+             // HorizontalCamara.localPosition = Vector3.zero;
+          }*/
 
-        if (Input.GetKeyDown(KeyCode.E)|| Input.GetKeyUp(KeyCode.Mouse2))
+
+        LAxis = Input.GetAxis("Lateral");
+        if (LAxis < 0 || LAxis > 0)
+            transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
+
+        if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyUp(KeyCode.Mouse0))
         {
             if (caja)
             {     
@@ -152,7 +159,7 @@ public class Movimiento_Grande : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.E)|| Input.GetKeyUp(KeyCode.Mouse2))
+        if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.Mouse0))
         {
             if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
             {
@@ -178,6 +185,7 @@ public class Movimiento_Grande : MonoBehaviour
                 {
                     caja.SetActive(false);
                     Destroy(caja);
+                    caja = null;
                     asignarCaja = true;
                     gameObject.layer = 9;
                     gameObject.tag = "Escondido";
@@ -224,6 +232,7 @@ public class Movimiento_Grande : MonoBehaviour
             StartCoroutine("Guarda");
         }
     }
+		
 
     IEnumerator Guarda()
     {

@@ -52,6 +52,9 @@ public class Pausa : MonoBehaviour {
         {
 			sonido.PlayOneShot(sonidoPausa);
             pausado = !pausado;
+			if(MenuFinNivel.prueba){
+				MenuFinNivel.prueba=false;
+			}
         }
 
             if (pausado)

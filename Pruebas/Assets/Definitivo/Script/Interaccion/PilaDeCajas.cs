@@ -13,27 +13,43 @@ public class PilaDeCajas : MonoBehaviour
 	AudioClip sonidoCaja;
     [SerializeField]
     GameObject texto;
+    [SerializeField]
+    bool instrucciones;
+    [SerializeField]
+    bool cajasEscondite;
 
     void Update()
     {
-        if (activador == Caja.Length)
+        if (instrucciones)
         {
-            Caja = new GameObject[0];
-            Destroy(texto, 1);
-            Destroy(this.gameObject, 2);
-            
+            texto.transform.LookAt(Camera.main.transform);
         }
+        else
+        {
+            texto = null;
+        }
+
+        if (activador == Caja.Length)
+            {
+            if (cajasEscondite)
+                activador = 0;
+            else
+            {
+                Caja = new GameObject[0];
+                Destroy(this.gameObject, 2);
+                Destroy(texto, 1);
+            }
+            }
 
         if (coger)
         {
             Movimiento_Grande.soltar = false;
             sonido.PlayOneShot(sonidoCaja);
-            Transform sitioIntanciado = GameObject.FindWithTag("Grande").transform.GetChild(0).GetChild(2).GetChild(2);
+            Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(2).GetChild(2);
             if (activador < Caja.Length)
             {
                 Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
                 activador++;
-
             }
 
             coger = false;
@@ -43,7 +59,7 @@ public class PilaDeCajas : MonoBehaviour
 
     void OnTriggerStay(Collider other)
   {
-    if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.E)|| other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse2))
+    if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse0)|| other.CompareTag("Escondido") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Escondido") && Input.GetKeyUp(KeyCode.Mouse0))
     {
             coger = true;
             texto.SetActive(false);

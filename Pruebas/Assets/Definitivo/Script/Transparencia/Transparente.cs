@@ -4,15 +4,15 @@ using System.Collections;
 public class Transparente : MonoBehaviour
 {
 
-    RayoParaTransparencia paredes;
+   // RayoParaTransparencia paredes;
     [SerializeField]
     bool puertaDetectada;
     [SerializeField]
     float alfa;
     void Start()
     {
-        GameObject cam = GameObject.Find("Cam");
-        paredes = cam.GetComponent<RayoParaTransparencia>();
+        //GameObject cam = GameObject.Find("Cam");
+       // paredes = cam.GetComponent<RayoParaTransparencia>();
     }
 
     // Update is called once per frame

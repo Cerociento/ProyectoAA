@@ -26,6 +26,7 @@ public class Suelos : MonoBehaviour {
 			cristal.SetActive(true);
 			sueloGrande.SetActive(true);
 			sueloPequeño.SetActive(true);
+			MenuFinNivel.prueba=false;
 		}
 	}
 }

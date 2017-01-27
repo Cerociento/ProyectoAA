@@ -7,11 +7,12 @@ public class Manager : MonoBehaviour
     [SerializeField]
     public bool nivelMas;
 
+    public static bool muertoGrande = false;
+    public static bool muertoPequeño = false;
     [SerializeField]
-    public static bool muertoGrande=false;
-    public static bool muertoPequeño=false;
-    GameObject grande;
-    GameObject pequeño;
+    GameObject grandeDañado;
+    [SerializeField]
+    GameObject pequeñoDañado;
 
     [SerializeField]
     GameObject alma;
@@ -26,10 +27,10 @@ public class Manager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        grande = GameObject.Find("Grande");
-        pequeño = GameObject.Find("Pequeño");
+        //grandeDañado = GameObject.Find("Grande");
+        //pequeñoDañado = GameObject.Find("Pequeño");
 
-    }  
+    }
 
     void FixedUpdate()
     {
@@ -37,44 +38,33 @@ public class Manager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
             {
-                //SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
-                Debug.Log("Holas");
-                GameObject.Find("ActivarInicio").SetActive(false);
+                SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
+               // GameObject.Find("ActivarInicio").SetActive(false);
                 nivelMas = false;
             }
         }
-    }    
+    }
 
     void Update()
     {
-        if (muertoGrande==true)
+        if (muertoGrande)
         {
-            grande.SetActive(false);
+            alma.transform.position = grandeDañado.transform.position;
+            grandeDañado.SetActive(false);
             alma.SetActive(true);
-            grande.transform.position = Vector3.MoveTowards(grande.transform.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
-
-            if (grande.transform.position == Movimiento_Grande.checkpointGrande)
-            {
-                alma.SetActive(false);
-                grande.SetActive(true);
-                muertoGrande = false;
-            }
+            grandeDañado.transform.parent.position = Vector3.MoveTowards(grandeDañado.transform.parent.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
+            grandeDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
+            grandeDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
         }
 
-        if (muertoPequeño==true)
+        if (muertoPequeño)
         {
-            pequeño.SetActive(false);
+            alma.transform.position = pequeñoDañado.transform.position;
+            pequeñoDañado.SetActive(false);
             alma.SetActive(true);
-            pequeño.transform.position = Vector3.MoveTowards(pequeño.transform.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
-
-             print("hola 1");
-            if (pequeño.transform.position == Movimiento_Pequeño.checkpointPequeño)
-            {
-                print("hola");
-                alma.SetActive(false);
-                pequeño.SetActive(true);
-                muertoPequeño = false;
-            }
+            pequeñoDañado.transform.parent.position = Vector3.MoveTowards(pequeñoDañado.transform.parent.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
+            pequeñoDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
+            pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
         }
     }
 }

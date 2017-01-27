@@ -14,7 +14,7 @@ public class Inicio : MonoBehaviour
         if (unload)
         {
             SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
-            GameObject.Find("ActivarInicio").SetActive(true);
+            //GameObject.Find("ActivarInicio").SetActive(true);
         }
     }
 

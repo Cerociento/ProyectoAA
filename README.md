@@ -1,5 +1,25 @@
-﻿﻿# ProyectoAA
+﻿﻿﻿# ProyectoAA
 
+**~Cerociento 27/01/2017~**
+
+*Arreglado error de muerte
+*Boton de interaccion del ratón pasa de "mouse2" a "mouse0"
+*Arreglado recogida de cajas cuando es transparente
+*Las cajas para esconderse ya no se acaban
+*Interaccion de teclado pasa de "E" a "LeftControl"
+*Añadido paso lateral (Q - E)
+*Rampas arregladas
+*Arreglado carga de nivel 4 desde nivel 3 
+
+---------------------------------------------------------------------------
+
+**~Fran 27/01/2017~**
+
+*Ahora el enemigo no debería ver a través de las paredes.
+*Ahora, al acercarse demasiado al enemigo, te detectará, aunque no estés en su cono de visión (no son TAN sordos).
+*Ahora la única pila de cajas que tiene el letrerito de 'Coger' es la primera. Y mira a cámara.
+
+---------------------------------------------------------------------------
 **~Cerociento 24/01/2017~**
 
 *Añadida informacion en nivel
@@ -235,4 +255,3 @@ En el proyecto que he subido a github es el del otro dia,con añadidos. Hay una 
 En esta escena, hay lineas negras en el suelo. Estas lineas son paredes que se pueden levantar a antojo para probar cosas y tener un nivel de prueba "personalizable".
 
 Tambien hay varias carpetas nuevas. Una llamada Prueba  y otra Pruebas 2. En la primera estan las cosas de la primera vez, en la segunda estan las cosas nuevas o las cosas antiguas retocadas y funcionales.
-
