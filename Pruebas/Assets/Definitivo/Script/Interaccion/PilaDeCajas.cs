@@ -16,6 +16,7 @@ public class PilaDeCajas : MonoBehaviour
 
     void Update()
     {
+		texto.transform.LookAt(Camera.main.transform);
         if (activador == Caja.Length)
         {
             Caja = new GameObject[0];
