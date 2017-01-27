@@ -10,7 +10,6 @@ public class Alma : MonoBehaviour {
     {
         if (other.CompareTag("Checkpoint"))
         {
-            print("alma");
             if (Manager.muertoPequeño)
             {           
                     gameObject.SetActive(false);

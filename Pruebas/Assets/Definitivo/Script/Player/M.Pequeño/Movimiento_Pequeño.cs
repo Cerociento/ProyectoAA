@@ -13,6 +13,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     [SerializeField]
     Transform CamCamera;
     float velocidadMovi;
+
     //Rotacion Camara
     float AxisCam = 0;
     [SerializeField]
@@ -51,32 +52,44 @@ public class Movimiento_Pequeño : MonoBehaviour
             if (ZAxis > 0 && Input.GetKey(KeyCode.W))
             {
             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+            velocidad = velocidadMovi;
+            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
             transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}
             }
             else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
             {
-                transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
-                transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
+            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
+            velocidad = velocidadMovi;
+            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+            transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}    
 		}
 
             if (YAxis < 0 && Input.GetKey(KeyCode.A))
             {
-                transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
-                transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
+            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
+            velocidad = velocidadMovi;
+            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+            transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}    
 		}
             else if (YAxis > 0 && Input.GetKey(KeyCode.D))
             {
-                transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
-                transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
+            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
+            velocidad = velocidadMovi;
+            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
+            transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
 			if(!sonido.isPlaying){
 				sonido.Play();}    
 		}
+        else if (YAxis < 0 && Input.GetKeyUp(KeyCode.A)|| YAxis > 0 && Input.GetKeyUp(KeyCode.D) || ZAxis > 0 && Input.GetKeyUp(KeyCode.W) || ZAxis < 0 && Input.GetKeyUp(KeyCode.S))
+        {
+            GetComponent<Rigidbody>().Sleep();
+        }
 
 		if(YAxis==0 && ZAxis==0){
 			sonido.Stop();

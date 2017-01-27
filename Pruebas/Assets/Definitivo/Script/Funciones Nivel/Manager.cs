@@ -7,13 +7,14 @@ public class Manager : MonoBehaviour
     [SerializeField]
     public bool nivelMas;
 
-    public static bool muertoGrande;
-    public static bool muertoPequeño;
-    protected GameObject grande;
-    protected GameObject pequeño;
+    [SerializeField]
+    public static bool muertoGrande=false;
+    public static bool muertoPequeño=false;
+    GameObject grande;
+    GameObject pequeño;
 
     [SerializeField]
-    protected GameObject alma;
+    GameObject alma;
 
 
     void Awake()
@@ -45,7 +46,7 @@ public class Manager : MonoBehaviour
 
     void Update()
     {
-        if (muertoGrande)
+        if (muertoGrande==true)
         {
             grande.SetActive(false);
             alma.SetActive(true);
@@ -59,7 +60,7 @@ public class Manager : MonoBehaviour
             }
         }
 
-        if (muertoPequeño)
+        if (muertoPequeño==true)
         {
             pequeño.SetActive(false);
             alma.SetActive(true);
