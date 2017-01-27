@@ -1,5 +1,13 @@
 ﻿﻿# ProyectoAA
 
+
+**~Fran 27/01/2017~**
+
+*Ahora el enemigo no debería ver a través de las paredes.
+*Ahora, al acercarse demasiado al enemigo, te detectará, aunque no estés en su cono de visión (no son TAN sordos).
+*Ahora la única pila de cajas que tiene el letrerito de 'Coger' es la primera. Y mira a cámara.
+
+---------------------------------------------------------------------------
 **~Cerociento 24/01/2017~**
 
 *Añadida informacion en nivel
