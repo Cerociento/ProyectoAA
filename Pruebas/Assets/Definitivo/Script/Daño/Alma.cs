@@ -15,7 +15,9 @@ public class Alma : MonoBehaviour {
                     gameObject.SetActive(false);
                     pequeño.SetActive(true);
                     Manager.muertoPequeño = false;
-             }
+                    pequeño.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
+                    pequeño.transform.parent.GetComponent<Rigidbody>().useGravity = true;
+            }
              else if (Manager.muertoGrande)
              {
                     gameObject.SetActive(false);

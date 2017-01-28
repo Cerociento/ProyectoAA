@@ -20,10 +20,9 @@ public class PilaDeCajas : MonoBehaviour
 
     void Update()
     {
+
         if (instrucciones)
-        {
-            texto.transform.LookAt(Camera.main.transform);
-        }
+		texto.transform.LookAt(Camera.main.transform);
         else
         {
             texto = null;
@@ -48,13 +47,27 @@ public class PilaDeCajas : MonoBehaviour
             Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(2).GetChild(2);
             if (activador < Caja.Length)
             {
-                Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
-                activador++;
+                if (cajasEscondite)
+                {
+                    if (GameObject.FindGameObjectWithTag("Caja Escondite") == null)
+                    {
+                        Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
+                        activador++;
+                        GetComponent<SphereCollider>().enabled = false;
+                    }
+                
+                }
+                else
+                { 
+                    Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
+                     activador++;
+                }
             }
 
             coger = false;
-        }         
-        }   
+        }else if(GameObject.FindGameObjectWithTag("Caja Escondite") == null)
+            GetComponent<SphereCollider>().enabled = true;
+    }   
     
 
     void OnTriggerStay(Collider other)

@@ -40,8 +40,6 @@
 *Añadido boton "Reinicio" en los menús de pausa.
 *Añadida representacion del ultimo nivel y el tiempo total en "Menu Inicio".
 
-
-
 ---------------------------------------------------------------------
 
 

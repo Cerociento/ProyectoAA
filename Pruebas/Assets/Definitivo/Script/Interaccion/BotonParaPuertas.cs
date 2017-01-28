@@ -22,7 +22,7 @@ public class BotonParaPuertas : MonoBehaviour {
         for (int i = 0; i < abrePuerta.Length; i++)
             if (activar)
             {
-                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Mouse2))
+                if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     Debug.Log(i);
                     abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");

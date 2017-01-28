@@ -26,4 +26,20 @@ public class Caja : MonoBehaviour
             caja = null;
         }
     }
+
+    void OnCollisionStay()
+    {
+       /* if(gameObject.CompareTag("Caja Escondite"))
+        {
+            
+            float seg = 255;
+            seg -= Time.deltaTime;
+            print(seg);
+            if (seg <= 0)
+            {
+                Destroy(gameObject);
+            }
+
+        }*/
+    }
 }
