@@ -11252,7 +11252,12 @@ Prefab:
       propertyPath: fanfarria
       value: 
       objectReference: {fileID: 8300000, guid: bd120e63153a586458e1ad1edf56bdd8, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 1000010395936550, guid: def82592cfecfea44ab273282ff0dacf, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114000011446861128, guid: def82592cfecfea44ab273282ff0dacf, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: def82592cfecfea44ab273282ff0dacf, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &522576790 stripped
@@ -11334,6 +11339,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &522576792 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014166504676, guid: def82592cfecfea44ab273282ff0dacf,
+    type: 2}
+  m_PrefabInternal: {fileID: 522576789}
+--- !u!114 &522576793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522576792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c54d9842bd2b3409163b87c13e8eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unload: 0
+  activar: {fileID: 0}
 --- !u!1001 &526495303
 Prefab:
   m_ObjectHideFlags: 0
@@ -17815,6 +17838,34 @@ Prefab:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &755555003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 755555004}
+  m_Layer: 0
+  m_Name: QuadNegros
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755555004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 755555003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!1001 &758037245
 Prefab:
   m_ObjectHideFlags: 0

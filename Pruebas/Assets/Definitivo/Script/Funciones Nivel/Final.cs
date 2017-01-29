@@ -31,9 +31,9 @@ public class Final : MonoBehaviour
             sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
             MenuFinNivel.prueba = true;
             Timer.tiempoFunciona1 = false;
+
             if (finDelJuego)
                 SceneManager.LoadScene(0);
-
         }
             
     }

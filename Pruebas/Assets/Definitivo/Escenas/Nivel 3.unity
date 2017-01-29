@@ -3677,7 +3677,7 @@ GameObject:
   - 82: {fileID: 67694256}
   m_Layer: 12
   m_Name: Checkpoint Final
-  m_TagString: DetectorMonos
+  m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27024,6 +27024,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 715549464}
     m_Modifications:
+    - target: {fileID: 114000011938770306, guid: 040aa41bcd38dc14bb9ce71f3cee8cca,
+        type: 2}
+      propertyPath: destinoCajasChicas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011938770306, guid: 040aa41bcd38dc14bb9ce71f3cee8cca,
+        type: 2}
+      propertyPath: destinoCajasGrandes.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013702511464, guid: 040aa41bcd38dc14bb9ce71f3cee8cca, type: 2}
       propertyPath: m_LocalPosition.x
       value: -14.05
@@ -46495,6 +46505,11 @@ Prefab:
     - target: {fileID: 114000011938770306, guid: 040aa41bcd38dc14bb9ce71f3cee8cca,
         type: 2}
       propertyPath: destinoCajasChicas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011938770306, guid: 040aa41bcd38dc14bb9ce71f3cee8cca,
+        type: 2}
+      propertyPath: destinoCajasGrandes.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000013702511464, guid: 040aa41bcd38dc14bb9ce71f3cee8cca, type: 2}

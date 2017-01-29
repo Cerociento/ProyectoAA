@@ -5,7 +5,7 @@ using System.Collections;
 public class Inicio : MonoBehaviour 
 {
     [SerializeField]
-    bool unload;
+    bool unload=false;
     [SerializeField]
     GameObject activar;
 
@@ -13,6 +13,7 @@ public class Inicio : MonoBehaviour
     {
         if (unload)
         {
+            print(unload);
             SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
             //GameObject.Find("ActivarInicio").SetActive(true);
         }

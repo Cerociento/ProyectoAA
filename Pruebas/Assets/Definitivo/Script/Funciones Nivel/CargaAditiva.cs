@@ -17,7 +17,7 @@ public class CargaAditiva : MonoBehaviour
         if (other.CompareTag("Pequeño") || other.CompareTag("Grande"))
         {        
                 manager.nivelMas = true;
-                Destroy(gameObject);
+            GetComponent<CargaAditiva>().enabled = false;
         }
     }
 	
