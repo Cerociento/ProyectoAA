@@ -1,8 +1,12 @@
-﻿﻿﻿# ProyectoAA
+﻿﻿# ProyectoAA
 
+**~Cerociento 01/02/2017~**
 
+* Mejorado sistema de particulas
+* Añadidios quad negros (nivel 1, nivel 2, nivel 3)
+* Mejora de ascensor (personajes se hacen hijos)
 
-
+---------------------------------------------------------------------
 **~Fran 31/01/2017~**
 
 *Añadidos botones al M. Principal y al M. de pausa
