@@ -12,11 +12,12 @@ public class Alma : MonoBehaviour {
         {
             if (Manager.muertoPequeño)
             {           
-                    gameObject.SetActive(false);
-                    pequeño.SetActive(true);
-                    Manager.muertoPequeño = false;
-                    pequeño.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
-                    pequeño.transform.parent.GetComponent<Rigidbody>().useGravity = true;
+                gameObject.SetActive(false);
+                pequeño.SetActive(true);
+                Manager.muertoPequeño = false;
+                pequeño.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
+                pequeño.transform.parent.GetComponent<Rigidbody>().useGravity = true;
+                pequeño.transform.parent.GetComponent<Rigidbody>().isKinematic = false;
             }
              else if (Manager.muertoGrande)
              {
@@ -25,6 +26,7 @@ public class Alma : MonoBehaviour {
                     Manager.muertoGrande = false;
                     grande.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
                     grande.transform.parent.GetComponent<Rigidbody>().useGravity = true;
+                    grande.transform.parent.GetComponent<Rigidbody>().isKinematic = false;
             }
         }
     }

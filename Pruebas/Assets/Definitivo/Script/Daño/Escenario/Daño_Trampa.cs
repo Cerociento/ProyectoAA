@@ -15,6 +15,7 @@ public class Daño_Trampa : MonoBehaviour
             Manager.muertoGrande = true;
             Pausa.vecesVisto++;
             sonido.PlayOneShot(sonidoMuerte);
+            other.GetComponent<Rigidbody>().isKinematic = true;
         }
 
         if (other.CompareTag("Pequeño"))
@@ -22,6 +23,7 @@ public class Daño_Trampa : MonoBehaviour
             Manager.muertoPequeño = true;
             Pausa.vecesVisto++;
             sonido.PlayOneShot(sonidoMuerte);
+            other.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
 }

@@ -15,7 +15,6 @@ public class Inicio : MonoBehaviour
         {
             print(unload);
             SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
-            //GameObject.Find("ActivarInicio").SetActive(true);
         }
     }
 
@@ -23,10 +22,12 @@ public class Inicio : MonoBehaviour
     {
         if(other.CompareTag("Finish"))
         {
-            unload = true;
+            GameObject.FindWithTag("Grande").transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
+            GameObject.FindWithTag("Pequeño").transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
             MenuFinNivel.prueba = false;
             Timer.tiempoFunciona1 = true;
             Timer.tiempo = 0;
+            unload = true;
         }
     }
 

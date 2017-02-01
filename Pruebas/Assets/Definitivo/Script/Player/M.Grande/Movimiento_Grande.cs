@@ -183,8 +183,7 @@ public class Movimiento_Grande : MonoBehaviour
                 escondite = !escondite;
                 if (escondite)
                 {
-                    caja.SetActive(false);
-                    Destroy(caja);
+                    caja.GetComponent<Caja>().Choque();
                     caja = null;
                     asignarCaja = true;
                     gameObject.layer = 9;
@@ -194,7 +193,7 @@ public class Movimiento_Grande : MonoBehaviour
                     Escondido();
                 }
             }
-            else
+            else if (!caja.CompareTag("Caja Escondite"))
             {
                 Debug.Log("Ninguna caja cerca");
             }

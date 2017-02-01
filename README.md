@@ -1,5 +1,14 @@
 ﻿﻿﻿# ProyectoAA
 
+
+
+
+**~Fran 31/01/2017~**
+
+*Añadidos botones al M. Principal y al M. de pausa
+  
+---------------------------------------------------------------------
+
 **~Cerociento 27/01/2017~**
 
 *Arreglado error de muerte

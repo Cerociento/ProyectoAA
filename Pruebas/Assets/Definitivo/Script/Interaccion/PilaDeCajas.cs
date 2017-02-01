@@ -18,6 +18,14 @@ public class PilaDeCajas : MonoBehaviour
     [SerializeField]
     bool cajasEscondite;
 
+    ManagerPool managerPool;
+
+
+    void Start()
+    {
+        managerPool = GameObject.Find("Manager").GetComponent<ManagerPool>();
+    }
+
     void Update()
     {
 
@@ -45,22 +53,17 @@ public class PilaDeCajas : MonoBehaviour
             Movimiento_Grande.soltar = false;
             sonido.PlayOneShot(sonidoCaja);
             Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(2).GetChild(2);
+
             if (activador < Caja.Length)
             {
                 if (cajasEscondite)
                 {
-                    if (GameObject.FindGameObjectWithTag("Caja Escondite") == null)
-                    {
-                        Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
-                        activador++;
-                        GetComponent<SphereCollider>().enabled = false;
-                    }
-                
+                   managerPool.getBox();
                 }
                 else
                 { 
                     Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
-                     activador++;
+                    activador++;
                 }
             }
 

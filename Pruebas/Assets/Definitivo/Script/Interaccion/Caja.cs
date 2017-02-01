@@ -29,17 +29,20 @@ public class Caja : MonoBehaviour
 
     void OnCollisionStay()
     {
-       /* if(gameObject.CompareTag("Caja Escondite"))
+        if(gameObject.CompareTag("Caja Escondite"))
         {
-            
-            float seg = 255;
-            seg -= Time.deltaTime;
-            print(seg);
-            if (seg <= 0)
-            {
-                Destroy(gameObject);
-            }
-
-        }*/
+            Choque();
+        }
     }
+
+    public void Choque()
+    {
+        caja = null;
+        GetComponent<SphereCollider>().enabled = true;
+        GetComponent<BoxCollider>().enabled = false;
+        GetComponent<Rigidbody>().useGravity = false;
+        GetComponent<Rigidbody>().isKinematic = true;
+        gameObject.SetActive(false);
+    }
+
 }
