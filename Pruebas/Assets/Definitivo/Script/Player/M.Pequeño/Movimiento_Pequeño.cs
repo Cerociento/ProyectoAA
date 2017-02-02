@@ -74,8 +74,9 @@ public class Movimiento_Pequeño : MonoBehaviour
             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
             //transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
             transform.Rotate(Vector3.up*velRotacion*YAxis);
-			if(!sonido.isPlaying){
-				sonido.Play();}    
+			//if(!sonido.isPlaying){
+			//	sonido.Play();
+			//}    
 		}
            /* else if (YAxis > 0 && Input.GetKey(KeyCode.D))
             {
@@ -86,7 +87,7 @@ public class Movimiento_Pequeño : MonoBehaviour
 				sonido.Play();}    
 		}*/
 
-		if(YAxis==0 && ZAxis==0){
+		if(YAxis==0 && ZAxis==0 && LAxis==0){
 			sonido.Stop();
 		}
 		if(salto!=0){
@@ -102,8 +103,11 @@ public class Movimiento_Pequeño : MonoBehaviour
 
 
         LAxis = Input.GetAxis("Lateral");
-        if (LAxis < 0 || LAxis > 0)
+		if (LAxis < 0 || LAxis > 0){
             transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
+		if(!sonido.isPlaying){
+			sonido.Play();}
+	}
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
