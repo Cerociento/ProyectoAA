@@ -24,7 +24,7 @@ public class BotonParaPuertas : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Mouse0))
                 {
-                    Debug.Log(i);
+                    Movimiento_Pequeño._anim.SetTrigger("push");
                     abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
                     abrePuerta[i].GetComponent<BoxCollider>().isTrigger = true;
                     transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
@@ -32,7 +32,7 @@ public class BotonParaPuertas : MonoBehaviour {
                     transform.GetComponent<BoxCollider>().enabled = false;
 					sonido.PlayOneShot(sonidoBoton);
                 }
-                if(Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Mouse2))
+                if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.Mouse0))
                 {                   
                     activar = false;
                 }

@@ -44,7 +44,7 @@ public class PilaDeCajas : MonoBehaviour
             {
                 Caja = new GameObject[0];
                 Destroy(this.gameObject, 2);
-                Destroy(texto, 1);
+                texto.SetActive(false);
             }
             }
 

@@ -49,6 +49,11 @@ public class Manager : MonoBehaviour
     {
         if (muertoGrande)
         {
+            if (Movimiento_Grande.soltar == false)
+            { 
+                Movimiento_Grande.soltar = true;
+                GameObject.Find("Grande").GetComponent<Movimiento_Grande>().Coger();
+            }  
             alma.transform.position = grandeDañado.transform.position;
             grandeDañado.SetActive(false);
             alma.SetActive(true);
