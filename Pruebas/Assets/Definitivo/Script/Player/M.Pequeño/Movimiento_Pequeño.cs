@@ -124,7 +124,11 @@ public class Movimiento_Pequeño : MonoBehaviour
 
        
 
+<<<<<<< HEAD
             LAxis = Input.GetAxis("Lateral");
+=======
+        LAxis = Input.GetAxis("Lateral");
+>>>>>>> origin/master
 		if (LAxis < 0 || LAxis > 0){
             transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
 		if(!sonido.isPlaying){

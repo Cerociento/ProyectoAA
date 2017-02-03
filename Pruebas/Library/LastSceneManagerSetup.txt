@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Definitivo/Escenas/Nivel 4.unity
+=======
+- path: Assets/Definitivo/Escenas/Menu Inicio.unity
+>>>>>>> origin/master
   isLoaded: 1
   isActive: 1
