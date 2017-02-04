@@ -9,14 +9,8 @@ public class Movimiento_Pequeño : MonoBehaviour
     public static float ZAxis = 0f;
     float YAxis;
     float LAxis;
-    [SerializeField]
-    Transform HorizontalCamara;
-    [SerializeField]
-    Transform CamCamera;
-    float velocidadMovi;
 
     //Rotacion Camara
-    float AxisCam = 0;
     [SerializeField]
     float velRotacion;
 
@@ -48,65 +42,30 @@ public class Movimiento_Pequeño : MonoBehaviour
     void Start()
     {
         _anim = anim;
-        velocidadMovi = velocidad;
     }
 
      void Update()
     {
-        /*if (GetComponent<Rigidbody>().velocity.y < -1)
-        {
-            anim.SetBool("onGround", false);
-        }
-        else
-        {
-            anim.SetBool("onGround", true);
-        }*/
-
-        #region MovimientoNormal
         YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
 
        if (ZAxis > 0 && Input.GetKey(KeyCode.W)|| ZAxis < 0 && Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-            // transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
-            anim.SetFloat("groundSpeed",ZAxis);
+            anim.SetFloat("Andar", ZAxis);
+
             if (!sonido.isPlaying){
 				sonido.Play();}
         }
         else
         {
-            anim.SetFloat("groundSpeed", 0);
+            anim.SetFloat("Andar", 0);
         }
-       
-        /* else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
-         {
-         transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
-         //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-         transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-         if(!sonido.isPlaying){
-             sonido.Play();}    
-     }*/
 
         if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
             {
-            //transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
-            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-            //transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
-            transform.Rotate(Vector3.up*velRotacion*YAxis);
-			//if(!sonido.isPlaying){
-			//	sonido.Play();
-			//}    
+            transform.Rotate(Vector3.up*velRotacion*YAxis);   
 		}
-           /* else if (YAxis > 0 && Input.GetKey(KeyCode.D))
-            {
-            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
-            //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-            transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
-			if(!sonido.isPlaying){
-				sonido.Play();}    
-		}*/
 
 		if(YAxis==0 && ZAxis==0 && LAxis==0){
 			sonido.Stop();
@@ -114,21 +73,8 @@ public class Movimiento_Pequeño : MonoBehaviour
 		if(salto!=0){
 			sonido.Stop();
 		}
-        #endregion
-        /* AxisCam = Input.GetAxis("Rotacion");
 
-         if (AxisCam < 0 ||  AxisCam > 0)
-         {
-             HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam, velRotacion);
-         }*/
-
-       
-
-<<<<<<< HEAD
             LAxis = Input.GetAxis("Lateral");
-=======
-        LAxis = Input.GetAxis("Lateral");
->>>>>>> origin/master
 		if (LAxis < 0 || LAxis > 0){
             transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
 		if(!sonido.isPlaying){
@@ -142,7 +88,8 @@ public class Movimiento_Pequeño : MonoBehaviour
                 GetComponent<Rigidbody>().AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
                 salto++;
 				sonidoBis.PlayOneShot(sonidoSalto);
-                anim.SetTrigger("jump");
+                anim.SetTrigger("Salto");
+                anim.SetBool("Suelo", false);
             }
         }
 
@@ -155,6 +102,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     void OnCollisionEnter()
     {
         salto = 0;
+        anim.SetBool("Suelo", true);
     }
 
     void OnTriggerEnter(Collider other)
@@ -163,7 +111,6 @@ public class Movimiento_Pequeño : MonoBehaviour
         {
             checkpointPequeño = other.transform.position;
             StartCoroutine("Guarda");
-            print(other.transform.position + "    "+ transform.position); 
         }
 
         if(other.CompareTag("Plataforma Movil"))

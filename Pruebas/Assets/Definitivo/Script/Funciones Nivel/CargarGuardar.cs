@@ -58,9 +58,6 @@ public class CargarGuardar : MonoBehaviour
         posicionGrandeZ = Movimiento_Grande.checkpointGrande.z;
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
-        print("Cargado datos minimos//  " +
-               TTotal + " " +
-               TNivel);
     }
 
     void Update()
@@ -129,7 +126,6 @@ public class CargarGuardar : MonoBehaviour
         datos.tiempoNivel = tiempoNivel;
         save.Serialize(file, datos);
         file.Close();
-        print("Guardado nivel" +nivel);
         imagenGuardado.SetActive(true);
         StartCoroutine("Imagen");
     } 

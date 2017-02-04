@@ -19,18 +19,19 @@ public class BotonParaPuertas : MonoBehaviour {
     void Update()
     {
 
-        for (int i = 0; i < abrePuerta.Length; i++)
+       // for (int i = 0; i < abrePuerta.Length; i++)
             if (activar)
             {
                 if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Mouse0))
                 {
-                    Movimiento_Pequeño._anim.SetTrigger("push");
-                    abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
+                    Movimiento_Pequeño._anim.SetTrigger("Pulsado");
+                    StartCoroutine("Pulsado");
+                  /*  abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
                     abrePuerta[i].GetComponent<BoxCollider>().isTrigger = true;
                     transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
                     transform.GetChild(0).GetComponent<MeshFilter>().mesh = botonVerde;
                     transform.GetComponent<BoxCollider>().enabled = false;
-					sonido.PlayOneShot(sonidoBoton);
+					sonido.PlayOneShot(sonidoBoton);*/
                 }
                 if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.Mouse0))
                 {                   
@@ -51,6 +52,20 @@ public class BotonParaPuertas : MonoBehaviour {
         if (hit.transform.CompareTag("Pequeño"))
         {
             activar = false;
+        }
+    }
+
+    IEnumerator Pulsado()
+    {
+        yield return new WaitForSeconds(0.6f);
+        for (int i = 0; i < abrePuerta.Length; i++)
+        {
+            abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
+            abrePuerta[i].GetComponent<BoxCollider>().isTrigger = true;
+            transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
+            transform.GetChild(0).GetComponent<MeshFilter>().mesh = botonVerde;
+            transform.GetComponent<BoxCollider>().enabled = false;
+            sonido.PlayOneShot(sonidoBoton);
         }
     }
 }
