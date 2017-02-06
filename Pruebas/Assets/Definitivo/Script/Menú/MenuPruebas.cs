@@ -41,14 +41,12 @@ public class MenuPruebas : MonoBehaviour {
     {
         if (File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
-            //NuevojuegoBoton.transform.localPosition = Vector3.zero;
             ContinuarBoton.GetComponent<Button>().interactable = true;
             ContinuarBoton.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "Tiempo jugado " + (int)Timer.tiempoTotal / 60 + " m " + (int)Timer.tiempoTotal % 60.0f + " s";
             ContinuarBoton.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "Nivel " + CargarGuardar.NNivel;
         }
         else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
-            //NuevojuegoBoton.transform.position = ContinuarBoton.transform.position;
             ContinuarBoton.GetComponent<Button>().interactable = false;
         }
     }
@@ -66,16 +64,17 @@ public class MenuPruebas : MonoBehaviour {
 		sonido.PlayOneShot(aceptar);        
 	}
 
-    public void MenuPrincipal (){
+    public void MenuPrincipal ()
+    {
 
         SceneManager.LoadScene(0);
         }
 
 	public void NuevoJuego (){
+        GameObject.Find("Manager").GetComponent<CargarGuardar>().Borrar();
         Timer.tiempo=0;
         Timer.tiempoTotal = 0;
 		SceneManager.LoadScene(1);
-        GameObject.Find("Manager").GetComponent<CargarGuardar>().Borrar();
     }
 
 	public void Salir(){

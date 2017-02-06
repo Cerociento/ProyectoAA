@@ -13,23 +13,22 @@ public class Manager : MonoBehaviour
     GameObject grandeDañado;
     [SerializeField]
     GameObject pequeñoDañado;
-
     [SerializeField]
     GameObject alma;
 
-
     void Awake()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            PosicionInicio();
+        }
+
         DontDestroyOnLoad(this.transform);
         if (FindObjectsOfType(GetType()).Length > 1)
         {
             gameObject.SetActive(false);
             Destroy(gameObject);
         }
-
-        //grandeDañado = GameObject.Find("Grande");
-        //pequeñoDañado = GameObject.Find("Pequeño");
-
     }
 
     void FixedUpdate()
@@ -39,25 +38,26 @@ public class Manager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
             {
                 SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
-               // GameObject.Find("ActivarInicio").SetActive(false);
                 nivelMas = false;
             }
         }
     }
 
     void Update()
-    {
+    {       
         if (muertoGrande)
         {
             if (Movimiento_Grande.soltar == false)
             { 
                 Movimiento_Grande.soltar = true;
-                GameObject.Find("Grande").GetComponent<Movimiento_Grande>().Coger();
+                GameObject.Find("Grande").GetComponent<Movimiento_Grande>().Soltar();
             }  
+
             alma.transform.position = grandeDañado.transform.position;
             grandeDañado.SetActive(false);
             alma.SetActive(true);
             grandeDañado.transform.parent.position = Vector3.MoveTowards(grandeDañado.transform.parent.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
+            Caja.caja = null;
             grandeDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
             grandeDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
         }
@@ -71,5 +71,12 @@ public class Manager : MonoBehaviour
             pequeñoDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
             pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
         }
+    }
+
+    public void PosicionInicio()
+    {
+        GameObject.FindWithTag("Pequeño").transform.position = new Vector3(0.19f, 0.6f, 1.94f);
+        GameObject.FindWithTag("Grande").transform.position = new Vector3(0.2f, 0.6f, -1.88f);
+        transform.position = new Vector3(0.61f, 3.16f, 1.23f);
     }
 }

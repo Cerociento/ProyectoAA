@@ -1,5 +1,17 @@
 **# ProyectoAA**
 
+**~Cerociento 04/02/2017~**
+
+- El cartel de "Esto borarrá..." no aparece si no hay partida.
+- Si no hay partida "Continuar" es "Interactable"
+- Fondo blanco en extras.
+- Bajados lasers de nivel 2.
+- Asignados valores del alma.
+- Modificado quad negro conflictivo de nivel 4.
+- Modificada zona de escaleras nivel 3.
+- Nivel 4 casi modificado por completo.
+---------------------------------------------------------------------
+
 **~Cerociento 01/02/2017~**
 
 * Mejorado sistema de particulas

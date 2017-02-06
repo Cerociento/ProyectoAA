@@ -28,23 +28,28 @@ public class Final : MonoBehaviour
     {
         if (subePequeño && subeGrande)
         {
-            barreraFinalPequeño.SetActive(true);
-            barreraFinalGrande.SetActive(true);
-            sueloPequeño.transform.Translate(Vector3.up * Time.deltaTime);
-            sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
-            MenuFinNivel.prueba = true;
-            Timer.tiempoFunciona1 = false;
-            finNivel = true;
-
             if (finDelJuego)
+            {
+                Timer.tiempoFunciona1 = false;
                 SceneManager.LoadScene(0);
+                finNivel = true;
+            }
+            else
+            { 
+                 barreraFinalPequeño.SetActive(true);
+                 barreraFinalGrande.SetActive(true);
+                 sueloPequeño.transform.Translate(Vector3.up * Time.deltaTime);
+                 sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
+                 MenuFinNivel.prueba = true;
+                 Timer.tiempoFunciona1 = false;
+                 finNivel = true;
+            }
         }
-            
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (!finNivel)
+        if (!finNivel && !finDelJuego)
         {
             if (other.CompareTag("Pequeño"))
             {
@@ -65,11 +70,25 @@ public class Final : MonoBehaviour
                 }
             }
         }
+        else
+        { 
+        if (other.CompareTag("Pequeño"))
+            if (!subePequeño)
+            {
+                subePequeño = true;
+            }
+
+         if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
+            if (!subeGrande)
+            {
+                subeGrande = true;
+            }
+         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (!finNivel)
+        if (!finNivel && !finDelJuego)
         {
             if (other.CompareTag("Pequeño"))
             {

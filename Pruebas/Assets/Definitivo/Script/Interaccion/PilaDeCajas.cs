@@ -6,6 +6,7 @@ public class PilaDeCajas : MonoBehaviour
     [SerializeField]
     GameObject[] Caja;
     int activador;
+    [SerializeField]
     bool coger = false;
 	[SerializeField]
 	AudioSource sonido;
@@ -75,10 +76,13 @@ public class PilaDeCajas : MonoBehaviour
 
     void OnTriggerStay(Collider other)
   {
-    if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse0)|| other.CompareTag("Escondido") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Escondido") && Input.GetKeyUp(KeyCode.Mouse0))
-    {
-            coger = true;
-            texto.SetActive(false);
+        if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse0) || other.CompareTag("Escondido") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Escondido") && Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            if (other.transform.GetComponent<Movimiento_Grande>().enabled)
+            {
+                coger = true;
+                texto.SetActive(false);
+            }
     }
  }   
 }	

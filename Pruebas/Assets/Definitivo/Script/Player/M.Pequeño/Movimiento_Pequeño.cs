@@ -14,10 +14,6 @@ public class Movimiento_Pequeño : MonoBehaviour
     [SerializeField]
     float velRotacion;
 
-    [Range(-5f, 5f)]
-    [SerializeField]
-    float alturaCamara;
-
     //Salto
     [SerializeField]
     float fSalto;
@@ -44,18 +40,22 @@ public class Movimiento_Pequeño : MonoBehaviour
         _anim = anim;
     }
 
-     void Update()
+    void Update()
     {
-        YAxis = Input.GetAxis("Horizontal");
-            ZAxis = Input.GetAxis("Vertical");
+        float num = GetComponent<Rigidbody>().velocity.y * Time.deltaTime;
+        anim.SetFloat("EnAire", num);
 
-       if (ZAxis > 0 && Input.GetKey(KeyCode.W)|| ZAxis < 0 && Input.GetKey(KeyCode.S))
+        YAxis = Input.GetAxis("Horizontal");
+        ZAxis = Input.GetAxis("Vertical");
+
+        if (ZAxis > 0 && Input.GetKey(KeyCode.W) || ZAxis < 0 && Input.GetKey(KeyCode.S))
         {
             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
             anim.SetFloat("Andar", ZAxis);
-
-            if (!sonido.isPlaying){
-				sonido.Play();}
+            if (!sonido.isPlaying)
+            {
+                sonido.Play();
+            }
         }
         else
         {
@@ -63,41 +63,49 @@ public class Movimiento_Pequeño : MonoBehaviour
         }
 
         if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
-            {
-            transform.Rotate(Vector3.up*velRotacion*YAxis);   
-		}
-
-		if(YAxis==0 && ZAxis==0 && LAxis==0){
-			sonido.Stop();
-		}
-		if(salto!=0){
-			sonido.Stop();
-		}
-
-            LAxis = Input.GetAxis("Lateral");
-		if (LAxis < 0 || LAxis > 0){
-            transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
-		if(!sonido.isPlaying){
-			sonido.Play();}
-	}
-
-        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (salto == 0)
-            {
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
-                salto++;
-				sonidoBis.PlayOneShot(sonidoSalto);
-                anim.SetTrigger("Salto");
-                anim.SetBool("Suelo", false);
-            }
+            transform.Rotate(Vector3.up * velRotacion * YAxis);
         }
 
-		if(Input.GetKeyDown(KeyCode.R)){
-			transform.position = checkpointPequeño;
-			Pausa.vecesVisto++;
-		}
-    }
+        if (YAxis == 0 && ZAxis == 0 && LAxis == 0)
+        {
+            sonido.Stop();
+        }
+
+        if (salto != 0)
+        {
+            sonido.Stop();
+        }
+
+        LAxis = Input.GetAxis("Lateral");
+        if (LAxis < 0 || LAxis > 0)
+        {
+            transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
+            if (!sonido.isPlaying)
+            {
+                sonido.Play();
+            }
+        }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (salto == 0)
+                {
+                anim.SetTrigger("Salto");
+              //  anim.SetFloat("EnAire", num);
+                GetComponent<Rigidbody>().AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
+                salto++;
+                sonidoBis.PlayOneShot(sonidoSalto);
+                anim.SetBool("Suelo", false);
+                    
+                }
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                transform.position = checkpointPequeño;
+                Pausa.vecesVisto++;
+            }
+        }
 
     void OnCollisionEnter()
     {

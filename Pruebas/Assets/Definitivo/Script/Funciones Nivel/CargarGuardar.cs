@@ -106,7 +106,6 @@ public class CargarGuardar : MonoBehaviour
         }
            
 #endif 
-
     }
 
     public void Guardar()
@@ -148,7 +147,6 @@ public class CargarGuardar : MonoBehaviour
             nivel = datos.nivel;
             tiempoNivel = datos.tiempoNivel;
             tiempoTotal = datos.tiempoTotal;
-            print("Cargado");
 
             SceneManager.LoadScene(nivel);
             desactivar.SetActive(true);
@@ -170,7 +168,7 @@ public class CargarGuardar : MonoBehaviour
             File.Delete(Application.persistentDataPath + "/monosave.af");
             TTotal = 0;
             TNivel = 0;
-            print("Borrado");
+            Timer.tiempoFunciona1 = true;
         }
     }
 

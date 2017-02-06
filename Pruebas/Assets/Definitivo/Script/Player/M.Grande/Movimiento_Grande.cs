@@ -11,24 +11,10 @@ public class Movimiento_Grande : MonoBehaviour
     float ZAxis = 0f;
     float YAxis;
     float LAxis;
-    [SerializeField]
-    Transform HorizontalCamara;
-    [SerializeField]
-    Transform CamCamera;
   
-    //float rango = 1;
-
-    //Rotacion Personaje
-    //float maxAnguloHorizontal = 180.0f;
-    //Quaternion rotacionBase;
-    //Quaternion rotacionDeseada;
-
-
     //Rotacion Camara
     [SerializeField]
-    float velRotacion;
-   // float AxisCam = 0;
-   
+    float velRotacion;   
 
     //Cajas 
     [SerializeField]
@@ -36,7 +22,6 @@ public class Movimiento_Grande : MonoBehaviour
     [SerializeField]
     public static bool soltar = false;
     bool escondite=false;
-   // public static Vector3 posicion;
     Color colorAlfa;
     [SerializeField]
     bool asignarCaja;
@@ -51,11 +36,7 @@ public class Movimiento_Grande : MonoBehaviour
     void Start()
     {
         colorAlfa = transform.GetChild(0).GetComponent<Renderer>().material.color;
-       // posicion = new Vector3(transform.position.x, transform.position.y, transform.position.z+5);
-       // CamCamera.LookAt(posicion);
         soltar = false;
-       // rotacionBase = transform.rotation;
-      //  rotacionDeseada = Quaternion.identity;
         caja = null;
     }
 
@@ -63,7 +44,7 @@ public class Movimiento_Grande : MonoBehaviour
     {
         if(asignarCaja)
            caja = Caja.caja;
-        
+        #region MOVIMIENTO        
         if (!Laser.paraMover)
         {
             YAxis = Input.GetAxis("Horizontal");
@@ -72,55 +53,22 @@ public class Movimiento_Grande : MonoBehaviour
             if (ZAxis > 0 && Input.GetKey(KeyCode.W) || ZAxis < 0 && Input.GetKey(KeyCode.S))
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-                //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-                // transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y, 0f);
                 if (!sonido.isPlaying)
                 {
                     sonido.Play();
                 }
             }
-            /* else if (ZAxis < 0 && Input.GetKey(KeyCode.S))
-             {
-             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -ZAxis);
-             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-             transform.eulerAngles = new Vector3(0, CamCamera.transform.eulerAngles.y - 180, 0f);
-             if(!sonido.isPlaying){
-                 sonido.Play();}    
-         }*/
 
             if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
             {
-                //transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * -YAxis);
-                //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-                //transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y - 180, 0f);
                 transform.Rotate(Vector3.up * velRotacion * YAxis);
-                //if (!sonido.isPlaying)
-                //{
-                //    sonido.Play();
-                //}
             }
-            /* else if (YAxis > 0 && Input.GetKey(KeyCode.D))
-             {
-             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * YAxis);
-             //GetComponent<Rigidbody>().AddRelativeForce(0, 0, velocidad, ForceMode.VelocityChange);
-             transform.eulerAngles = new Vector3(0, HorizontalCamara.transform.eulerAngles.y, 0f);
-             if(!sonido.isPlaying){
-                 sonido.Play();}    
-         }*/
 
 			if (YAxis == 0 && ZAxis == 0 && LAxis==0)
             {
                 sonido.Stop();
             }
         }
-
-        /*  AxisCam = Input.GetAxis("Rotacion");
-          if (AxisCam < 0 || AxisCam > 0)
-          {
-              HorizontalCamara.RotateAround(transform.position, Vector3.up * AxisCam,velRotacion );
-             // HorizontalCamara.localPosition = Vector3.zero;
-          }*/
-
 
         LAxis = Input.GetAxis("Lateral");
 		if (LAxis < 0 || LAxis > 0){
@@ -129,14 +77,17 @@ public class Movimiento_Grande : MonoBehaviour
 				sonido.Play();
 			}
 		}
+#endregion
 
         if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyUp(KeyCode.Mouse0))
         {
             if (caja)
             {     
                 soltar = !soltar;
-                Coger();         
-                           
+                if (!soltar)
+                    Coger();
+                else
+                    Soltar();      
             }
             else
             {
@@ -151,11 +102,11 @@ public class Movimiento_Grande : MonoBehaviour
                 asignarCaja = false;
                 if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
                 {
-                    
                     caja = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).gameObject;
                     gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
                 }
-        } else
+        }
+            else
         {
             Debug.Log("No hijo");
         }
@@ -168,6 +119,7 @@ public class Movimiento_Grande : MonoBehaviour
                 escondite = !escondite;
                 if (escondite)
                 {
+                    Soltar();
                     caja.GetComponent<Caja>().Choque();
                     caja = null;
                     asignarCaja = true;
@@ -184,11 +136,11 @@ public class Movimiento_Grande : MonoBehaviour
             }
         }
 
-		if(Input.GetKeyDown(KeyCode.R)){
+		if(Input.GetKeyDown(KeyCode.R))
+        {
 			transform.position = checkpointGrande;
 			Pausa.vecesVisto++;
 		}
-			
 		}
 
     void Escondido()
@@ -200,18 +152,6 @@ public class Movimiento_Grande : MonoBehaviour
 
     public void Coger()
     {
-        if (soltar)
-        {
-            asignarCaja = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
-
-        }
-        else
-        {
             asignarCaja = false;
             caja.transform.position = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).position;
             caja.transform.parent = gameObject.transform.GetChild(0).GetChild(2).GetChild(2);
@@ -219,9 +159,19 @@ public class Movimiento_Grande : MonoBehaviour
             caja.GetComponent<SphereCollider>().enabled = false;
             caja.GetComponent<Rigidbody>().useGravity = false;
             caja.GetComponent<Rigidbody>().isKinematic = true;
+    }
 
+    public void Soltar()
+    {
+        if (caja)
+        {
+            asignarCaja = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
         }
-
     }
 
     IEnumerator Esconder(int time)
@@ -231,7 +181,6 @@ public class Movimiento_Grande : MonoBehaviour
         gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = colorAlfa;
         gameObject.tag = "Grande";
         gameObject.layer = 11;
-
     }
 
     void OnTriggerEnter(Collider other)
@@ -242,7 +191,6 @@ public class Movimiento_Grande : MonoBehaviour
             StartCoroutine("Guarda");
         }
     }
-		
 
     IEnumerator Guarda()
     {

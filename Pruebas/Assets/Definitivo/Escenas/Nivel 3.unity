@@ -1273,6 +1273,10 @@ Prefab:
       propertyPath: nivelMas
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011642850640, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 16.63
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
   m_IsPrefabParent: 0
@@ -7936,7 +7940,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -12.84
+      value: -13.576
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7960,7 +7964,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalScale.x
@@ -44813,6 +44817,7 @@ MonoBehaviour:
   Caja:
   - {fileID: 1000014061532084, guid: aaa896791f267294aaa231c7befbab72, type: 2}
   - {fileID: 1000012352033960, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
+  coger: 0
   sonido: {fileID: 1041448464}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
   texto: {fileID: 0}
@@ -56201,6 +56206,7 @@ MonoBehaviour:
   Caja:
   - {fileID: 1000014061532084, guid: aaa896791f267294aaa231c7befbab72, type: 2}
   - {fileID: 1000012352033960, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
+  coger: 0
   sonido: {fileID: 1262527398}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
   texto: {fileID: 0}
@@ -71621,7 +71627,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 47.310005
+      value: 50.84
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.y
@@ -71629,7 +71635,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 18.550003
+      value: 23.95
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalRotation.x
@@ -71653,7 +71659,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalScale.z
-      value: 6.6598206
+      value: 1.8237534
       objectReference: {fileID: 0}
     - target: {fileID: 1000014249280304, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_Name
@@ -71661,7 +71667,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalScale.x
-      value: 4.2234697
+      value: 4.851002
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalScale.y
@@ -79920,6 +79926,7 @@ MonoBehaviour:
   Caja:
   - {fileID: 1000012352033960, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
   - {fileID: 1000012352033960, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
+  coger: 0
   sonido: {fileID: 1764998824}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
   texto: {fileID: 0}
