@@ -32,7 +32,6 @@ public class IA_No_Humana : MonoBehaviour {
         {
             if(Physics.Linecast(transform.GetChild(0).position,target.position,out ray,ve))
             {
-                Debug.Log(gameObject.name);
                 Debug.DrawLine(transform.position, target.position, Color.red,10);   
                 if (ray.transform.CompareTag("Grande"))
                 {

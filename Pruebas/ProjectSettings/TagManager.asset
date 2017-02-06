@@ -20,6 +20,7 @@ TagManager:
   - Alma
   - DetectorMonos
   - Enemigo
+  - Pila de cajas
   layers:
   - Default
   - TransparentFX

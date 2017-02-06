@@ -61,13 +61,11 @@ public class TimedTrap : MonoBehaviour {
 		this._animator = this.GetComponent<Animator> ();
 
 		if (this._animator == null) {
-			Debug.LogError ("No Animator component found in " + this.name);
 			this.enabled = false;
 			return;
 		}
 
 		if (this.deathTrigger == null) {
-			Debug.LogError ("No Trigger Collider component found in " + this.name);
 			this.enabled = false;
 			return;
 		}
@@ -144,7 +142,6 @@ public class TimedTrap : MonoBehaviour {
 	/// </summary>
 	private void ForceToggle(){
 		if (!this.alwaysActive) {
-			Debug.LogWarning ("Can't force toggle if this instance is playing Coroutines.");
 			return;
 		}
 

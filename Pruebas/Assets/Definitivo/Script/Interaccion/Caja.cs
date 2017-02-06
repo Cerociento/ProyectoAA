@@ -14,7 +14,7 @@ public class Caja : MonoBehaviour
     {
         if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
-            caja = gameObject;                 
+            caja = gameObject;
             other.GetComponent<Rigidbody>().Sleep();
         }
     }
@@ -24,7 +24,7 @@ public class Caja : MonoBehaviour
         if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
             caja = null;
-        }
+        }         
     }
 
     void OnCollisionStay()

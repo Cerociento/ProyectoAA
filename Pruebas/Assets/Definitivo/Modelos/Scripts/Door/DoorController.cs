@@ -21,13 +21,11 @@ public class DoorController : MonoBehaviour {
 		this._animators = this.GetComponentsInChildren<Animator> ();
 
 		if (this._animators.Length != 2) {
-			Debug.LogError ("No Animator component found in " + this.name + ". 2 Animators are needed for this script to work.");
 			this.enabled = false;
 			return;
 		}
 
 		if (this.doorColliders.Length != 2) {
-			Debug.LogError ("No Collider was found in " + this.name);
 			this.enabled = false;
 			return;
 		}

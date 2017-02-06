@@ -52,7 +52,6 @@ public class FieldOfViewRetocado : MonoBehaviour {
 
                 if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)&&timer>=5f) {
 					visibleTargets.Add (target);
-                        Debug.Log("Visto");
                          if (target.CompareTag("Grande")){
                                Pausa.vecesVisto++;
                                Manager.muertoGrande = true;

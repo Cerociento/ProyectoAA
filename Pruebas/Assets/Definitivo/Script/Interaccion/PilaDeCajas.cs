@@ -45,7 +45,6 @@ public class PilaDeCajas : MonoBehaviour
             {
                 Caja = new GameObject[0];
                 Destroy(this.gameObject, 2);
-                texto.SetActive(false);
             }
             }
 
@@ -62,14 +61,15 @@ public class PilaDeCajas : MonoBehaviour
                    managerPool.getBox();
                 }
                 else
-                { 
-                    Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
-                    activador++;
+                {
+                   Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);  
+                   activador++;
                 }
             }
 
             coger = false;
-        }else if(GameObject.FindGameObjectWithTag("Caja Escondite") == null)
+        }
+        else if(GameObject.FindGameObjectWithTag("Caja Escondite") == null)
             GetComponent<SphereCollider>().enabled = true;
     }   
     
@@ -81,8 +81,9 @@ public class PilaDeCajas : MonoBehaviour
             if (other.transform.GetComponent<Movimiento_Grande>().enabled)
             {
                 coger = true;
-                texto.SetActive(false);
+                if(instrucciones)
+                   texto.SetActive(false);
             }
-    }
+        }
  }   
 }	

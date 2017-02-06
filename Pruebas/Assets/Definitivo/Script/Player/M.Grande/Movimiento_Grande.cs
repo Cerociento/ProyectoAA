@@ -44,6 +44,7 @@ public class Movimiento_Grande : MonoBehaviour
     {
         if(asignarCaja)
            caja = Caja.caja;
+
         #region MOVIMIENTO        
         if (!Laser.paraMover)
         {
@@ -77,8 +78,8 @@ public class Movimiento_Grande : MonoBehaviour
 				sonido.Play();
 			}
 		}
-#endregion
-
+        #endregion
+        
         if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyUp(KeyCode.Mouse0))
         {
             if (caja)
@@ -87,61 +88,47 @@ public class Movimiento_Grande : MonoBehaviour
                 if (!soltar)
                     Coger();
                 else
-                    Soltar();      
+                    Soltar();   
             }
-            else
+       
+           if(asignarCaja==false)
+           if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
             {
-                Debug.Log("Ninguna caja cerca");
-            }
-        }
-
-        if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
-            {
-                asignarCaja = false;
-                if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
-                {
-                    caja = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).gameObject;
-                    gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
-                }
-        }
-            else
-        {
-            Debug.Log("No hijo");
-        }
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (caja.CompareTag("Caja Escondite"))
-            {
-                escondite = !escondite;
-                if (escondite)
-                {
-                    Soltar();
-                    caja.GetComponent<Caja>().Choque();
-                    caja = null;
-                    asignarCaja = true;
-                    gameObject.layer = 9;
-                    gameObject.tag = "Escondido";
-                    escondite = false;
-                    soltar = true;
-                    Escondido();
+                caja = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).gameObject;
+                //asignarCaja = false;
+                    if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
+                    {
+                        gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
+                    }
                 }
             }
-            else if (!caja.CompareTag("Caja Escondite"))
+
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                Debug.Log("Ninguna caja cerca");
+                if (caja.CompareTag("Caja Escondite"))
+                {
+                    escondite = !escondite;
+                    if (escondite)
+                    {
+                        Soltar();
+                        caja.GetComponent<Caja>().Choque();
+                        caja = null;
+                        asignarCaja = true;
+                        gameObject.layer = 9;
+                        gameObject.tag = "Escondido";
+                        escondite = false;
+                        soltar = true;
+                        Escondido();
+                    }
+                }
             }
-        }
 
 		if(Input.GetKeyDown(KeyCode.R))
         {
 			transform.position = checkpointGrande;
 			Pausa.vecesVisto++;
 		}
-		}
+	}
 
     void Escondido()
     {
@@ -190,6 +177,11 @@ public class Movimiento_Grande : MonoBehaviour
             checkpointGrande = other.transform.position;
             StartCoroutine("Guarda");
         }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        
     }
 
     IEnumerator Guarda()

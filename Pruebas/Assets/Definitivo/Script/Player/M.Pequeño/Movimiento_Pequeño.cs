@@ -48,7 +48,7 @@ public class Movimiento_Pequeño : MonoBehaviour
         YAxis = Input.GetAxis("Horizontal");
         ZAxis = Input.GetAxis("Vertical");
 
-        if (ZAxis > 0 && Input.GetKey(KeyCode.W) || ZAxis < 0 && Input.GetKey(KeyCode.S))
+        if (ZAxis > 0 || ZAxis < 0)
         {
             transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
             anim.SetFloat("Andar", ZAxis);
@@ -62,7 +62,7 @@ public class Movimiento_Pequeño : MonoBehaviour
             anim.SetFloat("Andar", 0);
         }
 
-        if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
+        if (YAxis < 0 || YAxis > 0)
         {
             transform.Rotate(Vector3.up * velRotacion * YAxis);
         }

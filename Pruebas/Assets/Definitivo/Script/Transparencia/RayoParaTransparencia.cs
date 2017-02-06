@@ -7,7 +7,8 @@ public class RayoParaTransparencia : MonoBehaviour {
     {
         if (other.CompareTag("Background"))
         {
-            other.GetComponent<ParedPersiana>().persiana = true;          
+            if (other.GetComponent<ParedPersiana>())
+                other.GetComponent<ParedPersiana>().persiana = true;          
         }
     }
 
@@ -15,7 +16,8 @@ public class RayoParaTransparencia : MonoBehaviour {
     {
         if (other.CompareTag("Background"))
         {
-            other.GetComponent<ParedPersiana>().persiana = false;
+            if (other.GetComponent<ParedPersiana>())
+                other.GetComponent<ParedPersiana>().persiana = false;
         }
     }
 }

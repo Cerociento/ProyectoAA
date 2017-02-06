@@ -9,13 +9,7 @@ public class Transparente : MonoBehaviour
     bool puertaDetectada;
     [SerializeField]
     float alfa;
-    void Start()
-    {
-        //GameObject cam = GameObject.Find("Cam");
-       // paredes = cam.GetComponent<RayoParaTransparencia>();
-    }
 
-    // Update is called once per frame
     void Update()
     {
         for (int m = 0; m < GetComponent<Renderer>().materials.Length; m++)
@@ -51,7 +45,6 @@ public class Transparente : MonoBehaviour
         if (other.CompareTag("Detector"))
         {
             puertaDetectada = true;
-            Debug.Log("Una Puerta");
         }
     }
 
@@ -60,7 +53,6 @@ public class Transparente : MonoBehaviour
         if (other.CompareTag("Detector"))
         {
             puertaDetectada = false;
-            Debug.Log("saliendo de Puerta");
         }
     }
 

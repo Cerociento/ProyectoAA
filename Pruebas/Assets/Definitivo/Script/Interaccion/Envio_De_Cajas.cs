@@ -52,7 +52,6 @@ public class Envio_De_Cajas : MonoBehaviour
         {
             if (destinoChicas < destinoCajasChicas.Length)
             {
-                Debug.Log("Entra Chica");
                 hit.transform.position = destinoCajasChicas[destinoChicas].position;
                 destinoChicas++;
                 indiceChicas--;
@@ -63,7 +62,6 @@ public class Envio_De_Cajas : MonoBehaviour
 
         if (hit.transform.CompareTag("Caja Grande"))
         {
-            Debug.Log("Entra Grande");
 
             if (destinoGrandes < destinoCajasGrandes.Length)
             {

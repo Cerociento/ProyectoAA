@@ -33,7 +33,8 @@ public class MenuPruebas : MonoBehaviour {
     }
     void Start()
     {
-        ContinuarBoton.transform.GetChild(0).gameObject.SetActive(false);
+        if (ContinuarBoton)
+            ContinuarBoton.transform.GetChild(0).gameObject.SetActive(false);
     }
 
 
@@ -48,6 +49,8 @@ public class MenuPruebas : MonoBehaviour {
         else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
             ContinuarBoton.GetComponent<Button>().interactable = false;
+            ContinuarBoton.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = null;
+            ContinuarBoton.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "NO EXISTE PARTIDA GUARDADA ";
         }
     }
 
@@ -79,7 +82,6 @@ public class MenuPruebas : MonoBehaviour {
 
 	public void Salir(){
 		Application.Quit();
-        Debug.Log("Ha salido del juego");
 		sonido.PlayOneShot(aceptar);
 	}
 

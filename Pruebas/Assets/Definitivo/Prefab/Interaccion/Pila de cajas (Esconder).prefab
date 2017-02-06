@@ -437,7 +437,7 @@ GameObject:
   - 82: {fileID: 82000012921739746}
   m_Layer: 0
   m_Name: Pila de cajas (Esconder)
-  m_TagString: Untagged
+  m_TagString: Pila de cajas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2000,6 +2000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Caja:
   - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  coger: 0
   sonido: {fileID: 82000012921739746}
   sonidoCaja: {fileID: 8300000, guid: 40757f510c5c51843b3fc41d8092f4e9, type: 3}
   texto: {fileID: 0}
