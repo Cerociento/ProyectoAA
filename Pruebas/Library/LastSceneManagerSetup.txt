@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Definitivo/Escenas/Nivel 1.unity
-=======
-- path: Assets/Definitivo/Escenas/Nivel 4.unity
->>>>>>> origin/master
   isLoaded: 1
   isActive: 1
