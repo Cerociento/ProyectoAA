@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692594, g: 0.49678788, b: 0.575086, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692534, g: 0.4967872, b: 0.57508564, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -8370,7 +8370,11 @@ GameObject:
   - 64: {fileID: 326450302}
   - 114: {fileID: 326450301}
   - 82: {fileID: 326450303}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 10
+>>>>>>> origin/master
   m_Name: cono vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8427,15 +8431,23 @@ MeshCollider:
 --- !u!82 &326450303
 AudioSource:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_PrefabParentObject: {fileID: 82000011883157686, guid: 52be3d9cd3aa7914b8f42c558c658bf9,
     type: 2}
+=======
+  m_PrefabParentObject: {fileID: 0}
+>>>>>>> origin/master
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326450299}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+<<<<<<< HEAD
   m_PlayOnAwake: 1
+=======
+  m_PlayOnAwake: 0
+>>>>>>> origin/master
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -37357,8 +37369,14 @@ GameObject:
   - 23: {fileID: 1401294643}
   - 64: {fileID: 1401294641}
   - 114: {fileID: 1401294640}
+<<<<<<< HEAD
   - 82: {fileID: 1401294642}
   m_Layer: 8
+=======
+  - 54: {fileID: 1401294642}
+  - 82: {fileID: 1401294645}
+  m_Layer: 10
+>>>>>>> origin/master
   m_Name: cono vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37393,7 +37411,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab6da4afceb73d84ca121166369d5fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   sonido: {fileID: 1401294642}
+=======
+  sonido: {fileID: 1401294645}
+>>>>>>> origin/master
   alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
@@ -37525,6 +37547,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1401294638}
   m_Mesh: {fileID: 4300000, guid: fec0074ab8bca8641adb50e3d247d7a5, type: 3}
+--- !u!82 &1401294645
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401294638}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &1401774527
 Prefab:
   m_ObjectHideFlags: 0
@@ -49577,7 +49673,11 @@ GameObject:
   - 64: {fileID: 1921634671}
   - 114: {fileID: 1921634670}
   - 82: {fileID: 1921634672}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 10
+>>>>>>> origin/master
   m_Name: cono vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49634,8 +49734,12 @@ MeshCollider:
 --- !u!82 &1921634672
 AudioSource:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_PrefabParentObject: {fileID: 82000011883157686, guid: 52be3d9cd3aa7914b8f42c558c658bf9,
     type: 2}
+=======
+  m_PrefabParentObject: {fileID: 0}
+>>>>>>> origin/master
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1921634668}
   m_Enabled: 1
@@ -52291,7 +52395,11 @@ GameObject:
   - 64: {fileID: 2020870681}
   - 114: {fileID: 2020870680}
   - 82: {fileID: 2020870682}
+<<<<<<< HEAD
   m_Layer: 8
+=======
+  m_Layer: 10
+>>>>>>> origin/master
   m_Name: cono vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52348,15 +52456,23 @@ MeshCollider:
 --- !u!82 &2020870682
 AudioSource:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_PrefabParentObject: {fileID: 82000011883157686, guid: 52be3d9cd3aa7914b8f42c558c658bf9,
     type: 2}
+=======
+  m_PrefabParentObject: {fileID: 0}
+>>>>>>> origin/master
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2020870678}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+<<<<<<< HEAD
   m_PlayOnAwake: 1
+=======
+  m_PlayOnAwake: 0
+>>>>>>> origin/master
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
