@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692594, g: 0.49678788, b: 0.575086, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692534, g: 0.4967872, b: 0.57508564, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1449,6 +1449,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -1557,6 +1572,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -2697,6 +2727,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -3277,6 +3322,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -5023,6 +5083,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 93386449}
   m_Mesh: {fileID: 4300000, guid: ea7100b97353b6243b13685c811d7c34, type: 3}
+--- !u!82 &94740442 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 1890609984}
 --- !u!1001 &97704748
 Prefab:
   m_ObjectHideFlags: 0
@@ -5888,6 +5953,31 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 1914295909}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -6962,6 +7052,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -7235,6 +7340,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010488410390, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
     type: 2}
   m_PrefabInternal: {fileID: 160344801}
+--- !u!82 &161922463 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 603407077}
 --- !u!1001 &162238460
 Prefab:
   m_ObjectHideFlags: 0
@@ -7340,6 +7450,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -9391,6 +9516,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -11229,6 +11369,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -11421,6 +11576,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -11616,6 +11786,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -11880,6 +12065,26 @@ Prefab:
       propertyPath: ruta.Array.data[9]
       value: 
       objectReference: {fileID: 584868612}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -13773,6 +13978,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -15829,6 +16049,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000012607641176, guid: c92c21c95ab2f5145a454e2a4fefd500,
     type: 2}
   m_PrefabInternal: {fileID: 732723083}
+--- !u!82 &386301199 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 2078934574}
 --- !u!1001 &387632507
 Prefab:
   m_ObjectHideFlags: 0
@@ -16095,6 +16320,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010488410390, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
     type: 2}
   m_PrefabInternal: {fileID: 390156017}
+--- !u!82 &390259597 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 1006613270}
 --- !u!1 &392084190
 GameObject:
   m_ObjectHideFlags: 0
@@ -16687,7 +16917,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -16764,7 +16994,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 407581006}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -17204,6 +17434,26 @@ Prefab:
       propertyPath: ruta.Array.data[9]
       value: 
       objectReference: {fileID: 1847933606}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -18512,6 +18762,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -22416,6 +22681,26 @@ Prefab:
       propertyPath: m_Speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -23885,6 +24170,31 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 161922463}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -23947,6 +24257,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -24068,6 +24393,11 @@ Prefab:
       propertyPath: abrePuerta.Array.data[1]
       value: 
       objectReference: {fileID: 386268313}
+    - target: {fileID: 114000011371799572, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: sonidoBoton
+      value: 
+      objectReference: {fileID: 8300000, guid: 30cbece9c779e1c4e82a81010bd272b0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52eb6ae66098e404e80194817ea16af4, type: 2}
   m_IsPrefabParent: 0
@@ -25656,6 +25986,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -29778,6 +30123,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -31396,6 +31756,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -31563,6 +31938,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -31861,6 +32251,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -32823,6 +33228,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -34237,7 +34657,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -34314,7 +34734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 771693040}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -34430,6 +34850,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -34972,9 +35407,29 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
+--- !u!82 &784054080 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 1656063391}
 --- !u!1001 &787927497
 Prefab:
   m_ObjectHideFlags: 0
@@ -36347,6 +36802,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -36485,6 +36955,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -36964,6 +37449,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -38854,6 +39354,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -41683,6 +42198,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -41940,6 +42470,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -43197,6 +43742,31 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 390259597}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -43826,6 +44396,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -43927,6 +44512,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -44474,6 +45074,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -45463,6 +46078,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -46074,6 +46704,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -46280,6 +46925,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -46635,6 +47295,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1086058229}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1088101704 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 1593428722}
 --- !u!1001 &1090166596
 Prefab:
   m_ObjectHideFlags: 0
@@ -47259,6 +47924,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -48574,6 +49254,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -50313,6 +51008,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -52043,6 +52753,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013702511464, guid: 040aa41bcd38dc14bb9ce71f3cee8cca,
     type: 2}
   m_PrefabInternal: {fileID: 1214202593}
+--- !u!82 &1214440355 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 1742621763}
 --- !u!1 &1215166751
 GameObject:
   m_ObjectHideFlags: 0
@@ -55097,6 +55812,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -55599,7 +56329,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -55676,7 +56406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 1256817549}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -60413,6 +61143,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -61183,6 +61928,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -63259,6 +64019,11 @@ Prefab:
       propertyPath: abrePuerta.Array.data[1]
       value: 
       objectReference: {fileID: 995091161}
+    - target: {fileID: 114000011371799572, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: sonidoBoton
+      value: 
+      objectReference: {fileID: 8300000, guid: 30cbece9c779e1c4e82a81010bd272b0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52eb6ae66098e404e80194817ea16af4, type: 2}
   m_IsPrefabParent: 0
@@ -65468,6 +66233,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -65838,7 +66618,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -65915,7 +66695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 1467365640}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -68688,7 +69468,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -68765,7 +69545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 1549420971}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -69183,6 +69963,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -69870,6 +70665,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -71935,6 +72745,26 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 1088101704}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -72253,6 +73083,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -74711,6 +75556,31 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (82)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 784054080}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -77720,7 +78590,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -77797,7 +78667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 1726207429}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -78805,6 +79675,31 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 1214440355}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -78913,6 +79808,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -80533,6 +81443,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -81268,6 +82193,11 @@ Prefab:
       propertyPath: abrePuerta.Array.data[1]
       value: 
       objectReference: {fileID: 1651547092}
+    - target: {fileID: 114000011371799572, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: sonidoBoton
+      value: 
+      objectReference: {fileID: 8300000, guid: 30cbece9c779e1c4e82a81010bd272b0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52eb6ae66098e404e80194817ea16af4, type: 2}
   m_IsPrefabParent: 0
@@ -83480,6 +84410,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -84359,6 +85304,31 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 94740442}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -84518,6 +85488,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (77)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -84826,6 +85811,26 @@ Prefab:
       propertyPath: m_Speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -84957,6 +85962,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -85209,6 +86229,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -85422,6 +86457,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1913988383}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1914295909 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+    type: 2}
+  m_PrefabInternal: {fileID: 120105921}
 --- !u!1001 &1914938951
 Prefab:
   m_ObjectHideFlags: 0
@@ -88480,6 +89520,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -88997,6 +90052,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -89042,6 +90112,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -90646,6 +91731,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -91532,6 +92632,26 @@ Prefab:
       propertyPath: ruta.Array.data[9]
       value: 
       objectReference: {fileID: 1847933606}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -91577,6 +92697,31 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 386301199}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 8300000, guid: b2f3c214011e6694497205793433ddbb, type: 3}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a526dec720bc95439336eed7ac762d3, type: 3}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000010741364126, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -91646,6 +92791,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -91895,6 +93055,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -92343,6 +93518,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
@@ -92948,6 +94138,21 @@ Prefab:
       propertyPath: m_Name
       value: SpikesTrap (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
   m_IsPrefabParent: 0
@@ -93135,6 +94340,21 @@ Prefab:
     - target: {fileID: 1000012650060608, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}
       propertyPath: m_Name
       value: SpikesTrap (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: sonido
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosEntran
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011568796782, guid: 54d0d9e476c5ec242871bdd81883a094,
+        type: 2}
+      propertyPath: pinchosSalen
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54d0d9e476c5ec242871bdd81883a094, type: 2}

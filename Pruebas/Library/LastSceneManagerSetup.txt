@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Definitivo/Escenas/PruebaPC.unity
+- path: Assets/Definitivo/Escenas/Nivel 4.unity
   isLoaded: 1
   isActive: 1

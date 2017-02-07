@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692594, g: 0.49678788, b: 0.575086, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692534, g: 0.4967872, b: 0.57508564, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -7270,6 +7270,21 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: -0.37458342
       objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -13463,6 +13478,7 @@ GameObject:
   - 64: {fileID: 506810663}
   - 23: {fileID: 506810662}
   - 114: {fileID: 506810661}
+  - 82: {fileID: 506810666}
   m_Layer: 9
   m_Name: Quad
   m_TagString: Untagged
@@ -13481,8 +13497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c611f9584237c54aa7c815c755714cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonido: {fileID: 0}
-  sonidoMuerte: {fileID: 0}
+  sonido: {fileID: 506810666}
+  sonidoMuerte: {fileID: 8300000, guid: 9fc6698a89e217145ab03551efa7dd5a, type: 3}
 --- !u!23 &506810662
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13544,6 +13560,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1116994840}
   m_RootOrder: 5
+--- !u!82 &506810666
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 506810660}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &508194709
 Prefab:
   m_ObjectHideFlags: 0
@@ -22525,7 +22615,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -22602,7 +22692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonido: {fileID: 864600308}
-  alarma: {fileID: 8300000, guid: c994b589ac2afe648ada576ca62a29f9, type: 3}
+  alarma: {fileID: 8300000, guid: b065726508d23a24fae1da7515d476f0, type: 3}
   target: {fileID: 0}
   ve:
     serializedVersion: 2
@@ -35676,6 +35766,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011371799572, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: sonidoBoton
+      value: 
+      objectReference: {fileID: 8300000, guid: 30cbece9c779e1c4e82a81010bd272b0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52eb6ae66098e404e80194817ea16af4, type: 2}
   m_IsPrefabParent: 0
@@ -36446,6 +36541,21 @@ Prefab:
     - target: {fileID: 4000010010815102, guid: 2606d16dec561294dab93323abbc688a, type: 2}
       propertyPath: m_LocalRotation.w
       value: -0.37458342
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
@@ -42668,6 +42778,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011371799572, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: sonidoBoton
+      value: 
+      objectReference: {fileID: 8300000, guid: 30cbece9c779e1c4e82a81010bd272b0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52eb6ae66098e404e80194817ea16af4, type: 2}
   m_IsPrefabParent: 0
@@ -49128,6 +49243,31 @@ Prefab:
       propertyPath: m_Name
       value: Enemigo1
       objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: Priority
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0
@@ -50071,6 +50211,31 @@ Prefab:
     - target: {fileID: 4000010010815102, guid: 2606d16dec561294dab93323abbc688a, type: 2}
       propertyPath: m_LocalRotation.w
       value: -0.37458342
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 06ab4ef94abcd4644bad92d603071ed2, type: 3}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: m_Pitch
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: Priority
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
