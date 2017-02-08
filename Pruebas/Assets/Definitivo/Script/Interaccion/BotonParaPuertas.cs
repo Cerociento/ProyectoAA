@@ -20,19 +20,12 @@ public class BotonParaPuertas : MonoBehaviour {
     void Update()
     {
 
-       // for (int i = 0; i < abrePuerta.Length; i++)
             if (activar)
             {
                 if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     Movimiento_Pequeño._anim.SetTrigger("Pulsado");
                     StartCoroutine("Pulsado");
-                  /*  abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
-                    abrePuerta[i].GetComponent<BoxCollider>().isTrigger = true;
-                    transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
-                    transform.GetChild(0).GetComponent<MeshFilter>().mesh = botonVerde;
-                    transform.GetComponent<BoxCollider>().enabled = false;
-					sonido.PlayOneShot(sonidoBoton);*/
                 }
                 if(Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.Mouse0))
                 {                   
@@ -64,6 +57,7 @@ public class BotonParaPuertas : MonoBehaviour {
             abrePuerta[i].GetComponent<Animator>().SetTrigger("toggle");
             abrePuerta[i].GetComponent<BoxCollider>().isTrigger = true;
             transform.GetChild(1).GetComponent<Renderer>().material.color = Color.green;
+            transform.GetChild(2).GetComponent<Light>().color = Color.green;
             transform.GetChild(0).GetComponent<MeshFilter>().mesh = botonVerde;
             transform.GetComponent<BoxCollider>().enabled = false;
             sonido.PlayOneShot(sonidoBoton);
