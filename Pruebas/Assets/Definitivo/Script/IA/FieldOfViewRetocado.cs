@@ -17,6 +17,8 @@ public class FieldOfViewRetocado : MonoBehaviour {
 	public LayerMask targetMask;
 	public LayerMask obstacleMask;
 	public float timer=0f;
+	[SerializeField]
+	MeshRenderer meshR;
 
 	[HideInInspector]
 	public List<Transform> visibleTargets = new List<Transform>();
@@ -45,10 +47,20 @@ public class FieldOfViewRetocado : MonoBehaviour {
 		for (int i = 0; i < targetsInViewRadius.Length; i++) {
 			Transform target = targetsInViewRadius [i].transform;
 			Vector3 dirToTarget = (target.position - transform.position).normalized;
+			float distance=Vector3.Distance(transform.position, target.position);
+			if(distance<viewRadius){
+				meshR.material.color=Color.yellow;
+			}else{
+				meshR.material.color=Color.green;
+			}
+			
+			
 			if (Vector3.Angle (transform.forward, dirToTarget) < viewAngle / 2) {
                 //float dstToTarget = transform.position.sqrMagnitude-target.position.sqrMagnitude;
 		float dstToTarget=Vector3.Distance(transform.position, target.position);
                 timer+=Time.time;
+
+
 
                 if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)&&timer>=5f) {
 					visibleTargets.Add (target);
