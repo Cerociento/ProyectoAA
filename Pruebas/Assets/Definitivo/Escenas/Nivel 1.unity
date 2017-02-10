@@ -18976,11 +18976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b37c32ae6b98542bd7ba0906f13773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   velocidad: 0.03
-=======
-  velocidad: 0.01
->>>>>>> origin/master
 --- !u!65 &668800911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41023,11 +41019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b37c32ae6b98542bd7ba0906f13773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   velocidad: 0.03
-=======
-  velocidad: 0.01
->>>>>>> origin/master
 --- !u!65 &1483263547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43923,10 +43915,7 @@ Transform:
   - {fileID: 329783347}
   - {fileID: 1218252483}
   - {fileID: 1325204486}
-<<<<<<< HEAD
   - {fileID: 1261625867}
-=======
->>>>>>> origin/master
   - {fileID: 1483263545}
   - {fileID: 668800909}
   - {fileID: 1806585243}
@@ -48930,11 +48919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b37c32ae6b98542bd7ba0906f13773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   velocidad: 0.03
-=======
-  velocidad: 0.01
->>>>>>> origin/master
 --- !u!65 &1806585245
 BoxCollider:
   m_ObjectHideFlags: 0
