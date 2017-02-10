@@ -37,7 +37,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.37356585, g: 0.3811212, b: 0.3588764, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44692534, g: 0.4967872, b: 0.57508564, a: 1}
+>>>>>>> origin/master
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -59301,7 +59305,10 @@ GameObject:
   - 23: {fileID: 2068674526}
   - 114: {fileID: 2068674525}
   - 82: {fileID: 2068674524}
+<<<<<<< HEAD
   - 114: {fileID: 2068674529}
+=======
+>>>>>>> origin/master
   m_Layer: 9
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -59457,6 +59464,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2068674522}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 --- !u!114 &2068674529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59469,6 +59477,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 0.03
+=======
+>>>>>>> origin/master
 --- !u!1001 &2070041053
 Prefab:
   m_ObjectHideFlags: 0
