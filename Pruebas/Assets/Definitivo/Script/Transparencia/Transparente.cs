@@ -17,7 +17,7 @@ public class Transparente : MonoBehaviour
             if (GetComponent<Renderer>().materials[m].color.a < 1)
                 GetComponent<Renderer>().materials[m].shader = Shader.Find("Legacy Shaders/Transparent/Diffuse");
             else
-                GetComponent<Renderer>().materials[m].shader = Shader.Find("Legacy Shaders/Self-Illumin/Diffuse");
+                GetComponent<Renderer>().materials[m].shader = Shader.Find("Legacy Shaders/Bumped Diffuse");
 
             if (puertaDetectada)
             {
