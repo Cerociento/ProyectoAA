@@ -38,8 +38,8 @@ public class Final : MonoBehaviour
             { 
                  barreraFinalPequeño.SetActive(true);
                  barreraFinalGrande.SetActive(true);
-                 sueloPequeño.transform.Translate(Vector3.up * Time.deltaTime);
-                 sueloGrande.transform.Translate(Vector3.up * Time.deltaTime);
+                 sueloPequeño.transform.Translate(Vector3.up*2 * Time.deltaTime);
+                 sueloGrande.transform.Translate(Vector3.up *2* Time.deltaTime);
                  MenuFinNivel.prueba = true;
                  Timer.tiempoFunciona1 = false;
                  finNivel = true;
@@ -57,7 +57,7 @@ public class Final : MonoBehaviour
                 {
                     other.transform.parent = transform.GetChild(1);
                     subePequeño = true;
-                    GameObject.FindWithTag("Grande").transform.Translate(Vector3.up);
+                    GameObject.FindWithTag("Grande").transform.Translate(Vector3.up*2);
                 }
             }
             if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
@@ -66,7 +66,7 @@ public class Final : MonoBehaviour
                 {
                     other.transform.parent = transform.GetChild(1);
                     subeGrande = true;
-                    GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up);
+                    GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up*2);
                 }
             }
         }
@@ -96,7 +96,7 @@ public class Final : MonoBehaviour
                 {
                     other.transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
                     subePequeño = false;
-                    GameObject.FindWithTag("Grande").transform.Translate(Vector3.up);
+                    GameObject.FindWithTag("Grande").transform.Translate(Vector3.up*2);
                 }
             }
             if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
@@ -105,7 +105,7 @@ public class Final : MonoBehaviour
                 {
                     other.transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
                     subeGrande = false;
-                    GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up);
+                    GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up*2);
                 }
             }
         }

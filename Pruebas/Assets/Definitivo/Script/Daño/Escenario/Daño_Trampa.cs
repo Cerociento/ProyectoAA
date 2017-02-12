@@ -10,7 +10,7 @@ public class Daño_Trampa : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Grande"))
+		if (other.CompareTag("Grande")||other.CompareTag("Escondido"))
         {
             Manager.muertoGrande = true;
             Pausa.vecesVisto++;
