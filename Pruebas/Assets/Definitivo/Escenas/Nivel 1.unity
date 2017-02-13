@@ -13837,12 +13837,12 @@ Prefab:
     - target: {fileID: 198000011361797036, guid: b99a364eab661554c8fe5235ecd473ff,
         type: 2}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
-      value: 1
+      value: 0.6181818
       objectReference: {fileID: 0}
     - target: {fileID: 198000011361797036, guid: b99a364eab661554c8fe5235ecd473ff,
         type: 2}
       propertyPath: EmissionModule.rate.scalar
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 198000011361797036, guid: b99a364eab661554c8fe5235ecd473ff,
         type: 2}

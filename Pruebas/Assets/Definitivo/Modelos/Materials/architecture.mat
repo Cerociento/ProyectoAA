@@ -9,7 +9,7 @@ Material:
   m_Name: architecture
   m_Shader: {fileID: 2, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION _NORMALMAP _SPECGLOSSMAP _SPECULARHIGHLIGHTS_OFF
-  m_LightmapFlags: 0
+  m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
@@ -214,7 +214,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.78676474, g: 0.88529414, b: 1, a: 1}
     - first:
         name: _DiffuseColor
       second: {r: 1, g: 1, b: 1, a: 1}

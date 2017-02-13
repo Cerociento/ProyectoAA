@@ -1348,6 +1348,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 81000013422085436, guid: 19a6bd89975b1ed4dbd213462411a1aa,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
   m_IsPrefabParent: 0
@@ -24855,6 +24860,18 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010488410390, guid: 83ed72294b37a7640ba341e2ae1a9a5b,
     type: 2}
   m_PrefabInternal: {fileID: 540927585}
+--- !u!1 &541245627 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014260103016, guid: 19a6bd89975b1ed4dbd213462411a1aa,
+    type: 2}
+  m_PrefabInternal: {fileID: 21545257}
+--- !u!81 &541245633
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 541245627}
+  m_Enabled: 1
 --- !u!1 &541404532
 GameObject:
   m_ObjectHideFlags: 0
@@ -87447,6 +87464,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1754238759}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1754628955 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013813015090, guid: 19a6bd89975b1ed4dbd213462411a1aa,
+    type: 2}
+  m_PrefabInternal: {fileID: 21545257}
+--- !u!81 &1754628961
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754628955}
+  m_Enabled: 1
 --- !u!1 &1756970537
 GameObject:
   m_ObjectHideFlags: 0
