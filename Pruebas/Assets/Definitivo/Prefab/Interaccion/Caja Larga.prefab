@@ -23,8 +23,8 @@ GameObject:
   - 65: {fileID: 65000013208183068}
   - 23: {fileID: 23000011553468666}
   - 114: {fileID: 114000013357454168}
-  - 135: {fileID: 135000010987709882}
   - 54: {fileID: 54000014192574344}
+  - 135: {fileID: 135000010987709882}
   m_Layer: 13
   m_Name: Caja Larga
   m_TagString: Caja Grande
@@ -104,7 +104,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000012352033960}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

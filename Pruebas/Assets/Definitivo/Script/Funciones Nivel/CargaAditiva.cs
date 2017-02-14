@@ -15,9 +15,12 @@ public class CargaAditiva : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Pequeño") || other.CompareTag("Grande"))
-        {        
+        {
+            if (GetComponent<CargaAditiva>().enabled == true)
+            {
                 manager.nivelMas = true;
-            GetComponent<CargaAditiva>().enabled = false;
+                GetComponent<CargaAditiva>().enabled = false;
+            }
         }
     }
 	

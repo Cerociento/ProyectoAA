@@ -69,8 +69,6 @@ public class PilaDeCajas : MonoBehaviour
 
             coger = false;
         }
-        else if(GameObject.FindGameObjectWithTag("Caja Escondite") == null)
-            GetComponent<SphereCollider>().enabled = true;
     }   
     
 

@@ -7675,7 +7675,7 @@ MonoBehaviour:
   velocidad: 5
   velRotacion: 3
   caja: {fileID: 0}
-  asignarCaja: 0
+  asignarCaja: 1
   sonido: {fileID: 82000010668686324}
 --- !u!114 &114000014123664798
 MonoBehaviour:

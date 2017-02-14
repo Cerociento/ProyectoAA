@@ -35,14 +35,17 @@ public class Final : MonoBehaviour
                 finNivel = true;
             }
             else
-            { 
-                 barreraFinalPequeño.SetActive(true);
-                 barreraFinalGrande.SetActive(true);
-                 sueloPequeño.transform.Translate(Vector3.up*2 * Time.deltaTime);
-                 sueloGrande.transform.Translate(Vector3.up *2* Time.deltaTime);
-                 MenuFinNivel.prueba = true;
-                 Timer.tiempoFunciona1 = false;
-                 finNivel = true;
+            {
+                barreraFinalPequeño.SetActive(true);
+                barreraFinalGrande.SetActive(true);
+                sueloPequeño.transform.Translate(Vector3.up * 2 * Time.deltaTime);
+                sueloGrande.transform.Translate(Vector3.up * 2 * Time.deltaTime);
+                Timer.tiempoFunciona1 = false;
+            if (!finNivel)
+               {
+                    MenuFinNivel.prueba = true;
+                    finNivel = true;
+               }
             }
         }
     }

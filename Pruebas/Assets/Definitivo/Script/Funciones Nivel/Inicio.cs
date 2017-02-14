@@ -13,7 +13,6 @@ public class Inicio : MonoBehaviour
     {
         if (unload)
         {
-            print(unload);
             SceneManager.UnloadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

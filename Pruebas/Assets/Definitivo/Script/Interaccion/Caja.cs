@@ -8,6 +8,7 @@ public class Caja : MonoBehaviour
     void Start()
     {
         caja = null;
+        StartCoroutine("DesColl");
     }
 
     void OnTriggerStay(Collider other)
@@ -29,10 +30,10 @@ public class Caja : MonoBehaviour
 
     void OnCollisionStay()
     {
-        if(gameObject.CompareTag("Caja Escondite"))
+        /*if(gameObject.CompareTag("Caja Escondite"))
         {
             Choque();
-        }
+        }*/
     }
 
     public void Choque()
@@ -43,6 +44,12 @@ public class Caja : MonoBehaviour
         GetComponent<Rigidbody>().useGravity = false;
         GetComponent<Rigidbody>().isKinematic = true;
         gameObject.SetActive(false);
+    }
+
+    IEnumerator DesColl()
+    {
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<SphereCollider>().enabled = false;
     }
 
 }

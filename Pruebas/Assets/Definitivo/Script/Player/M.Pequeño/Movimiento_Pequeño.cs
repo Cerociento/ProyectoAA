@@ -45,6 +45,7 @@ public class Movimiento_Pequeño : MonoBehaviour
         float num = GetComponent<Rigidbody>().velocity.y * Time.deltaTime;
         anim.SetFloat("EnAire", num);
 
+        #region MOVIMIENTO 
         YAxis = Input.GetAxis("Horizontal");
         ZAxis = Input.GetAxis("Vertical");
 
@@ -91,7 +92,6 @@ public class Movimiento_Pequeño : MonoBehaviour
                 if (salto == 0)
                 {
                 anim.SetTrigger("Salto");
-              //  anim.SetFloat("EnAire", num);
                 GetComponent<Rigidbody>().AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
                 salto++;
                 sonidoBis.PlayOneShot(sonidoSalto);
@@ -99,8 +99,9 @@ public class Movimiento_Pequeño : MonoBehaviour
                     
                 }
             }
+        #endregion
 
-            if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
             {
                 transform.position = checkpointPequeño;
                 Pausa.vecesVisto++;

@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000013520156058}
   - 65: {fileID: 65000014270051040}
   - 23: {fileID: 23000013239701266}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - 33: {fileID: 33000011117357190}
   - 65: {fileID: 65000010260784718}
   - 23: {fileID: 23000011840905080}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - 33: {fileID: 33000011192989950}
   - 65: {fileID: 65000012621123482}
   - 23: {fileID: 23000011473954144}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - 33: {fileID: 33000012682593484}
   - 65: {fileID: 65000013150920762}
   - 23: {fileID: 23000012403214124}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - 33: {fileID: 33000011000410348}
   - 65: {fileID: 65000013241156966}
   - 23: {fileID: 23000013542091190}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - 33: {fileID: 33000013958127556}
   - 65: {fileID: 65000013358842830}
   - 23: {fileID: 23000010379209642}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   - 33: {fileID: 33000011854728422}
   - 65: {fileID: 65000011068703018}
   - 23: {fileID: 23000011305412462}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - 33: {fileID: 33000012185129564}
   - 65: {fileID: 65000010886476800}
   - 23: {fileID: 23000012377839126}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   - 33: {fileID: 33000012140417424}
   - 65: {fileID: 65000011608769782}
   - 23: {fileID: 23000010013018636}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - 33: {fileID: 33000013536433364}
   - 65: {fileID: 65000010022928312}
   - 23: {fileID: 23000013343246742}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - 33: {fileID: 33000013559831834}
   - 65: {fileID: 65000014050002886}
   - 23: {fileID: 23000013880474352}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - 33: {fileID: 33000010575339784}
   - 65: {fileID: 65000011083653408}
   - 23: {fileID: 23000012887689434}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - 33: {fileID: 33000010559572806}
   - 65: {fileID: 65000014187659136}
   - 23: {fileID: 23000010799703080}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - 33: {fileID: 33000010791599494}
   - 65: {fileID: 65000012936022402}
   - 23: {fileID: 23000011610307334}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - 33: {fileID: 33000014197839654}
   - 65: {fileID: 65000013798067774}
   - 23: {fileID: 23000012623871924}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   - 33: {fileID: 33000010385823414}
   - 65: {fileID: 65000013763888134}
   - 23: {fileID: 23000011388874352}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - 4: {fileID: 4000010852476088}
   - 198: {fileID: 198000013946106356}
   - 199: {fileID: 199000010352195164}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - 33: {fileID: 33000011859630516}
   - 65: {fileID: 65000011156096486}
   - 23: {fileID: 23000012305076154}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   - 33: {fileID: 33000010881042724}
   - 65: {fileID: 65000012802291084}
   - 23: {fileID: 23000012131944948}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - 33: {fileID: 33000012916623590}
   - 65: {fileID: 65000013685241490}
   - 23: {fileID: 23000012424967996}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - 33: {fileID: 33000011632264018}
   - 65: {fileID: 65000010551261046}
   - 23: {fileID: 23000013958990376}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   - 33: {fileID: 33000011126341178}
   - 65: {fileID: 65000012482995204}
   - 23: {fileID: 23000011557420634}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,7 +417,7 @@ GameObject:
   - 33: {fileID: 33000013324598052}
   - 65: {fileID: 65000012399674858}
   - 23: {fileID: 23000013676043350}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ GameObject:
   - 135: {fileID: 135000010160348636}
   - 114: {fileID: 114000010703776076}
   - 82: {fileID: 82000012921739746}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Pila de cajas (Esconder)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - 33: {fileID: 33000012070200076}
   - 65: {fileID: 65000013222843236}
   - 23: {fileID: 23000010577674682}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Caja (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

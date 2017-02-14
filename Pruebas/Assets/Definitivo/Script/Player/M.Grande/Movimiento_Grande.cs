@@ -51,7 +51,7 @@ public class Movimiento_Grande : MonoBehaviour
             YAxis = Input.GetAxis("Horizontal");
             ZAxis = Input.GetAxis("Vertical");
 
-            if (ZAxis > 0 && Input.GetKey(KeyCode.W) || ZAxis < 0 && Input.GetKey(KeyCode.S))
+            if (ZAxis > 0 || ZAxis < 0)
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
                 if (!sonido.isPlaying)
@@ -60,7 +60,7 @@ public class Movimiento_Grande : MonoBehaviour
                 }
             }
 
-            if (YAxis < 0 && Input.GetKey(KeyCode.A) || YAxis > 0 && Input.GetKey(KeyCode.D))
+            if (YAxis < 0 || YAxis > 0)
             {
                 transform.Rotate(Vector3.up * velRotacion * YAxis);
             }
@@ -80,29 +80,28 @@ public class Movimiento_Grande : MonoBehaviour
 		}
         #endregion
         
-        if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (caja)
             {     
                 soltar = !soltar;
+
                 if (!soltar)
                     Coger();
                 else
                     Soltar();   
             }
        
-           if(asignarCaja==false)
+          if(asignarCaja==false)
            if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
             {
                 caja = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).gameObject;
-                //asignarCaja = false;
                     if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
                     {
                         gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
                     }
-                }
             }
-
+         }
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (caja.CompareTag("Caja Escondite"))
@@ -150,7 +149,7 @@ public class Movimiento_Grande : MonoBehaviour
 
     public void Soltar()
     {
-        if (caja)
+        if (!caja.CompareTag("Caja Escondite"))
         {
             asignarCaja = true;
             gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
@@ -158,6 +157,19 @@ public class Movimiento_Grande : MonoBehaviour
             gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
             gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
             gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
+        }
+        else if(caja.CompareTag("Caja Escondite"))
+        {
+            asignarCaja = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
+            caja.transform.parent = GameObject.Find("Manager").transform;
+        }
+        else if(caja==null)
+        {
+            return; 
         }
     }
 
@@ -177,11 +189,6 @@ public class Movimiento_Grande : MonoBehaviour
             checkpointGrande = other.transform.position;
             StartCoroutine("Guarda");
         }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        
     }
 
     IEnumerator Guarda()
