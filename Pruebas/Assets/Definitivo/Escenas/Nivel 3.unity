@@ -1358,6 +1358,11 @@ Prefab:
       propertyPath: asignarCaja
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012306441914, guid: 19a6bd89975b1ed4dbd213462411a1aa,
+        type: 2}
+      propertyPath: fSalto
+      value: 5.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
   m_IsPrefabParent: 0
@@ -6476,7 +6481,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5b0adb6b71c2c7549ad693b829c27802, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6510,7 +6515,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.78
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13313,7 +13318,7 @@ Prefab:
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
@@ -18939,7 +18944,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5b0adb6b71c2c7549ad693b829c27802, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -18973,7 +18978,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.78
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -19817,7 +19822,7 @@ Prefab:
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
@@ -25616,7 +25621,7 @@ Prefab:
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
@@ -45915,7 +45920,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5b0adb6b71c2c7549ad693b829c27802, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -45949,7 +45954,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.78
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -47418,7 +47423,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5b0adb6b71c2c7549ad693b829c27802, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -47452,7 +47457,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.78
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -51271,6 +51276,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1ac249a245bff9248979213468b7b35d, type: 2}
+    - target: {fileID: 199000010352195164, guid: cee9f7a226f32284bb777d519a14b102,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b47121c4b0604bd4f930289bfcd62b27, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cee9f7a226f32284bb777d519a14b102, type: 2}
   m_IsPrefabParent: 0
@@ -74513,7 +74523,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5b0adb6b71c2c7549ad693b829c27802, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -74547,7 +74557,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.78
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -74699,7 +74709,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 5b0adb6b71c2c7549ad693b829c27802, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -74733,7 +74743,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.78
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -94871,7 +94881,7 @@ Prefab:
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
@@ -103915,7 +103925,7 @@ Prefab:
     - target: {fileID: 82000012602906300, guid: 2606d16dec561294dab93323abbc688a,
         type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}

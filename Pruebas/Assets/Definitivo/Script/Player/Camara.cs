@@ -24,7 +24,7 @@ public class Camara : MonoBehaviour
         Target = Pequeño;
         transform.localPosition = sitioCamara;
 		Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
-		//Grande.gameObject.GetComponent<AudioListener>().enabled=false;
+		Grande.gameObject.GetComponent<AudioListener>().enabled=false;
     }
 
 
@@ -37,9 +37,9 @@ public class Camara : MonoBehaviour
             transform.localPosition = sitioCamara;
             transform.localEulerAngles = Vector3.zero;
             Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
-			//Grande.gameObject.GetComponent<AudioListener>().enabled=false;
+			Grande.gameObject.GetComponent<AudioListener>().enabled=false;
             Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = true;
-			//Pequeño.gameObject.GetComponent<AudioListener>().enabled=true;
+			Pequeño.gameObject.GetComponent<AudioListener>().enabled=true;
             Pausa.nPersonaje = 1;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -49,9 +49,9 @@ public class Camara : MonoBehaviour
             transform.localPosition = sitioCamara;
             transform.localEulerAngles = Vector3.zero;
             Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = true;
-			//Grande.gameObject.GetComponent<AudioListener>().enabled=true;
+			Grande.gameObject.GetComponent<AudioListener>().enabled=true;
             Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = false;
-			//Pequeño.gameObject.GetComponent<AudioListener>().enabled=false;
+			Pequeño.gameObject.GetComponent<AudioListener>().enabled=false;
             Pausa.nPersonaje = 2;
 
         }
