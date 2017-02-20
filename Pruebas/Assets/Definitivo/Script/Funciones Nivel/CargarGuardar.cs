@@ -27,6 +27,7 @@ public class CargarGuardar : MonoBehaviour
     public static float TTotal;
     public static float TNivel;
     public static int NNivel;
+    public static int CColeccionable;
 
     void Awake()
     {
@@ -46,6 +47,8 @@ public class CargarGuardar : MonoBehaviour
         NNivel = nivel;
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
+        CColeccionable = colecionables;
+        Debug.Log(colecionables);
     }
 
     void Start()
