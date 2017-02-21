@@ -48,7 +48,7 @@ public class CargarGuardar : MonoBehaviour
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
         CColeccionable = colecionables;
-        Debug.Log(colecionables);
+        Debug.Log(colecionables + " A  " + nivel + "   " + tiempoTotal);
     }
 
     void Start()
@@ -61,10 +61,13 @@ public class CargarGuardar : MonoBehaviour
         posicionGrandeZ = Movimiento_Grande.checkpointGrande.z;
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
+        CColeccionable = colecionables;
+        Debug.Log(colecionables + " S  " + nivel + "   " + tiempoTotal);
     }
 
     void Update()
     {
+       
         posicionPequeñoX = Movimiento_Pequeño.checkpointPequeño.x;
         posicionPequeñoY = Movimiento_Pequeño.checkpointPequeño.y;
         posicionPequeñoZ = Movimiento_Pequeño.checkpointPequeño.z;
@@ -78,6 +81,7 @@ public class CargarGuardar : MonoBehaviour
         tiempoNivel = Timer.tiempo;
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
+        CColeccionable = colecionables;
 
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
@@ -128,8 +132,10 @@ public class CargarGuardar : MonoBehaviour
         datos.tiempoNivel = tiempoNivel;
         save.Serialize(file, datos);
         file.Close();
+
         imagenGuardado.SetActive(true);
         StartCoroutine("Imagen");
+        Debug.Log(colecionables + "  G " + nivel + "   " + tiempoTotal);
     } 
 
     public void Cargar()
@@ -164,6 +170,7 @@ public class CargarGuardar : MonoBehaviour
         }
     }
 
+    [ContextMenu("Borrar")]
     public void Borrar()
     {
         if (File.Exists(Application.persistentDataPath + "/monosave.af"))
@@ -171,6 +178,8 @@ public class CargarGuardar : MonoBehaviour
             File.Delete(Application.persistentDataPath + "/monosave.af");
             TTotal = 0;
             TNivel = 0;
+            CColeccionable = 0;
+            Pausa.recogidos = 0;
             Timer.tiempoFunciona1 = true;
         }
     }

@@ -6,16 +6,16 @@ public class Rotate : MonoBehaviour {
 	[Range(0.0f, 50.0f)]
 	public float speed = 1.0f;
 
-    [Range(0, 10)]
+   /* [Range(0, 10)]
     [SerializeField]
     float parpadeo;
 
     [SerializeField]
-    GameObject luzParpadeo;
+    GameObject luzParpadeo;*/
 	
 	void Update () {
 		this.transform.Rotate (0.0f, this.speed*Time.deltaTime, 0.0f);
-        luzParpadeo.GetComponent<Light>().intensity = parpadeo;
+       // luzParpadeo.GetComponent<Light>().intensity = parpadeo;
 
        /* for (float i = 0; i <=8 ; i++)
         {

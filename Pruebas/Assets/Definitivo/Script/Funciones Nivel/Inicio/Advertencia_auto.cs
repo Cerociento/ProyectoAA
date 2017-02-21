@@ -11,6 +11,12 @@ public class Advertencia_auto : MonoBehaviour
         StartCoroutine("QuitarAdvertencia");
     }
 
+    public void Desactivacion()
+    {
+        inicio.SetTrigger("Activa");
+        gameObject.SetActive(false);
+    }
+
     IEnumerator QuitarAdvertencia()
     {
         yield return new WaitForSeconds(3);

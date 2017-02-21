@@ -64,16 +64,12 @@ public class Pausa : MonoBehaviour {
                 menuPausa.SetActive(true);
                 if (nPersonaje == 1)
                 {
-                   // personaje1.SetActive(true);
                     personaje1.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-                    //personaje2.SetActive(false);
                     personaje2.GetComponent<Image>().color = new Color(1, 1, 1, 0.2f);
                 }
                 else if (nPersonaje == 2)
                 {
-                   //personaje2.SetActive(true);
                    personaje2.GetComponent<Image>().color = new Color(1, 1, 1, 1);
-                  // personaje1.SetActive(false);
                    personaje1.GetComponent<Image>().color = new Color(1, 1, 1, 0.2f);
                 }
             }
