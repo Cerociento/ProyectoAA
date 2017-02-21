@@ -42,6 +42,7 @@ public class MenuPruebas : MonoBehaviour {
 
     void Update()
     {
+        if(estamosEnElMenuPrincipal)
         if(Input.anyKey && !GameObject.Find("Advertencia Guardado"))
         {
             inicio.SetTrigger("Desactiva");

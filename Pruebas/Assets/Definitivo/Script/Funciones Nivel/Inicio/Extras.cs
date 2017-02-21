@@ -11,9 +11,21 @@ public class Extras : MonoBehaviour {
     [SerializeField]
     Sprite candadoAbierto;
     ColorBlock botonColor;
-
+    [SerializeField]
     int ultimoColeccionable;
-    List<int> lista;
+    [SerializeField]
+    List<int> listaCandados;
+
+    [SerializeField]
+    List<int> listaActivas;
+
+    [SerializeField]
+    Button botonDerecha;
+    [SerializeField]
+    Button botonIzquierda;
+
+    CargarGuardar guardar;
+    int valorImagenes;
 
     void Start()
     {
@@ -24,77 +36,126 @@ public class Extras : MonoBehaviour {
 
     void Coleccionables()
     {
-
-        for (int i = 0; i < CargarGuardar.CColeccionable; i++)
-         {
-
              switch (CargarGuardar.CColeccionable)
              {
                 case 2:
                 case 1:
-                     botonColor = candados[0].GetComponent<Button>().colors;
-                     candados[0].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[0].GetComponent<Button>().colors = botonColor;
-                     ultimoColeccionable = 1;
-                     break;
+                    listaCandados.Add(0);
+                    Candados();
+                    break;
 
-               
                 case 3:
-                     botonColor = candados[1].GetComponent<Button>().colors;
-                     candados[1].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[1].GetComponent<Button>().colors = botonColor;
-                    ultimoColeccionable = 3;
-                     goto case 1;
+                        listaCandados.Add(1);
+                    Candados();
+                    goto case 1;
                 case 5:
                 case 4:
-                     botonColor = candados[2].GetComponent<Button>().colors;
-                     candados[2].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[2].GetComponent<Button>().colors = botonColor;
-                    ultimoColeccionable = 4;
-                     goto case 3;
+                        listaCandados.Add(2);
+                    Candados();
+                    goto case 3;
                 case 7:
                 case 6:
-                     botonColor = candados[3].GetComponent<Button>().colors;
-                     candados[3].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[3].GetComponent<Button>().colors = botonColor;
-                    ultimoColeccionable = 6;
+                        listaCandados.Add(3);
+                    Candados();
                     goto case 4;
                 case 9:
                 case 8:
-                     botonColor = candados[4].GetComponent<Button>().colors;
-                     candados[4].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[4].GetComponent<Button>().colors = botonColor;
-                    ultimoColeccionable = 8;
+                        listaCandados.Add(4);
+                    Candados();
                     goto case 6;
                 case 11:
                 case 10:
-                     botonColor = candados[5].GetComponent<Button>().colors;
-                     candados[5].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[5].GetComponent<Button>().colors = botonColor;
-                    ultimoColeccionable = 10;
+                        listaCandados.Add(5);
+                    Candados();
                     goto case 8;
-               
+                
                 case 12:
-                     botonColor = candados[6].GetComponent<Button>().colors;
-                     candados[6].GetComponent<Image>().sprite = candadoAbierto;
-                     botonColor.highlightedColor = new Color32(77, 255, 77, 255);
-                     botonColor.pressedColor = new Color32(0, 218, 0, 255);
-                     candados[6].GetComponent<Button>().colors = botonColor;
-                    ultimoColeccionable = 12;
-                    goto case 10;     
+                        listaCandados.Add(6);
+                    Candados();
+                    goto case 10;
              }
-         }
+    }
+
+    void Candados()
+    {
+       foreach(int num in listaCandados)
+        {
+            botonColor = candados[num].GetComponent<Button>().colors;
+            candados[num].GetComponent<Image>().sprite = candadoAbierto;
+            botonColor.highlightedColor = new Color32(77, 255, 77, 255);
+            botonColor.pressedColor = new Color32(0, 218, 0, 255);
+            candados[num].GetComponent<Button>().colors = botonColor;
+            candados[num].GetComponent<Button>().interactable = true;
+        }
+    }
+
+    public void ImagenesActivas(int activas)
+    {
+        listaActivas.Add(activas);
+        extras[listaActivas[0]].SetActive(true);
+        if (listaActivas.Count <= 1)
+        {
+            botonDerecha.interactable = false;
+            botonIzquierda.interactable = false;
+        }
+        else
+        {
+            botonDerecha.interactable = true;
+        }
+    }
+
+    public void DesactivarImagenes(bool limpieza)
+    {
+        foreach (GameObject obj in extras)
+        {
+            obj.SetActive(false);
+            if (limpieza)
+            {
+                listaActivas.Clear();
+                valorImagenes = 0;
+            }
+        }
+    }
+
+    public void Botones (bool direccion)
+    {
+        DesactivarImagenes(false);
+
+        if (direccion)
+        {
+            botonIzquierda.interactable = true;
+            if (valorImagenes != listaActivas.Count-1)
+                ++valorImagenes;
+
+            if (valorImagenes == listaActivas.Count-1)
+                botonDerecha.interactable = false;
+        }
+        else
+        {
+            botonDerecha.interactable = true;
+            if (valorImagenes > 0)
+                valorImagenes--;
+            
+            if(valorImagenes==0)
+                botonIzquierda.interactable = false;
+        }
+
+        extras[listaActivas[valorImagenes]].SetActive(true);
+
+
+    }
+
+    void Update()
+    {
+        Debug.Log(valorImagenes);
+
+#if UNITY_EDITOR
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            guardar = GameObject.Find("Manager").GetComponent<CargarGuardar>();
+            Pausa.recogidos = ultimoColeccionable;
+            guardar.Guardar();
+        }
+#endif
     }
 }

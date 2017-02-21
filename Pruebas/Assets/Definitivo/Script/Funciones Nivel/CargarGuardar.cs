@@ -48,7 +48,6 @@ public class CargarGuardar : MonoBehaviour
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
         CColeccionable = colecionables;
-        Debug.Log(colecionables + " A  " + nivel + "   " + tiempoTotal);
     }
 
     void Start()
@@ -62,7 +61,6 @@ public class CargarGuardar : MonoBehaviour
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
         CColeccionable = colecionables;
-        Debug.Log(colecionables + " S  " + nivel + "   " + tiempoTotal);
     }
 
     void Update()
