@@ -16,6 +16,8 @@ public class MenuPruebas : MonoBehaviour {
 
     [SerializeField]
     int level;
+    [SerializeField]
+    Animator inicio;
 
     //Reposicionamiento de personajes
     [SerializeField]
@@ -40,6 +42,11 @@ public class MenuPruebas : MonoBehaviour {
 
     void Update()
     {
+        if(Input.anyKey && !GameObject.Find("Advertencia Guardado"))
+        {
+            inicio.SetTrigger("Desactiva");
+        }
+
         if (File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
         {
             ContinuarBoton.GetComponent<Button>().interactable = true;
