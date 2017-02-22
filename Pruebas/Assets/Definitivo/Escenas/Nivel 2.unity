@@ -4740,6 +4740,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012901995232, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
   m_IsPrefabParent: 0
@@ -32661,12 +32665,12 @@ Transform:
   - {fileID: 1605538791}
   - {fileID: 1949318050}
   - {fileID: 2041099840}
+  - {fileID: 1139580523}
   - {fileID: 1284671505}
   - {fileID: 1187513849}
   - {fileID: 1785451534}
   - {fileID: 749384542}
   - {fileID: 872710238}
-  - {fileID: 1139580523}
   - {fileID: 139758444}
   - {fileID: 2139670993}
   - {fileID: 429578881}
@@ -33500,7 +33504,7 @@ Transform:
   - {fileID: 2102759492}
   - {fileID: 1197696866}
   m_Father: {fileID: 1116994840}
-  m_RootOrder: 16
+  m_RootOrder: 11
 --- !u!1 &1143756540
 GameObject:
   m_ObjectHideFlags: 0

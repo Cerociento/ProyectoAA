@@ -62,12 +62,12 @@ public class Extras : MonoBehaviour {
                     Candados();
                     goto case 6;
                 case 11:
+                case 12:
                 case 10:
                         listaCandados.Add(5);
                     Candados();
                     goto case 8;
-                
-                case 12:
+                case 13:
                         listaCandados.Add(6);
                     Candados();
                     goto case 10;

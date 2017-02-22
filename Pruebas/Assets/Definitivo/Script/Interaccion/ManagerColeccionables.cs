@@ -4,30 +4,11 @@ using System.Collections.Generic;
 
 public class ManagerColeccionables : MonoBehaviour {
 
-    [System.Serializable]
-    public class Colecc
-    {
-        public GameObject Coleccionable;
-        public bool recogida=true;
-
-        public Colecc(GameObject coleccionable, bool recogido)
-        {
-            Coleccionable = coleccionable;
-            recogido = true;
-        }
-
-    }
-
     [SerializeField]
     GameObject ImageExtra;
 
-    [SerializeField]
-    List<Colecc> lista;
+    public static bool[] listaGuardar = new bool[12];
 
-    [SerializeField]
-   public static Colecc coleccion= new Colecc(null,true);
-    [SerializeField]
-     Colecc coleccion1 = new Colecc(null, true);
 
     public void Extra () {
 
@@ -51,7 +32,7 @@ public class ManagerColeccionables : MonoBehaviour {
             case 10:
                 ImageExtra.SetActive(true);
                 break;
-            case 12:
+            case 13:
                 ImageExtra.SetActive(true);
                 break;
         }
@@ -60,7 +41,13 @@ public class ManagerColeccionables : MonoBehaviour {
 
     void Update()
     {
-        coleccion1 = coleccion;
+
+        if(Input.GetKey(KeyCode.G))
+        {
+            listaGuardar[0] = false;
+        }
+        else if(Input.GetKey(KeyCode.H))
+            listaGuardar[0] = true;
     }
 
     IEnumerator ExtraDesbloqueado()

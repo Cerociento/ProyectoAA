@@ -4,6 +4,7 @@ using System.Collections;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Collections.Generic;
 
 public class CargarGuardar : MonoBehaviour 
 { 
@@ -20,6 +21,8 @@ public class CargarGuardar : MonoBehaviour
     GameObject imagenGuardado;
     [SerializeField]
     GameObject desactivar;
+    [SerializeField]
+    bool[] listaGuardar;
 
     float tiempoTotal;
     float tiempoNivel;
@@ -42,7 +45,15 @@ public class CargarGuardar : MonoBehaviour
             tiempoNivel = datos.tiempoNivel;
             tiempoTotal = datos.tiempoTotal;
             colecionables = datos.colecionables;
-           
+            ManagerColeccionables.listaGuardar = datos.listaGuardar;
+        }
+        else if (!File.Exists(Application.persistentDataPath + "/monosave.af") && SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            for (int i = 0; i < ManagerColeccionables.listaGuardar.Length; i++)
+            {
+                ManagerColeccionables.listaGuardar[i] = true;
+                Debug.Log("Cargado " + ManagerColeccionables.listaGuardar[i]);
+            }
         }
         NNivel = nivel;
         TTotal = tiempoTotal;
@@ -58,6 +69,7 @@ public class CargarGuardar : MonoBehaviour
         posicionGrandeX = Movimiento_Grande.checkpointGrande.x;
         posicionGrandeY = Movimiento_Grande.checkpointGrande.y;
         posicionGrandeZ = Movimiento_Grande.checkpointGrande.z;
+        listaGuardar = ManagerColeccionables.listaGuardar;
         TTotal = tiempoTotal;
         TNivel = tiempoNivel;
         CColeccionable = colecionables;
@@ -72,6 +84,7 @@ public class CargarGuardar : MonoBehaviour
         posicionGrandeX = Movimiento_Grande.checkpointGrande.x;
         posicionGrandeY = Movimiento_Grande.checkpointGrande.y;
         posicionGrandeZ = Movimiento_Grande.checkpointGrande.z;
+        listaGuardar = ManagerColeccionables.listaGuardar;
         nivel = SceneManager.GetActiveScene().buildIndex;
         vecesVisto = Pausa.vecesVisto;
         colecionables = Pausa.recogidos;
@@ -90,7 +103,8 @@ public class CargarGuardar : MonoBehaviour
             desactivar.SetActive(true);
         }
 
-#if UNITY_EDITOR 
+        #region editor
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.F1))
         {
             Guardar();
@@ -109,8 +123,9 @@ public class CargarGuardar : MonoBehaviour
             imagenGuardado.SetActive(true);
             StartCoroutine("Imagen");
         }
-           
-#endif 
+
+#endif
+        #endregion
     }
 
     public void Guardar()
@@ -128,6 +143,7 @@ public class CargarGuardar : MonoBehaviour
         datos.colecionables = colecionables;
         datos.tiempoTotal = tiempoTotal;
         datos.tiempoNivel = tiempoNivel;
+        datos.listaGuardar = ManagerColeccionables.listaGuardar;
         save.Serialize(file, datos);
         file.Close();
 
@@ -153,6 +169,7 @@ public class CargarGuardar : MonoBehaviour
             nivel = datos.nivel;
             tiempoNivel = datos.tiempoNivel;
             tiempoTotal = datos.tiempoTotal;
+            ManagerColeccionables.listaGuardar = datos.listaGuardar;
 
             SceneManager.LoadScene(nivel);
             desactivar.SetActive(true);
@@ -178,6 +195,13 @@ public class CargarGuardar : MonoBehaviour
             CColeccionable = 0;
             Pausa.recogidos = 0;
             Timer.tiempoFunciona1 = true;
+            for (int i = 0; i < ManagerColeccionables.listaGuardar.Length; i++)
+            {
+                ManagerColeccionables.listaGuardar[i] = true;
+                Debug.Log("BOrrado  " + ManagerColeccionables.listaGuardar[i]);
+            }
+
+                 
         }
     }
 
@@ -198,4 +222,5 @@ public class datosJuego : System.Object
     public int colecionables;
     public float tiempoTotal;
     public float tiempoNivel;
+    public bool[] listaGuardar;
 }

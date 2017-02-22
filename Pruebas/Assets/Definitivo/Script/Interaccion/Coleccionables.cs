@@ -13,23 +13,22 @@ public class Coleccionables : MonoBehaviour {
     ManagerColeccionables coleccionables;
     Pausa pausa;
 
-    void Awake()
+    void Start()
     {
         coleccionables = GameObject.Find("Manager").GetComponent<ManagerColeccionables>();
+        gameObject.SetActive(ManagerColeccionables.listaGuardar[numPosicionLista]);
     }
 
 	void OnTriggerEnter(Collider col)              
 {
 		if(col.gameObject.CompareTag("Grande") || col.gameObject.CompareTag("Pequeño"))
         {
-            ManagerColeccionables.coleccion.Coleccionable = gameObject;
             Pausa.recogidos++;
-            //coleccionables.InteractuarConLista(numPosicionLista);
+            ManagerColeccionables.listaGuardar[numPosicionLista] = false;
             sonido.PlayOneShot(sonidoColeccionable);
             GetComponent<BoxCollider>().enabled = false;
             coleccionables.Extra();
             gameObject.SetActive(false);
-           // Destroy(gameObject);
         }
     }
 }
