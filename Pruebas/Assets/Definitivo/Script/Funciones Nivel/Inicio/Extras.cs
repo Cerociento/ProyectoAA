@@ -30,8 +30,6 @@ public class Extras : MonoBehaviour {
     void Start()
     {
         Coleccionables();
-        Debug.Log("Iniciado");
-       
     }
 
     void Coleccionables()
@@ -147,7 +145,6 @@ public class Extras : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log(valorImagenes);
 
 #if UNITY_EDITOR
         if(Input.GetKeyDown(KeyCode.Space))

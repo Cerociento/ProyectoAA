@@ -7,30 +7,29 @@ public class Coleccionables : MonoBehaviour {
 	AudioSource sonido;
 	[SerializeField]
 	AudioClip sonidoColeccionable;
+    [SerializeField]
+    int numPosicionLista;
 
-    CargarGuardar guardar;
+    ManagerColeccionables coleccionables;
     Pausa pausa;
 
-    void Start()
+    void Awake()
     {
-        guardar = GameObject.Find("Manager").GetComponent<CargarGuardar>();
+        coleccionables = GameObject.Find("Manager").GetComponent<ManagerColeccionables>();
     }
 
-	void OnTriggerEnter(Collider col){
+	void OnTriggerEnter(Collider col)              
+{
 		if(col.gameObject.CompareTag("Grande") || col.gameObject.CompareTag("Pequeño"))
         {
+            ManagerColeccionables.coleccion.Coleccionable = gameObject;
             Pausa.recogidos++;
-			sonido.PlayOneShot(sonidoColeccionable);
+            //coleccionables.InteractuarConLista(numPosicionLista);
+            sonido.PlayOneShot(sonidoColeccionable);
             GetComponent<BoxCollider>().enabled = false;
-            transform.GetChild(0).GetChild(0).GetComponent<SkinnedMeshRenderer>().enabled = false;
-            StartCoroutine("GuardarCol");
-		}
-	}
-
-    IEnumerator GuardarCol()
-    {
-        yield return new WaitForSeconds(1);
-        guardar.Guardar();
-        Destroy(gameObject);
+            coleccionables.Extra();
+            gameObject.SetActive(false);
+           // Destroy(gameObject);
+        }
     }
 }

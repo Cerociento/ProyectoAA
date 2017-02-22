@@ -21,6 +21,7 @@ TagManager:
   - DetectorMonos
   - Enemigo
   - Pila de cajas
+  - Coleccionable
   layers:
   - Default
   - TransparentFX

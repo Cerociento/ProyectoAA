@@ -133,7 +133,6 @@ public class CargarGuardar : MonoBehaviour
 
         imagenGuardado.SetActive(true);
         StartCoroutine("Imagen");
-        Debug.Log(colecionables + "  G " + nivel + "   " + tiempoTotal);
     } 
 
     public void Cargar()

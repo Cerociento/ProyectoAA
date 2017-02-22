@@ -26,6 +26,7 @@ public class MenuPruebas : MonoBehaviour {
     bool estamosEnElMenuPrincipal;
     [SerializeField]
     GameObject seguro;
+    bool desactivar = true;
 
     CargarGuardar cargaGuarda;
 
@@ -43,9 +44,10 @@ public class MenuPruebas : MonoBehaviour {
     void Update()
     {
         if(estamosEnElMenuPrincipal)
-        if(Input.anyKey && !GameObject.Find("Advertencia Guardado"))
+        if(Input.anyKey && !GameObject.Find("Advertencia Guardado") && desactivar)
         {
             inicio.SetTrigger("Desactiva");
+                desactivar = false;
         }
 
         if (File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
