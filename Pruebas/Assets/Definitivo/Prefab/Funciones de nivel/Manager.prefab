@@ -9055,7 +9055,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 971d3837a5dd26843893423616f3afb7, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -9287,7 +9287,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 971d3837a5dd26843893423616f3afb7, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -10192,7 +10192,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 971d3837a5dd26843893423616f3afb7, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
@@ -11496,10 +11496,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 0
   vecesVisto: 0
-  colecionables: 0
+  coleccionables: 0
   imagenGuardado: {fileID: 1000010629501912}
   desactivar: {fileID: 1000010689382312}
   listaGuardar: 
+  listaColeccionables:
+  - {fileID: 1000013598735718}
+  - {fileID: 1000012285667588}
+  - {fileID: 1000014024656632}
+  - {fileID: 1000013499420304}
+  - {fileID: 1000012447915048}
+  - {fileID: 1000013320185754}
+  - {fileID: 1000012249655890}
+  - {fileID: 1000014254042874}
+  - {fileID: 1000011453128300}
+  - {fileID: 1000011486957888}
+  - {fileID: 1000013473333300}
+  - {fileID: 1000010766365698}
+  - {fileID: 1000012045826186}
 --- !u!114 &114000011410184040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12005,7 +12019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
-  velRotacion: 3
+  velRotacion: 2
   fSalto: 5
   sonido: {fileID: 82000012481972242}
   sonidoBis: {fileID: 82000014255126764}
@@ -12682,14 +12696,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21734425, g: 0.6992991, b: 0.9852941, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 03f7e7d8c3478934b9a2a392219bb843, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12812,7 +12826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
-  velRotacion: 3
+  velRotacion: 2
   caja: {fileID: 0}
   asignarCaja: 1
   sonido: {fileID: 82000010668686324}
@@ -14089,7 +14103,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -216, y: 114}
+  m_AnchoredPosition: {x: -216, y: 94}
   m_SizeDelta: {x: 59, y: 26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011427043324
@@ -14331,7 +14345,7 @@ RectTransform:
   m_GameObject: {fileID: 1000010599696874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012091986884}
@@ -14339,7 +14353,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -216, y: 146}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 358, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000013383816326
 RectTransform:

@@ -19,6 +19,11 @@ public class Coleccionables : MonoBehaviour {
         gameObject.SetActive(ManagerColeccionables.listaGuardar[numPosicionLista]);
     }
 
+    void OnEnable()
+    {
+        
+    }
+
 	void OnTriggerEnter(Collider col)              
 {
 		if(col.gameObject.CompareTag("Grande") || col.gameObject.CompareTag("Pequeño"))
@@ -26,7 +31,6 @@ public class Coleccionables : MonoBehaviour {
             Pausa.recogidos++;
             ManagerColeccionables.listaGuardar[numPosicionLista] = false;
             sonido.PlayOneShot(sonidoColeccionable);
-            GetComponent<BoxCollider>().enabled = false;
             coleccionables.Extra();
             gameObject.SetActive(false);
         }

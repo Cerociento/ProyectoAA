@@ -68,7 +68,7 @@ public class MenuPruebas : MonoBehaviour {
 	public void LoadSceneContinuar(){
         if(File.Exists(Application.persistentDataPath + "/monosave.af"))
         {
-            GameObject.Find("Manager").GetComponent<CargarGuardar>().Cargar();          
+            cargaGuarda.Cargar();
         }
         else
         {

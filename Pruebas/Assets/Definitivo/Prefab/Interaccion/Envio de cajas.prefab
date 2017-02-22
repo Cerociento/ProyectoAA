@@ -683,6 +683,7 @@ MonoBehaviour:
   textoGrande: {fileID: 114000013042299366}
   sonido: {fileID: 82000012341497950}
   sonidoEnvio: {fileID: 8300000, guid: 1a0841dbea3845e41aadbab9d97d6fbe, type: 3}
+  anim: {fileID: 0}
 --- !u!114 &114000012709661402
 MonoBehaviour:
   m_ObjectHideFlags: 1

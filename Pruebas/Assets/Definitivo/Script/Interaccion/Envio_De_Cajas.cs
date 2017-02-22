@@ -7,31 +7,18 @@ public class Envio_De_Cajas : MonoBehaviour
     [SerializeField]
     Transform[] destinoCajasChicas;
     int destinoChicas=0;
-    [SerializeField]
-    Text textoPequeña;
 
     [SerializeField]
     Transform[] destinoCajasGrandes;
     int destinoGrandes=0;
-    [SerializeField]
-    Text textoGrande;
 
     [SerializeField]
 	AudioSource sonido;
 	[SerializeField]
 	AudioClip sonidoEnvio;
 
-    int indiceChicas;
-    int indiceGrandes;
-
-    void Start()
-    {
-        textoPequeña.text =destinoCajasChicas.Length.ToString();
-        textoGrande.text = destinoCajasGrandes.Length.ToString();
-        indiceChicas = destinoCajasChicas.Length;
-        indiceGrandes = destinoCajasGrandes.Length;
-    }
-
+    [SerializeField]
+    Animator anim;
 
     void Update()
     {
@@ -54,8 +41,7 @@ public class Envio_De_Cajas : MonoBehaviour
             {
                 hit.transform.position = destinoCajasChicas[destinoChicas].position;
                 destinoChicas++;
-                indiceChicas--;
-                textoPequeña.text = indiceChicas.ToString();
+                anim.SetTrigger("Suck");
                 sonido.PlayOneShot(sonidoEnvio);
             }
         }
@@ -67,9 +53,8 @@ public class Envio_De_Cajas : MonoBehaviour
             {
                 hit.transform.position = destinoCajasGrandes[destinoGrandes].position;
                 destinoGrandes++;
-                indiceGrandes--;
 				sonido.PlayOneShot(sonidoEnvio);
-                textoGrande.text = indiceGrandes.ToString();
+                anim.SetTrigger("Suck");
             }
         }
     }
