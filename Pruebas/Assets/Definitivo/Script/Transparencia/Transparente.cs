@@ -15,9 +15,9 @@ public class Transparente : MonoBehaviour
         for (int m = 0; m < GetComponent<Renderer>().materials.Length; m++)
         {
             if (GetComponent<Renderer>().materials[m].color.a < 1)
-                GetComponent<Renderer>().materials[m].shader = Shader.Find("Legacy Shaders/Transparent/Diffuse");
+                GetComponent<Renderer>().materials[m].shader = Shader.Find("Unlit/ApeTRShader");
             else
-                GetComponent<Renderer>().materials[m].shader = Shader.Find("Legacy Shaders/Bumped Diffuse");
+                GetComponent<Renderer>().materials[m].shader = Shader.Find("Unlit/ApeTRShader");
 
             if (puertaDetectada)
             {
