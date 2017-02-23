@@ -69599,6 +69599,26 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65000010424781660, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 2.0850973
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010424781660, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.12922285
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010424781660, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.14010212
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000010424781660, guid: 52eb6ae66098e404e80194817ea16af4,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.6832085
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52eb6ae66098e404e80194817ea16af4, type: 2}
   m_IsPrefabParent: 0
