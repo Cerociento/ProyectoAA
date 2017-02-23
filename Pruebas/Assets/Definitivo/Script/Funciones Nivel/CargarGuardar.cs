@@ -103,6 +103,13 @@ public class CargarGuardar : MonoBehaviour
             desactivar.SetActive(true);
         }
 
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            Borrar();
+            imagenGuardado.SetActive(true);
+            StartCoroutine("Imagen");
+        }
+
         #region editor
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.F1))

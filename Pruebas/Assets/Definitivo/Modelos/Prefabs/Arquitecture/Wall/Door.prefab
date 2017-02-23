@@ -142,6 +142,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010898179530}
   - 114: {fileID: 114000013553635952}
+  - 65: {fileID: 65000010794640790}
   m_Layer: 8
   m_Name: Door
   m_TagString: Background
@@ -271,7 +272,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012494414120}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 13.98, y: 0.005, z: -7.6424875}
+  m_LocalPosition: {x: -22.02, y: 2.01, z: 2.36}
   m_LocalScale: {x: 1.0000007, y: 1, z: 1.0000007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -646,6 +647,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 0.5, z: 3}
   m_Center: {x: 0, y: 0.25, z: 1.5}
+--- !u!65 &65000010794640790
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012494414120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1957912, y: 0.95236087, z: 1}
+  m_Center: {x: -0.31922776, y: -0.40381944, z: -0.000000029802303}
 --- !u!65 &65000011004548212
 BoxCollider:
   m_ObjectHideFlags: 1
