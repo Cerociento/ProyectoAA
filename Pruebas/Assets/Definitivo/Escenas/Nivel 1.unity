@@ -15495,27 +15495,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010467467554, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.83
+      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: 4000010467467554, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 6.2
+      value: 7.24
       objectReference: {fileID: 0}
     - target: {fileID: 4000010995440880, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.83
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 4000010995440880, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.09
+      value: 7.16
       objectReference: {fileID: 0}
     - target: {fileID: 4000012374816976, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.12
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4000012374816976, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.22
+      value: 2.84
       objectReference: {fileID: 0}
     - target: {fileID: 4000014047502260, guid: 52be3d9cd3aa7914b8f42c558c658bf9, type: 2}
       propertyPath: m_RootOrder
