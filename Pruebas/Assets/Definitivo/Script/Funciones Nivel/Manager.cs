@@ -5,7 +5,7 @@ using System.Collections;
 public class Manager : MonoBehaviour
 {
     [SerializeField]
-    public bool nivelMas;
+    public static bool nivelMas;
 
     public static bool muertoGrande = false;
     public static bool muertoPequeño = false;
@@ -35,9 +35,9 @@ public class Manager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (nivelMas)
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
+            if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
+            {
+            if (nivelMas)
             {
                 SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
                 nivelMas = false;
