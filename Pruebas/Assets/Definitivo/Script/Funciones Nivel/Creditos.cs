@@ -17,7 +17,11 @@ public class Creditos : MonoBehaviour {
     {
        audioMixer.SetFloat("Master", -80);
 	}
-	        void OnDisabled(){audioMixer.SetFloat("Master",0);}
+
+    void OnDisable()
+    {
+        audioMixer.SetFloat("Master",0);
+    }
 	
 			
     public void Vuelta()
