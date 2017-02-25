@@ -1259,6 +1259,7 @@ GameObject:
   - 33: {fileID: 23562461}
   - 64: {fileID: 23562460}
   - 23: {fileID: 23562459}
+  - 114: {fileID: 23562462}
   m_Layer: 0
   m_Name: Quad (3)
   m_TagString: Untagged
@@ -1327,6 +1328,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23562457}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &23562462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23562457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!4 &31079877
 Transform:
   m_ObjectHideFlags: 0
@@ -2311,6 +2325,7 @@ GameObject:
   - 33: {fileID: 67685459}
   - 64: {fileID: 67685458}
   - 23: {fileID: 67685457}
+  - 114: {fileID: 67685460}
   m_Layer: 0
   m_Name: Quad (8)
   m_TagString: Untagged
@@ -2379,6 +2394,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 67685455}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &67685460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 67685455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &67879640
 Prefab:
   m_ObjectHideFlags: 0
@@ -11479,6 +11507,7 @@ GameObject:
   - 33: {fileID: 318814612}
   - 64: {fileID: 318814611}
   - 23: {fileID: 318814610}
+  - 114: {fileID: 318814613}
   m_Layer: 0
   m_Name: Quad (11)
   m_TagString: Untagged
@@ -11547,6 +11576,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 318814608}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &318814613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318814608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &321470417
 Prefab:
   m_ObjectHideFlags: 0
@@ -26656,6 +26698,7 @@ GameObject:
   - 33: {fileID: 687664891}
   - 64: {fileID: 687664890}
   - 23: {fileID: 687664889}
+  - 114: {fileID: 687664892}
   m_Layer: 0
   m_Name: Quad (9)
   m_TagString: Untagged
@@ -26724,6 +26767,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687664887}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &687664892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687664887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &697383140
 Prefab:
   m_ObjectHideFlags: 0
@@ -29245,6 +29301,7 @@ GameObject:
   - 33: {fileID: 762384109}
   - 64: {fileID: 762384108}
   - 23: {fileID: 762384107}
+  - 114: {fileID: 762384110}
   m_Layer: 0
   m_Name: Quad (5)
   m_TagString: Untagged
@@ -29313,6 +29370,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 762384105}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &762384110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762384105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1 &762719258
 GameObject:
   m_ObjectHideFlags: 0
@@ -46974,6 +47044,7 @@ GameObject:
   - 33: {fileID: 1225817946}
   - 64: {fileID: 1225817945}
   - 23: {fileID: 1225817944}
+  - 114: {fileID: 1225817947}
   m_Layer: 0
   m_Name: Quad
   m_TagString: Untagged
@@ -47042,6 +47113,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225817942}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1225817947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225817942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &1231168708
 Prefab:
   m_ObjectHideFlags: 0
@@ -49843,6 +49927,7 @@ GameObject:
   - 33: {fileID: 1305768082}
   - 64: {fileID: 1305768081}
   - 23: {fileID: 1305768080}
+  - 114: {fileID: 1305768083}
   m_Layer: 0
   m_Name: Quad (7)
   m_TagString: Untagged
@@ -49911,6 +49996,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305768078}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1305768083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305768078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1 &1305770206
 GameObject:
   m_ObjectHideFlags: 0
@@ -50166,6 +50264,7 @@ GameObject:
   - 33: {fileID: 1306979016}
   - 64: {fileID: 1306979015}
   - 23: {fileID: 1306979014}
+  - 114: {fileID: 1306979017}
   m_Layer: 0
   m_Name: Quad (2)
   m_TagString: Untagged
@@ -50234,6 +50333,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306979012}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1306979017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306979012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &1315451741
 Prefab:
   m_ObjectHideFlags: 0
@@ -62654,6 +62766,7 @@ GameObject:
   - 33: {fileID: 1656086306}
   - 64: {fileID: 1656086305}
   - 23: {fileID: 1656086304}
+  - 114: {fileID: 1656086307}
   m_Layer: 0
   m_Name: Quad (6)
   m_TagString: Untagged
@@ -62722,6 +62835,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1656086302}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1656086307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1656086302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &1660600997
 Prefab:
   m_ObjectHideFlags: 0
@@ -65287,6 +65413,7 @@ GameObject:
   - 33: {fileID: 1749398491}
   - 64: {fileID: 1749398490}
   - 23: {fileID: 1749398489}
+  - 114: {fileID: 1749398492}
   m_Layer: 0
   m_Name: Quad (1)
   m_TagString: Untagged
@@ -65355,6 +65482,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1749398487}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1749398492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1749398487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &1749964278
 Prefab:
   m_ObjectHideFlags: 0
@@ -69168,6 +69308,7 @@ GameObject:
   - 33: {fileID: 1868158400}
   - 64: {fileID: 1868158399}
   - 23: {fileID: 1868158398}
+  - 114: {fileID: 1868158401}
   m_Layer: 0
   m_Name: Quad (4)
   m_TagString: Untagged
@@ -69236,6 +69377,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868158396}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1868158401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868158396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1bbd741a7a50e49bc6217323352315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puertaDetectada: 0
+  alfa: 0
 --- !u!1001 &1869688432
 Prefab:
   m_ObjectHideFlags: 0

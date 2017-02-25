@@ -57,7 +57,7 @@ public class Camara : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         transform.position = Vector3.Lerp (transform.position, LugarCamara.position, Time.deltaTime * velocidad);
         transform.LookAt(Target.position + sitioCamara);

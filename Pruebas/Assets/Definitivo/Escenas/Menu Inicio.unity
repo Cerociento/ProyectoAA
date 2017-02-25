@@ -1322,7 +1322,7 @@ GameObject:
   - 222: {fileID: 302359226}
   - 114: {fileID: 302359225}
   m_Layer: 5
-  m_Name: 10 Col****
+  m_Name: 10 Col
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1336,7 +1336,7 @@ RectTransform:
   m_GameObject: {fileID: 302359223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6.8778033, y: 3.9257932, z: 3.9257932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1911729512}
@@ -1365,7 +1365,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8206d69a08983ba468cbb47568927cb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b177a1f14a2d0604fac27cf699445cfc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4553,6 +4553,18 @@ Prefab:
         type: 2}
       propertyPath: MaxDistance
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013820848156, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 18.762
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013820848156, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -14.135
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013024724376, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19a6bd89975b1ed4dbd213462411a1aa, type: 2}
