@@ -104847,6 +104847,22 @@ Prefab:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4000013664600850, guid: 2606d16dec561294dab93323abbc688a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013664600850, guid: 2606d16dec561294dab93323abbc688a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013664600850, guid: 2606d16dec561294dab93323abbc688a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013664600850, guid: 2606d16dec561294dab93323abbc688a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2606d16dec561294dab93323abbc688a, type: 2}
   m_IsPrefabParent: 0

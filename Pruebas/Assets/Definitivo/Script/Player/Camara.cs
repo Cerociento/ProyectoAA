@@ -34,15 +34,10 @@ public class Camara : MonoBehaviour
 
     void Update()
     {
-
-       // transform.LookAt(Target);
-
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Target = Pequeño;
             LugarCamara = LugarPequenio;
-            //transform.localPosition = sitioCamara;
-            //transform.localEulerAngles = Vector3.zero;
             Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
 			Grande.gameObject.GetComponent<AudioListener>().enabled=false;
             Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = true;
@@ -54,8 +49,6 @@ public class Camara : MonoBehaviour
         {
             Target = Grande;
             LugarCamara = LugarGrande;        
-            //transform.localPosition = sitioCamara;
-            //transform.localEulerAngles = Vector3.zero;
             Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = true;
 			Grande.gameObject.GetComponent<AudioListener>().enabled=true;
             Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = false;
@@ -64,7 +57,7 @@ public class Camara : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         transform.position = Vector3.Lerp (transform.position, LugarCamara.position, Time.deltaTime * velocidad);
         transform.LookAt(Target.position + sitioCamara);

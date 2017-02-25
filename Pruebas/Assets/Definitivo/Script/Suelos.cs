@@ -12,7 +12,8 @@ public class Suelos : MonoBehaviour {
 
 
 	void OnTriggerEnter(Collider col){
-		if(col.gameObject.CompareTag("Grande")){
+		if(col.gameObject.CompareTag("Grande")|| col.gameObject.CompareTag("Pequeño"))
+        {
 			cristal.SetActive(true);
 			sueloGrande.SetActive(true);
 			sueloPequeño.SetActive(true);

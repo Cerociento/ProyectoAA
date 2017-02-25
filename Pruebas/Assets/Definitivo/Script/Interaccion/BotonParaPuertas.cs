@@ -19,7 +19,6 @@ public class BotonParaPuertas : MonoBehaviour {
 
     void Update()
     {
-
             if (activar)
             {
                 if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.Mouse0))
