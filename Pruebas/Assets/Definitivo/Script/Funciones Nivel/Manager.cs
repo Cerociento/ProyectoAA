@@ -15,6 +15,8 @@ public class Manager : MonoBehaviour
     GameObject pequeñoDañado;
     [SerializeField]
     GameObject alma;
+    [SerializeField]
+    GameObject creditosFinal;
 
     void Awake()
     {
@@ -70,6 +72,11 @@ public class Manager : MonoBehaviour
             pequeñoDañado.transform.parent.position = Vector3.MoveTowards(pequeñoDañado.transform.parent.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
             pequeñoDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
             pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            creditosFinal.SetActive(false);
         }
     }
 

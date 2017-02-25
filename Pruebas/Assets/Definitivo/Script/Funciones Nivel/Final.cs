@@ -24,15 +24,23 @@ public class Final : MonoBehaviour
     bool finDelJuego;
     bool finNivel;
 
+    Pausa pausa;
+
+    void Start()
+    {
+        StartCoroutine("AsigCreditos");
+    }
+
     void Update()
     {
         if (subePequeño && subeGrande)
         {
             if (finDelJuego)
             {
-                Timer.tiempoFunciona1 = false;
-                SceneManager.LoadScene(0);
+                MenuFinNivel.prueba = true;
                 finNivel = true;
+                StartCoroutine("Creditos");
+                finDelJuego = false;
             }
             else
             {
@@ -41,11 +49,12 @@ public class Final : MonoBehaviour
                 sueloPequeño.transform.Translate(Vector3.up * 2 * Time.deltaTime);
                 sueloGrande.transform.Translate(Vector3.up * 2 * Time.deltaTime);
                 Timer.tiempoFunciona1 = false;
+
             if (!finNivel)
                {
                     MenuFinNivel.prueba = true;
                     finNivel = true;
-               }
+                }
             }
         }
     }
@@ -113,4 +122,19 @@ public class Final : MonoBehaviour
             }
         }
     }
+
+    IEnumerator AsigCreditos()
+    {
+        yield return new WaitForSeconds(1);
+        pausa = GameObject.Find("Canvas Pausa").GetComponent<Pausa>();
+    }
+
+    IEnumerator Creditos()
+    {
+        yield return new WaitForSeconds(4);
+        pausa.Creditos();
+    }
+
+
+
 }

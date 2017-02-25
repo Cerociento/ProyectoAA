@@ -37,6 +37,9 @@ public class Pausa : MonoBehaviour {
     [Range(0, 50)]
     public static int recogidos;
 
+    [SerializeField]
+    GameObject creditos;
+
     void Start () {
 		pausado=false;
 		nPersonaje=1;
@@ -90,4 +93,9 @@ public class Pausa : MonoBehaviour {
 	public void OnHover(){
 		sonido.PlayOneShot(sonidoSeleccion);
 	}
+
+    public void Creditos()
+    {
+        creditos.SetActive(true);
+    }
 }
