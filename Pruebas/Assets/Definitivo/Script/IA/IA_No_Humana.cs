@@ -8,6 +8,7 @@ public class IA_No_Humana : MonoBehaviour {
 	[SerializeField]
 	AudioClip alarma;
 
+    Ray rayo;
     RaycastHit ray = new RaycastHit();
     [SerializeField]
     Transform target;
@@ -24,16 +25,22 @@ public class IA_No_Humana : MonoBehaviour {
     void Update()
     {
         target = Camara.Target;
-        gameObject.transform.GetChild(0).LookAt(target);
+        gameObject.transform.GetChild(0).LookAt(target.position);
+        Debug.Log(transform.GetChild(0).position);
+        
     }
 
         void OnTriggerEnter(Collider hit)
     {
         if (hit.transform.CompareTag("Grande")|| hit.transform.CompareTag("Pequeño"))
         {
-            if(Physics.Linecast(transform.GetChild(0).position,target.position,out ray,ve))
+            Debug.Log("Entra");
+            rayo.origin = transform.GetChild(0).position;
+            rayo.direction = hit.transform.position - rayo.origin;
+            if (Physics.Raycast(rayo,out ray/*,ve*/))
             {
-                Debug.DrawRay(transform.position, target.position, Color.red,10);
+                Debug.DrawLine(rayo.origin, rayo.direction, Color.blue,10);
+                Debug.Log(ray.collider.name);
                 if (ray.transform.CompareTag("Grande"))
                 {
                     Manager.muertoGrande = true;

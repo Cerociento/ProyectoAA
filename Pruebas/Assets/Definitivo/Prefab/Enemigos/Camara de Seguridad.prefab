@@ -214,7 +214,7 @@ GameObject:
   - 64: {fileID: 64000011646782866}
   - 114: {fileID: 114000010368074424}
   - 82: {fileID: 82000011883157686}
-  m_Layer: 8
+  m_Layer: 2
   m_Name: cono vision
   m_TagString: Untagged
   m_Icon: {fileID: 0}

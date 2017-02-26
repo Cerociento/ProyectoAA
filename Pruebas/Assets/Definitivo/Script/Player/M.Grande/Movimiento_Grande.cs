@@ -98,9 +98,6 @@ public class Movimiento_Grande : MonoBehaviour
 		}
         #endregion
 
-        Debug.Log(soltar);
-
-
         if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (caja)
@@ -115,7 +112,6 @@ public class Movimiento_Grande : MonoBehaviour
                 else
                 {
                     Soltar();
-                    Debug.Log(soltar);
                 }
             }
             else if (caja == null)
