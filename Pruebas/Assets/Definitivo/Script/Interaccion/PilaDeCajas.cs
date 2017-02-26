@@ -69,7 +69,7 @@ public class PilaDeCajas : MonoBehaviour
             }
            else if (Caja.caja== null)
                 Movimiento_Grande.soltar=true;
-            //  StartCoroutine("Desasignar");
+
             coger = false;
         }
     }   
@@ -87,10 +87,4 @@ public class PilaDeCajas : MonoBehaviour
             }
         }
  }   
-
-    IEnumerator Desasignar()
-    {
-        yield return new WaitForSeconds(1);
-        Movimiento_Grande._asignarCaja = false;
-    }
 }	

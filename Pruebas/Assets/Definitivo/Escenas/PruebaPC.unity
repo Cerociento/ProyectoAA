@@ -10904,7 +10904,7 @@ Prefab:
     - target: {fileID: 135000010160348636, guid: cee9f7a226f32284bb777d519a14b102,
         type: 2}
       propertyPath: m_Radius
-      value: 4
+      value: 5.5341415
       objectReference: {fileID: 0}
     - target: {fileID: 114000010703776076, guid: cee9f7a226f32284bb777d519a14b102,
         type: 2}
