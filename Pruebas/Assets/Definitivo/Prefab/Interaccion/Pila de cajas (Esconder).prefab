@@ -1998,7 +1998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81cbaaa6faa4ae34dae0ffa46078dfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Caja:
+  cajaList:
   - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
   coger: 0
   sonido: {fileID: 82000012921739746}

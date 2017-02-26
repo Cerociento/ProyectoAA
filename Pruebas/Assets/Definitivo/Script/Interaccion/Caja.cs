@@ -33,10 +33,10 @@ public class Caja : MonoBehaviour
 
     void OnCollisionStay()
     {
-        /*if(gameObject.CompareTag("Caja Escondite"))
+        if(gameObject.CompareTag("Caja Escondite"))
         {
             Choque();
-        }*/
+        }
     }
 
     public void Choque()

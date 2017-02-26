@@ -50,7 +50,6 @@ public class Movimiento_Grande : MonoBehaviour
     void Update()
     {
         asignarCaja = _asignarCaja;
-
         if(asignarCaja)
            caja = Caja.caja;
 
@@ -93,33 +92,32 @@ public class Movimiento_Grande : MonoBehaviour
 			}
 		}
         #endregion
-        
+
         if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (caja)
-            {     
+            {
                 soltar = !soltar;
 
                 if (!soltar)
                     Coger();
                 else
-                    Soltar();   
+                    Soltar();
             }
-            else
-            {
-                Soltar();
-            }
-       
-         /* if(asignarCaja==false)
-           if (gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0))
-            {
-                caja = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject;
-                    if (gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled == true)
-                    {
-                        gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = false;
-                    }
-            }*/
-         }
+            else if (caja == null)
+                if (!gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject)
+                {
+                    Debug.Log("la");
+                    return;
+                }
+                else if (gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject)
+                {
+                    Debug.Log("hokla");
+                    caja = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject;
+                    Soltar();
+                }
+               
+        }
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (caja.CompareTag("Caja Escondite"))
@@ -166,6 +164,7 @@ public class Movimiento_Grande : MonoBehaviour
             anim.SetBool("Coger", true);
             anim.SetBool("Esconder", false);
            _asignarCaja = false;
+        
     }
 
     public void Soltar()
@@ -192,7 +191,13 @@ public class Movimiento_Grande : MonoBehaviour
         }
         else if(caja==null)
         {
-            return; 
+            _asignarCaja = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).DetachChildren();
+            anim.SetBool("Coger", false);
         }
     }
 

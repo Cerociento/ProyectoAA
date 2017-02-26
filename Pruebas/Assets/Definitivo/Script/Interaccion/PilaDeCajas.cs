@@ -4,7 +4,7 @@ using System.Collections;
 public class PilaDeCajas : MonoBehaviour
 {
     [SerializeField]
-    GameObject[] Caja;
+    GameObject[] cajaList;
     int activador;
     [SerializeField]
     bool coger = false;
@@ -37,13 +37,13 @@ public class PilaDeCajas : MonoBehaviour
             texto = null;
         }
 
-        if (activador == Caja.Length)
+        if (activador == cajaList.Length)
             {
             if (cajasEscondite)
                 activador = 0;
             else
             {
-                Caja = new GameObject[0];
+                cajaList = new GameObject[0];
                 Destroy(this.gameObject, 2);
             }
             }
@@ -55,7 +55,7 @@ public class PilaDeCajas : MonoBehaviour
             Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(1).GetChild(0);
             Movimiento_Grande._anim.SetBool("Coger", true);
             Movimiento_Grande._anim.SetBool("Esconder", false);
-            if (activador < Caja.Length)
+            if (activador < cajaList.Length)
             {
                 if (cajasEscondite)
                 {
@@ -63,11 +63,13 @@ public class PilaDeCajas : MonoBehaviour
                 }
                 else
                 {
-                   Instantiate(Caja[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);  
+                   Instantiate(cajaList[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);  
                    activador++;
                 }
             }
-            StartCoroutine("Desasignar");
+           else if (Caja.caja== null)
+                Movimiento_Grande.soltar=true;
+            //  StartCoroutine("Desasignar");
             coger = false;
         }
     }   
