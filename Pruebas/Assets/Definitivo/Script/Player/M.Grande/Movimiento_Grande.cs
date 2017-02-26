@@ -107,7 +107,6 @@ public class Movimiento_Grande : MonoBehaviour
                 if (!soltar)
                 {
                     Coger();
-                    Debug.Log(soltar);
                 }
                 else
                 {

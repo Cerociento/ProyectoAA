@@ -69,7 +69,6 @@ public class PilaDeCajas : MonoBehaviour
             }
            else if (Caja.caja== null)
                 Movimiento_Grande.soltar=true;
-
             coger = false;
         }
     }   
