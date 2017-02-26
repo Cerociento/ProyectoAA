@@ -39,6 +39,9 @@ public class Movimiento_Grande : MonoBehaviour
 	[SerializeField]
 	AudioSource sonido;
 
+    [SerializeField]
+    Caja[] hijo;
+
     void Start()
     {
         colorAlfa = transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.color;
@@ -49,6 +52,8 @@ public class Movimiento_Grande : MonoBehaviour
 
     void Update()
     {
+        hijo = GetComponentsInChildren<Caja>();
+
         asignarCaja = _asignarCaja;
         if(asignarCaja)
            caja = Caja.caja;
@@ -93,6 +98,9 @@ public class Movimiento_Grande : MonoBehaviour
 		}
         #endregion
 
+        Debug.Log(soltar);
+
+
         if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (caja)
@@ -100,21 +108,27 @@ public class Movimiento_Grande : MonoBehaviour
                 soltar = !soltar;
 
                 if (!soltar)
+                {
                     Coger();
+                    Debug.Log(soltar);
+                }
                 else
+                {
                     Soltar();
+                    Debug.Log(soltar);
+                }
             }
             else if (caja == null)
-                if (!gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject)
+                if (hijo==null)
                 {
-                    Debug.Log("la");
                     return;
                 }
-                else if (gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject)
+                else if (hijo.Length>0)
                 {
-                    Debug.Log("hokla");
+                    _asignarCaja = false;
                     caja = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject;
                     Soltar();
+                    soltar = true;
                 }
                
         }
@@ -169,6 +183,7 @@ public class Movimiento_Grande : MonoBehaviour
 
     public void Soltar()
     {
+
         if (!caja.CompareTag("Caja Escondite"))
         {
             _asignarCaja = true;
