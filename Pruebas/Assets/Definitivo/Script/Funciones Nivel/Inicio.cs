@@ -19,6 +19,7 @@ public class Inicio : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if(!unload)
         if(other.CompareTag("Finish"))
         {
             GameObject.FindWithTag("Grande").transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
