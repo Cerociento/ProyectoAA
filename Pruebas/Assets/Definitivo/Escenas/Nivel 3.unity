@@ -55207,7 +55207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cajaList:
   - {fileID: 1000014061532084, guid: aaa896791f267294aaa231c7befbab72, type: 2}
-  - {fileID: 1000010688865600, guid: b1577afe26c971246bd8debd77a1b3a1, type: 2}
+  - {fileID: 1000012352033960, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
   coger: 0
   sonido: {fileID: 1041448464}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
