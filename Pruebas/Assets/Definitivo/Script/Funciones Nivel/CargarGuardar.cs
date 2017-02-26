@@ -201,6 +201,7 @@ public class CargarGuardar : MonoBehaviour
             TNivel = 0;
             CColeccionable = 0;
             Pausa.recogidos = 0;
+            Pausa.vecesVisto = 0;
             Timer.tiempoFunciona1 = true;
             for (int i = 0; i < ManagerColeccionables.listaGuardar.Length; i++)
             {

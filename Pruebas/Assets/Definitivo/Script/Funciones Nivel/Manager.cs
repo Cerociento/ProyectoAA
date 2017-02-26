@@ -35,7 +35,7 @@ public class Manager : MonoBehaviour
 
     void FixedUpdate()
     {
-            if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
+            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
             {
             if (nivelMas)
             {
