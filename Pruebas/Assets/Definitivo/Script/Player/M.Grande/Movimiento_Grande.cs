@@ -161,6 +161,7 @@ public class Movimiento_Grande : MonoBehaviour
             caja.GetComponent<Rigidbody>().useGravity = false;
             caja.GetComponent<Rigidbody>().isKinematic = true;
             anim.SetBool("Coger", true);
+            anim.SetBool("Esconder", false);
            _asignarCaja = false;
     }
 

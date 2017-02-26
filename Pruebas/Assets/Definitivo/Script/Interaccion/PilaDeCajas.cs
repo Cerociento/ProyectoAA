@@ -54,6 +54,7 @@ public class PilaDeCajas : MonoBehaviour
             sonido.PlayOneShot(sonidoCaja);
             Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(1).GetChild(0);
             Movimiento_Grande._anim.SetBool("Coger", true);
+            Movimiento_Grande._anim.SetBool("Esconder", false);
             if (activador < Caja.Length)
             {
                 if (cajasEscondite)
