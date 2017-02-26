@@ -43,7 +43,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     void Update()
     {
         float num = GetComponent<Rigidbody>().velocity.y * Time.deltaTime;
-        anim.SetFloat("EnAire", num);
+       // anim.SetFloat("EnAire", num);
 
         #region MOVIMIENTO 
         YAxis = Input.GetAxis("Horizontal");

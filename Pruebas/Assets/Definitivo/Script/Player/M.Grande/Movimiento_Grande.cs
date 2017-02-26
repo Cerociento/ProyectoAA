@@ -25,6 +25,12 @@ public class Movimiento_Grande : MonoBehaviour
     Color colorAlfa;
     [SerializeField]
     bool asignarCaja;
+    public static bool _asignarCaja = true;
+
+    //Animaciones
+    [SerializeField]
+    Animator anim;
+    public static Animator _anim;
 
     //Checkpoint
     public static Vector3 checkpointGrande = new Vector3(0, 1.5f, 0);
@@ -35,13 +41,16 @@ public class Movimiento_Grande : MonoBehaviour
 
     void Start()
     {
-        colorAlfa = transform.GetChild(0).GetComponent<Renderer>().material.color;
+        colorAlfa = transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.color;
         soltar = false;
         caja = null;
+        _anim = anim;
     }
 
     void Update()
     {
+        asignarCaja = _asignarCaja;
+
         if(asignarCaja)
            caja = Caja.caja;
 
@@ -54,10 +63,15 @@ public class Movimiento_Grande : MonoBehaviour
             if (ZAxis > 0 || ZAxis < 0)
             {
                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+                anim.SetFloat("Andar", ZAxis);
                 if (!sonido.isPlaying)
                 {
                     sonido.Play();
                 }
+            }
+            else
+            {
+                anim.SetFloat("Andar", 0);
             }
 
             if (YAxis < 0 || YAxis > 0)
@@ -92,15 +106,15 @@ public class Movimiento_Grande : MonoBehaviour
                     Soltar();   
             }
        
-          if(asignarCaja==false)
-           if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0))
+         /* if(asignarCaja==false)
+           if (gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0))
             {
-                caja = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).gameObject;
-                    if (gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled == true)
+                caja = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject;
+                    if (gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled == true)
                     {
-                        gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = false;
+                        gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = false;
                     }
-            }
+            }*/
          }
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -131,41 +145,46 @@ public class Movimiento_Grande : MonoBehaviour
 
     void Escondido()
     {
-        colorAlfa.a = 0.1f;
-        gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = colorAlfa;
+        colorAlfa.a = 0.3f;
+        anim.SetBool("Esconder", true);
+        gameObject.transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.color = colorAlfa;
         StartCoroutine("Esconder", 10);
     }
 
     public void Coger()
     {
-            asignarCaja = false;
-            caja.transform.position = gameObject.transform.GetChild(0).GetChild(2).GetChild(2).position;
-            caja.transform.parent = gameObject.transform.GetChild(0).GetChild(2).GetChild(2);
+            
+            caja.transform.position = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).position;
+            caja.transform.parent = gameObject.transform.GetChild(0).GetChild(1).GetChild(0);
             caja.GetComponent<BoxCollider>().enabled = false;
             caja.GetComponent<SphereCollider>().enabled = false;
             caja.GetComponent<Rigidbody>().useGravity = false;
             caja.GetComponent<Rigidbody>().isKinematic = true;
+            anim.SetBool("Coger", true);
+           _asignarCaja = false;
     }
 
     public void Soltar()
     {
         if (!caja.CompareTag("Caja Escondite"))
         {
-            asignarCaja = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).DetachChildren();
+            _asignarCaja = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).DetachChildren();
+            anim.SetBool("Coger", false);
         }
         else if(caja.CompareTag("Caja Escondite"))
         {
-            asignarCaja = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<SphereCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-            gameObject.transform.GetChild(0).GetChild(2).GetChild(2).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
+            _asignarCaja = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
+            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
             caja.transform.parent = GameObject.Find("Manager").transform;
+            anim.SetBool("Coger", false);
         }
         else if(caja==null)
         {
@@ -177,9 +196,10 @@ public class Movimiento_Grande : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         colorAlfa.a = 1f;
-        gameObject.transform.GetChild(0).GetComponent<Renderer>().material.color = colorAlfa;
+        gameObject.transform.GetChild(1).GetChild(0).GetComponent<Renderer>().material.color = colorAlfa;
         gameObject.tag = "Grande";
         gameObject.layer = 11;
+        anim.SetBool("Esconder", false);
     }
 
     void OnTriggerEnter(Collider other)

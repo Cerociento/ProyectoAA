@@ -15,8 +15,11 @@ public class Caja : MonoBehaviour
     {
         if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
-            caja = gameObject;
-            other.GetComponent<Rigidbody>().Sleep();
+            if (Movimiento_Grande._asignarCaja)
+            {
+                caja = gameObject;
+                other.GetComponent<Rigidbody>().Sleep();
+            }
         }
     }
 

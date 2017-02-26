@@ -13,7 +13,7 @@ public class Daño_Trampa : MonoBehaviour
 		if (other.CompareTag("Grande")||other.CompareTag("Escondido"))
         {
             Manager.muertoGrande = true;
-            Pausa.vecesVisto++;
+            //Pausa.vecesVisto++;
             sonido.PlayOneShot(sonidoMuerte);
             other.GetComponent<Rigidbody>().isKinematic = true;
         }
@@ -21,7 +21,7 @@ public class Daño_Trampa : MonoBehaviour
         if (other.CompareTag("Pequeño"))
         {
             Manager.muertoPequeño = true;
-            Pausa.vecesVisto++;
+            //Pausa.vecesVisto++;
             sonido.PlayOneShot(sonidoMuerte);
             other.GetComponent<Rigidbody>().isKinematic = true;
         }

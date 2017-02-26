@@ -35,21 +35,19 @@ public class Laser : MonoBehaviour {
               if (hit.collider.CompareTag("Grande"))
               {
                 Manager.muertoGrande = true;
-                Pausa.vecesVisto++;
+                //Pausa.vecesVisto++;
             }
 
             if (hit.collider.CompareTag("Pequeño"))
               {
                 Manager.muertoPequeño = true;
-                Pausa.vecesVisto++;
+               // Pausa.vecesVisto++;
             }
         }
           else
           {
               lr.SetPosition(1, new Vector3(0, 0, 200));
           }
-
-     // drawLaser(transform.position, 3);
   }
   void OnTriggerStay(Collider hit)
     {
@@ -72,24 +70,4 @@ public class Laser : MonoBehaviour {
         if (other.gameObject.CompareTag("Grande"))
             paraMover = false;
     }
-
- /*void drawLaser(Vector3 startPoint,int n)
-  {
-      RaycastHit hit;
-     Vector3 rayDir = transform.TransformDirection(Vector3.forward);
-
-      for (var i = 0; i < n; i++)
-      {
-          if (Physics.Raycast(startPoint, rayDir,out hit, 1000))
-          {
-            if (hit.collider)
-            {
-                Debug.DrawLine(startPoint, hit.point);
-                rayDir = Vector3.Reflect((hit.point - startPoint).normalized, hit.normal);
-                startPoint = hit.point;
-            }
-
-           }
-      }
-  }*/
 }

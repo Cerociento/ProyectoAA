@@ -17,13 +17,13 @@ public class EnemigoMatar : MonoBehaviour {
 		if (other.CompareTag("Grande")||other.CompareTag("Escondido"))
 	{
 		Manager.muertoGrande = true;
-		Pausa.vecesVisto++;
+		//Pausa.vecesVisto++;
 	}
 
 	if (other.CompareTag("Pequeño"))
 	{
 		Manager.muertoPequeño = true;
-		Pausa.vecesVisto++;
+		//Pausa.vecesVisto++;
 	}
 }
 }

@@ -17,8 +17,8 @@ public class ManagerPool : MonoBehaviour {
                 break;
             if (!Box.activeSelf)
             {
-                Box.transform.position = transform.GetComponentInChildren<Movimiento_Grande>().transform.GetChild(0).GetChild(2).GetChild(2).transform.position;
-                Box.transform.SetParent(transform.GetComponentInChildren<Movimiento_Grande>().transform.GetChild(0).GetChild(2).GetChild(2));
+                Box.transform.position = transform.GetComponentInChildren<Movimiento_Grande>().transform.GetChild(0).GetChild(1).GetChild(0).transform.position;
+                Box.transform.SetParent(transform.GetComponentInChildren<Movimiento_Grande>().transform.GetChild(0).GetChild(1).GetChild(0));
                 Box.SetActive(true);
                 return Box;
             }

@@ -65,14 +65,14 @@ public class FieldOfViewRetocado : MonoBehaviour {
                 if (!Physics.Raycast (transform.position, dirToTarget, dstToTarget, obstacleMask)&&timer>=5f) {
 					visibleTargets.Add (target);
                          if (target.CompareTag("Grande")){
-                               Pausa.vecesVisto++;
+                               //Pausa.vecesVisto++;
                                Manager.muertoGrande = true;
 						       sonido.PlayOneShot(alarma);
                            }
 
                            if (target.CompareTag("Pequeño"))
                            {
-                               Pausa.vecesVisto++;
+                              // Pausa.vecesVisto++;
                                Manager.muertoPequeño = true;
 						       sonido.PlayOneShot(alarma);
                            }

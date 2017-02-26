@@ -58,10 +58,10 @@ public class Manager : MonoBehaviour
             alma.transform.position = grandeDañado.transform.position;
             grandeDañado.SetActive(false);
             alma.SetActive(true);
-            grandeDañado.transform.parent.position = Vector3.MoveTowards(grandeDañado.transform.parent.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
+            grandeDañado.transform.parent.parent.position = Vector3.MoveTowards(grandeDañado.transform.parent.parent.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
             Caja.caja = null;
-            grandeDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
-            grandeDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
+            grandeDañado.transform.parent.parent.GetComponent<Rigidbody>().useGravity = false;
+            grandeDañado.transform.parent.parent.GetComponent<CapsuleCollider>().enabled = false;
         }
 
         if (muertoPequeño)

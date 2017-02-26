@@ -52,8 +52,8 @@ public class PilaDeCajas : MonoBehaviour
         {
             Movimiento_Grande.soltar = false;
             sonido.PlayOneShot(sonidoCaja);
-            Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(2).GetChild(2);
-
+            Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(1).GetChild(0);
+            Movimiento_Grande._anim.SetBool("Coger", true);
             if (activador < Caja.Length)
             {
                 if (cajasEscondite)
@@ -66,7 +66,7 @@ public class PilaDeCajas : MonoBehaviour
                    activador++;
                 }
             }
-
+            StartCoroutine("Desasignar");
             coger = false;
         }
     }   
@@ -84,4 +84,10 @@ public class PilaDeCajas : MonoBehaviour
             }
         }
  }   
+
+    IEnumerator Desasignar()
+    {
+        yield return new WaitForSeconds(1);
+        Movimiento_Grande._asignarCaja = false;
+    }
 }	

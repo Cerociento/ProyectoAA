@@ -7,7 +7,7 @@ public class ManagerColeccionables : MonoBehaviour {
     [SerializeField]
     GameObject ImageExtra;
 
-    public static bool[] listaGuardar = new bool[12];
+    public static bool[] listaGuardar = new bool[14];
 
 
     public void Extra () {
@@ -32,7 +32,7 @@ public class ManagerColeccionables : MonoBehaviour {
             case 10:
                 ImageExtra.SetActive(true);
                 break;
-            case 13:
+            case 14:
                 ImageExtra.SetActive(true);
                 break;
         }

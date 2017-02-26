@@ -24,6 +24,7 @@ public class IA_No_Humana : MonoBehaviour {
     void Update()
     {
         target = Camara.Target;
+        gameObject.transform.GetChild(0).LookAt(target);
     }
 
         void OnTriggerEnter(Collider hit)
@@ -32,18 +33,18 @@ public class IA_No_Humana : MonoBehaviour {
         {
             if(Physics.Linecast(transform.GetChild(0).position,target.position,out ray,ve))
             {
-                Debug.DrawLine(transform.position, target.position, Color.red,10);   
+                Debug.DrawRay(transform.position, target.position, Color.red,10);
                 if (ray.transform.CompareTag("Grande"))
                 {
                     Manager.muertoGrande = true;
-                    Pausa.vecesVisto++;
+                    //Pausa.vecesVisto++;
 					sonido.PlayOneShot(alarma);
                 }
 
                 if (ray.transform.CompareTag("Pequeño"))
                 {
                     Manager.muertoPequeño = true;
-                    Pausa.vecesVisto++;
+                    //Pausa.vecesVisto++;
 					sonido.PlayOneShot(alarma);
                 }
             }

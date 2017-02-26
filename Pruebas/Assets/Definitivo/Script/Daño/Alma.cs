@@ -18,16 +18,17 @@ public class Alma : MonoBehaviour {
                 pequeño.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
                 pequeño.transform.parent.GetComponent<Rigidbody>().useGravity = true;
                 pequeño.transform.parent.GetComponent<Rigidbody>().isKinematic = false;
+                Pausa.vecesVisto++;
             }
              else if (Manager.muertoGrande)
              {
                 gameObject.SetActive(false);
-                
                 grande.SetActive(true);
                 Manager.muertoGrande = false;
-                grande.transform.parent.GetComponent<CapsuleCollider>().enabled = true;
-                grande.transform.parent.GetComponent<Rigidbody>().useGravity = true;
-                grande.transform.parent.GetComponent<Rigidbody>().isKinematic = false;
+                grande.transform.parent.parent.GetComponent<CapsuleCollider>().enabled = true;
+                grande.transform.parent.parent.GetComponent<Rigidbody>().useGravity = true;
+                grande.transform.parent.parent.GetComponent<Rigidbody>().isKinematic = false;
+                Pausa.vecesVisto++;
             }
         }
     }
