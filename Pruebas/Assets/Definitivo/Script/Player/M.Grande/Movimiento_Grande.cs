@@ -163,7 +163,8 @@ public class Movimiento_Grande : MonoBehaviour
     }
 
     public void Coger()
-    {
+    {       
+              
             caja.transform.position = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).position;
             caja.transform.parent = gameObject.transform.GetChild(0).GetChild(1).GetChild(0);
             caja.GetComponent<BoxCollider>().enabled = false;
