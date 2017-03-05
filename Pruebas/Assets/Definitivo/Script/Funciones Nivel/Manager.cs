@@ -35,14 +35,14 @@ public class Manager : MonoBehaviour
 
     void FixedUpdate()
     {
-            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
-            {
+          //  if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
+           // {
             if (nivelMas)
             {
                 SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
                 nivelMas = false;
             }
-        }
+       // }
     }
 
     void Update()

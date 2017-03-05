@@ -118,15 +118,8 @@ public class Movimiento_Grande : MonoBehaviour
                 {
                     return;
                 }
-                else if (hijo.Length>0)
-                {
-                    _asignarCaja = false;
-                    caja = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).gameObject;
-                    Soltar();
-                    soltar = true;
-                }
-               
         }
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 if (caja.CompareTag("Caja Escondite"))
@@ -164,7 +157,6 @@ public class Movimiento_Grande : MonoBehaviour
 
     public void Coger()
     {       
-              
             caja.transform.position = gameObject.transform.GetChild(0).GetChild(1).GetChild(0).position;
             caja.transform.parent = gameObject.transform.GetChild(0).GetChild(1).GetChild(0);
             caja.GetComponent<BoxCollider>().enabled = false;
@@ -174,23 +166,26 @@ public class Movimiento_Grande : MonoBehaviour
             anim.SetBool("Coger", true);
             anim.SetBool("Esconder", false);
            _asignarCaja = false;
-        
     }
 
     public void Soltar()
     {
-
         if (!caja.CompareTag("Caja Escondite"))
         {
             _asignarCaja = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).DetachChildren();
+           foreach (Caja cajaH in hijo)
+            {
+                cajaH.GetComponent<SphereCollider>().enabled = true;
+                cajaH.GetComponent<BoxCollider>().enabled = true;
+                cajaH.GetComponent<Rigidbody>().useGravity = true;
+                cajaH.GetComponent<Rigidbody>().isKinematic = false;
+            }
+            if (hijo.Length > 0)
+                gameObject.transform.GetChild(0).GetChild(1).GetChild(0).DetachChildren();
             anim.SetBool("Coger", false);
+            Caja.caja = null;
         }
-        else if(caja.CompareTag("Caja Escondite"))
+        else
         {
             _asignarCaja = true;
             gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = true;
@@ -199,16 +194,7 @@ public class Movimiento_Grande : MonoBehaviour
             gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
             caja.transform.parent = GameObject.Find("Manager").transform;
             anim.SetBool("Coger", false);
-        }
-        else if(caja==null)
-        {
-            _asignarCaja = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<SphereCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<BoxCollider>().enabled = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().useGravity = true;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).GetChild(0).GetComponent<Rigidbody>().isKinematic = false;
-            gameObject.transform.GetChild(0).GetChild(1).GetChild(0).DetachChildren();
-            anim.SetBool("Coger", false);
+            Caja.caja = null;
         }
     }
 

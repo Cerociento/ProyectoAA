@@ -13,9 +13,7 @@ public class PilaDeCajas : MonoBehaviour
 	[SerializeField]
 	AudioClip sonidoCaja;
     [SerializeField]
-    GameObject texto;
-    [SerializeField]
-    bool instrucciones;
+    bool activo;
     [SerializeField]
     bool cajasEscondite;
 
@@ -30,13 +28,6 @@ public class PilaDeCajas : MonoBehaviour
     void Update()
     {
 
-        if (instrucciones)
-		texto.transform.LookAt(Camera.main.transform);
-        else
-        {
-            texto = null;
-        }
-
         if (activador == cajaList.Length)
             {
             if (cajasEscondite)
@@ -46,44 +37,66 @@ public class PilaDeCajas : MonoBehaviour
                 cajaList = new GameObject[0];
                 Destroy(this.gameObject, 2);
             }
-            }
+        }
 
         if (coger)
         {
-            Movimiento_Grande.soltar = false;
-            sonido.PlayOneShot(sonidoCaja);
-            Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(1).GetChild(0);
-            Movimiento_Grande._anim.SetBool("Coger", true);
-            Movimiento_Grande._anim.SetBool("Esconder", false);
-            if (activador < cajaList.Length)
+            if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.Mouse0))
             {
-                if (cajasEscondite)
+                Movimiento_Grande.soltar = false;
+                sonido.PlayOneShot(sonidoCaja);
+                Transform sitioIntanciado = GameObject.Find("Grande").transform.GetChild(0).GetChild(1).GetChild(0);
+                Movimiento_Grande._anim.SetBool("Coger", true);
+                Movimiento_Grande._anim.SetBool("Esconder", false);
+
+                if (activador < cajaList.Length)
                 {
-                   managerPool.getBox();
+                    if (cajasEscondite)
+                    {
+                        managerPool.getBox();
+                    }
+                    else
+                    {
+                        Instantiate(cajaList[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);
+                        activador++;
+                    }
                 }
-                else
-                {
-                   Instantiate(cajaList[activador], sitioIntanciado.position, sitioIntanciado.rotation, sitioIntanciado);  
-                   activador++;
-                }
+                else if (Caja.caja == null)
+                    Movimiento_Grande.soltar = true;
+
+                coger = false;
             }
-           else if (Caja.caja== null)
-                Movimiento_Grande.soltar=true;
-            coger = false;
         }
-    }   
-    
+    }
+
 
     void OnTriggerStay(Collider other)
-  {
-        if (other.CompareTag("Grande") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Grande") && Input.GetKeyUp(KeyCode.Mouse0) || other.CompareTag("Escondido") && Input.GetKeyDown(KeyCode.LeftControl) || other.CompareTag("Escondido") && Input.GetKeyUp(KeyCode.Mouse0))
+    {
+        if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
             if (other.transform.GetComponent<Movimiento_Grande>().enabled)
             {
-                coger = true;
-                if(instrucciones)
-                   texto.SetActive(false);
+                if(Caja.caja == null)
+                {
+                    coger = true;
+                }
             }
         }
- }   
+
+        if (other.CompareTag("Caja") && Caja.caja == null)
+            other.transform.Translate(Vector3.forward);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
+        {
+            if (other.transform.GetComponent<Movimiento_Grande>().enabled)
+            {
+                    coger = false;
+            }
+        }
+    }
+
+
 }	

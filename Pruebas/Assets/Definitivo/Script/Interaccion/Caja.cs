@@ -11,17 +11,6 @@ public class Caja : MonoBehaviour
         StartCoroutine("DesColl");
     }
 
-    void Update()
-    {
-        if (caja != gameObject)
-        {
-            GetComponent<SphereCollider>().enabled = true;
-            GetComponent<BoxCollider>().enabled = true;
-            GetComponent<Rigidbody>().useGravity = true;
-            GetComponent<Rigidbody>().isKinematic = false;
-        }
-    }
-
     void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
