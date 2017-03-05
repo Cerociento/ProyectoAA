@@ -21498,7 +21498,6 @@ GameObject:
   - 23: {fileID: 522576800}
   - 114: {fileID: 522576799}
   - 82: {fileID: 522576791}
-  - 65: {fileID: 522576803}
   m_Layer: 12
   m_Name: Checkpoint Final
   m_TagString: Untagged
@@ -21759,8 +21758,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9999998, y: 1, z: 0.50868684}
-  m_Center: {x: -0.00014724841, y: 0, z: -0.24565582}
+  m_Size: {x: 0.9999998, y: 1, z: 0.9890051}
+  m_Center: {x: -0.00020361519, y: 0, z: -0.005496237}
 --- !u!33 &522576802
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21769,18 +21768,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522576790}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &522576803
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 522576790}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.35661113, y: 1, z: 0.48697883}
-  m_Center: {x: 0.32156113, y: 0, z: 0.2565174}
 --- !u!1001 &526495303
 Prefab:
   m_ObjectHideFlags: 0
@@ -30830,7 +30817,7 @@ Prefab:
     - target: {fileID: 65000012883574276, guid: d8c8839fd0f21f7499fe2cdf03141eb7,
         type: 2}
       propertyPath: m_Center.z
-      value: -0.0034863066
+      value: -0.0034862438
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647374790, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_LocalScale.z
@@ -30843,6 +30830,16 @@ Prefab:
     - target: {fileID: 1000014249280304, guid: d8c8839fd0f21f7499fe2cdf03141eb7, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012883574276, guid: d8c8839fd0f21f7499fe2cdf03141eb7,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.79097927
+      objectReference: {fileID: 0}
+    - target: {fileID: 65000012883574276, guid: d8c8839fd0f21f7499fe2cdf03141eb7,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.104509495
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}

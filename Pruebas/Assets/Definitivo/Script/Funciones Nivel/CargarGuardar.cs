@@ -77,7 +77,6 @@ public class CargarGuardar : MonoBehaviour
 
     void Update()
     {
-       
         posicionPequeñoX = Movimiento_Pequeño.checkpointPequeño.x;
         posicionPequeñoY = Movimiento_Pequeño.checkpointPequeño.y;
         posicionPequeñoZ = Movimiento_Pequeño.checkpointPequeño.z;

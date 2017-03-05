@@ -12,6 +12,7 @@ public class CargaAditiva : MonoBehaviour
            Manager.nivelMas = true;
             Debug.Log("Hola  " + Manager.nivelMas);
            GetComponent<CargaAditiva>().enabled = false;
+            Destroy(GetComponent<CargaAditiva>());
         }
     }
 

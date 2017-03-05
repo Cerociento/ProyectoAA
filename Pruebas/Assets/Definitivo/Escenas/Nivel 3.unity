@@ -4550,8 +4550,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 0.7967077}
-  m_Center: {x: -0.000026160546, y: 0, z: 0.10167641}
+  m_Size: {x: 1, y: 1, z: 1.0045133}
+  m_Center: {x: -0.00004722276, y: 0, z: -0.002202606}
 --- !u!33 &67694254
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17058,8 +17058,7 @@ MonoBehaviour:
   coger: 0
   sonido: {fileID: 340275697}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
-  texto: {fileID: 0}
-  instrucciones: 0
+  activo: 0
   cajasEscondite: 0
 --- !u!135 &340275699
 SphereCollider:
@@ -55211,8 +55210,7 @@ MonoBehaviour:
   coger: 0
   sonido: {fileID: 1041448464}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
-  texto: {fileID: 0}
-  instrucciones: 0
+  activo: 0
   cajasEscondite: 0
 --- !u!135 &1041448466
 SphereCollider:
@@ -68836,8 +68834,7 @@ MonoBehaviour:
   coger: 0
   sonido: {fileID: 1262527398}
   sonidoCaja: {fileID: 8300000, guid: c513df8d4dfc86043b19000ed7a27d0d, type: 3}
-  texto: {fileID: 0}
-  instrucciones: 0
+  activo: 0
   cajasEscondite: 0
 --- !u!135 &1262527400
 SphereCollider:
@@ -87269,7 +87266,8 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114000013357454168, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2537d1c1f13beaa46a189af0a2469ed6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1653431887
