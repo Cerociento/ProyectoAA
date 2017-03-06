@@ -5,7 +5,7 @@ public class Camara : MonoBehaviour
 {
 
     public static Transform Target;
-    Transform LugarCamara;
+  //  Transform LugarCamara;
 
     [SerializeField]
     Transform LugarPequenio;
@@ -14,34 +14,58 @@ public class Camara : MonoBehaviour
 
     [SerializeField]
     Vector3 sitioCamara;
+    public static Vector3 _sitioCamara = new Vector3(6, 5, 0);
+    [SerializeField]
+    Vector3 sitioVista;
+    public static Vector3 _sitioVista = new Vector3(-16, 4, 0);
+
+    [SerializeField]
+    Vector3 sitioCamaraG;
+    public static Vector3 _sitioCamaraG = new Vector3(-6, 5, 0);
+    [SerializeField]
+    Vector3 sitioVistaG;
+    public static Vector3 _sitioVistaG = new Vector3(16, 4, 0);
 
     [SerializeField]
     Transform Grande;
     [SerializeField]
     Transform Pequeño;
 
-    [Range(1,10)]
+    [Range(0.1f,10)]
     [SerializeField]
     float velocidad;
     bool cambio=true;
 
+    public static bool transicion = false;
+
+    [SerializeField]
+    bool pruebaCamara;
+
     void Start()
     {
         Target = Pequeño;
-        LugarCamara = LugarPequenio;
 		Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
 		Grande.gameObject.GetComponent<AudioListener>().enabled=false;
     }
 
     void Update()
     {
+        if (!pruebaCamara)
+        {
+            sitioCamara = _sitioCamara;
+            sitioVista = _sitioVista;
+            sitioCamaraG = _sitioCamaraG;
+            sitioVistaG = _sitioVistaG;
+        }
+
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             cambio = !cambio;
             if (cambio)
             {
+                sitioCamara = _sitioCamara;
+                sitioVista = _sitioVista;
                 Target = Pequeño;
-                LugarCamara = LugarPequenio;
                 Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = false;
                 Grande.gameObject.GetComponent<AudioListener>().enabled = false;
                 Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = true;
@@ -50,8 +74,9 @@ public class Camara : MonoBehaviour
             }
             else
             {
+                sitioCamaraG = _sitioCamaraG;
+                sitioVistaG = _sitioVistaG;
                 Target = Grande;
-                LugarCamara = LugarGrande;
                 Grande.gameObject.GetComponent<Movimiento_Grande>().enabled = true;
                 Grande.gameObject.GetComponent<AudioListener>().enabled = true;
                 Pequeño.gameObject.GetComponent<Movimiento_Pequeño>().enabled = false;
@@ -63,7 +88,25 @@ public class Camara : MonoBehaviour
 
     void LateUpdate()
     {
-        transform.position = Vector3.Lerp (transform.position, LugarCamara.position, Time.deltaTime * velocidad);
-        transform.LookAt(Target.position + sitioCamara);
+        if (!transicion)
+        {
+            if (cambio)
+            {
+                transform.position = Vector3.Lerp(transform.position, Target.position + sitioCamara, Time.deltaTime * velocidad);
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(transform.position, Target.position + sitioCamaraG, Time.deltaTime * velocidad);
+            }
+        }
+
+        if (cambio)
+        {
+            transform.LookAt(LugarPequenio);
+        }
+        else
+        {
+            transform.LookAt(LugarGrande);
+        }
     }
 }

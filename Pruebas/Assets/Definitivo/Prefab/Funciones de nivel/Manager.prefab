@@ -878,6 +878,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012139027556}
   - 114: {fileID: 114000012456476848}
+  - 114: {fileID: 114000013146507900}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -6694,7 +6695,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012269925944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: -4}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -7061,8 +7062,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010390589120}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.61, y: 3.16, z: 1.23}
+  m_LocalRotation: {x: -0, y: 0.99994195, z: -0, w: 0.010779849}
+  m_LocalPosition: {x: -4.24, y: 2.02, z: 2.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 178.80101, z: 0}
   m_Children:
@@ -8747,7 +8748,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013133384576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: -4}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -9827,8 +9828,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.573307, y: 8.814299, z: 17.777739}
-  m_Center: {x: 0.4620488, y: 2.9340644, z: -0.038858533}
+  m_Size: {x: 36.345043, y: 8.814299, z: 25.6863}
+  m_Center: {x: -11.426208, y: 2.9351382, z: -0.37025452}
 --- !u!65 &65000011581883418
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -12190,7 +12191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
-  velRotacion: 2
+  velRotacion: 5
   caja: {fileID: 0}
   asignarCaja: 1
   anim: {fileID: 95000010806496222}
@@ -13749,7 +13750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
-  velRotacion: 2
+  velRotacion: 5
   fSalto: 5
   sonido: {fileID: 82000012481972242}
   sonidoBis: {fileID: 82000014255126764}
@@ -13910,10 +13911,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LugarPequenio: {fileID: 4000011226175056}
   LugarGrande: {fileID: 4000013529334402}
-  sitioCamara: {x: 0, y: 4, z: 0}
+  sitioCamara: {x: 6, y: 5, z: 0}
+  sitioVista: {x: -16, y: 4, z: 0}
+  sitioCamaraG: {x: 0, y: 0, z: 0}
+  sitioVistaG: {x: 0, y: 0, z: 0}
   Grande: {fileID: 4000011218212152}
   "Peque\xF1o": {fileID: 4000011642850640}
   velocidad: 3
+  pruebaCamara: 0
 --- !u!114 &114000012530744614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -14321,6 +14326,18 @@ MonoBehaviour:
   sonido: {fileID: 82000013442818712}
   sonidoColeccionable: {fileID: 8300000, guid: 8633b8d411e1f1744a210de10c7e21d6, type: 3}
   numPosicionLista: 10
+--- !u!114 &114000013146507900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010706569492}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 390711978ef26854caec88484eeb5a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nuevoLugar: {x: 0, y: 0, z: 0}
 --- !u!114 &114000013152766260
 MonoBehaviour:
   m_ObjectHideFlags: 1

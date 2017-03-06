@@ -10,7 +10,6 @@ public class CargaAditiva : MonoBehaviour
         if (other.CompareTag("Pequeño") || other.CompareTag("Grande"))
         {
            Manager.nivelMas = true;
-            Debug.Log("Hola  " + Manager.nivelMas);
            GetComponent<CargaAditiva>().enabled = false;
             Destroy(GetComponent<CargaAditiva>());
         }

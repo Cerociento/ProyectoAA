@@ -37,7 +37,6 @@ public class IA_No_Humana : MonoBehaviour {
             if (Physics.Raycast(rayo,out ray,10))
             {
                 Debug.DrawRay(rayo.origin, rayo.direction, Color.blue,10);
-                Debug.Log(ray.collider.name,ray.collider);
                 if (ray.transform.CompareTag("Grande"))
                 {
                     Manager.muertoGrande = true;
