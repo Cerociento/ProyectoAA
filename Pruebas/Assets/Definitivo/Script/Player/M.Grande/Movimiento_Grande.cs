@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+[RequireComponent(typeof(CharacterController))]
 public class Movimiento_Grande : MonoBehaviour 
 {
-
-
     //Movimiento
     [SerializeField]
-    float velocidad = 1f;
-    float ZAxis = 0f;
-    float YAxis;
-    float LAxis;
-  
+    public float velocidad = 1f;
+    /* public static float ZAxis = 0f;
+     float YAxis;
+     float LAxis;*/
+    public float moveSpeed = 5f;
+    public float rotateSpeed = 15f;
+    Vector2 input;
+    Vector3 camForward;
+    Vector3 lookingDirection;
+    Transform CameraTransform;
+    CharacterController controller;
+    Vector3 moveDirection = Vector2.zero;
+    Vector3 gravity = Vector3.zero;
+    public static bool mantDireccion = true;
+
     //Rotacion Camara
     [SerializeField]
     float velRotacion;   
@@ -48,6 +56,9 @@ public class Movimiento_Grande : MonoBehaviour
         soltar = false;
         caja = null;
         _anim = anim;
+        controller = transform.GetComponent<CharacterController>();
+        CameraTransform = Camera.main.transform;
+        lookingDirection = moveDirection;
     }
 
     void Update()
@@ -58,44 +69,52 @@ public class Movimiento_Grande : MonoBehaviour
         if(asignarCaja)
            caja = Caja.caja;
 
+        #region MOVIMIENTO 
+        PJAngle();
+        HorizontalMovement();
+        moveDirection *= velocidad;
+        controller.Move(moveDirection * Time.deltaTime);
+        #endregion
+
+
         #region MOVIMIENTO        
-        if (!Laser.paraMover)
-        {
-            YAxis = Input.GetAxis("Horizontal");
-            ZAxis = Input.GetAxis("Vertical");
+        /* if (!Laser.paraMover)
+         {
+             YAxis = Input.GetAxis("Horizontal");
+             ZAxis = Input.GetAxis("Vertical");
 
-            if (ZAxis > 0 || ZAxis < 0)
-            {
-                transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-                anim.SetFloat("Andar", ZAxis);
-                if (!sonido.isPlaying)
-                {
-                    sonido.Play();
-                }
-            }
-            else
-            {
-                anim.SetFloat("Andar", 0);
-            }
+             if (ZAxis > 0 || ZAxis < 0)
+             {
+                 transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+                 anim.SetFloat("Andar", ZAxis);
+                 if (!sonido.isPlaying)
+                 {
+                     sonido.Play();
+                 }
+             }
+             else
+             {
+                 anim.SetFloat("Andar", 0);
+             }
 
-            if (YAxis < 0 || YAxis > 0)
-            {
-                transform.Rotate(Vector3.up * velRotacion * YAxis);
-            }
+             if (YAxis < 0 || YAxis > 0)
+             {
+                 transform.Rotate(Vector3.up * velRotacion * YAxis);
+             }
 
-			if (YAxis == 0 && ZAxis == 0 && LAxis==0)
-            {
-                sonido.Stop();
-            }
-        }
+             if (YAxis == 0 && ZAxis == 0 && LAxis==0)
+             {
+                 sonido.Stop();
+             }
+         }
 
-        LAxis = Input.GetAxis("Lateral");
-		if (LAxis < 0 || LAxis > 0){
-            transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
-			if(!sonido.isPlaying){
-				sonido.Play();
-			}
-		}
+         LAxis = Input.GetAxis("Lateral");
+         if (LAxis < 0 || LAxis > 0){
+             transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
+             if(!sonido.isPlaying){
+                 sonido.Play();
+             }
+         }*/
         #endregion
 
         if (Input.GetKeyDown(KeyCode.LeftControl)|| Input.GetKeyDown(KeyCode.Mouse0))
@@ -146,6 +165,33 @@ public class Movimiento_Grande : MonoBehaviour
 			Pausa.vecesVisto++;
 		}
 	}
+
+    void HorizontalMovement()
+    {
+        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        camForward = Vector3.Scale(CameraTransform.forward, new Vector3(1, 0, 1));
+        moveDirection = input.x * CameraTransform.right + input.y * camForward;
+        anim.SetFloat("Andar", input.sqrMagnitude);
+
+        if (!sonido.isPlaying)
+        {
+            sonido.Play();
+        }
+
+        if (input.sqrMagnitude > 0f)
+        {
+            lookingDirection = moveDirection;
+        }
+
+        moveDirection = moveDirection.normalized;
+        moveDirection.x *= moveSpeed;
+        moveDirection.z *= moveSpeed;
+    }
+
+    void PJAngle()
+    {
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(lookingDirection), Time.deltaTime * rotateSpeed);
+    }
 
     void Escondido()
     {

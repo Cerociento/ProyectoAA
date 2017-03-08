@@ -1,14 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(CharacterController))]
 public class Movimiento_Pequeño : MonoBehaviour 
 {
     //Movimiento
+     [SerializeField]
+     public float velocidad = 1f;
+    /* public static float ZAxis = 0f;
+     float YAxis;
+     float LAxis;*/
+    public float moveSpeed = 5f;
+    public float rotateSpeed = 15f;
+    Vector2 input;
+    Vector3 camForward;
+    Vector3 lookingDirection;
+    Transform CameraTransform;
+    CharacterController controller;
+    Vector3 moveDirection = Vector2.zero;
+    Vector3 gravity = Vector3.zero;
+    public static bool mantDireccion = true;
     [SerializeField]
-    public float velocidad = 1f;
-    public static float ZAxis = 0f;
-    float YAxis;
-    float LAxis;
+    GameObject refCamara;
 
     //Rotacion Camara
     [SerializeField]
@@ -17,7 +30,7 @@ public class Movimiento_Pequeño : MonoBehaviour
     //Salto
     [SerializeField]
     float fSalto;
-    int salto=0;
+    bool salto;
 
     //Checpoint
     public static Vector3 checkpointPequeño= new Vector3 (0,1.5f,0);
@@ -38,67 +51,70 @@ public class Movimiento_Pequeño : MonoBehaviour
     void Start()
     {
         _anim = anim;
+        controller = transform.GetComponent<CharacterController>();
+        CameraTransform = Camera.main.transform;
+        lookingDirection = moveDirection;
     }
 
     void Update()
     {
-        float num = GetComponent<Rigidbody>().velocity.y * Time.deltaTime;
-       // anim.SetFloat("EnAire", num);
-
         #region MOVIMIENTO 
-        YAxis = Input.GetAxis("Horizontal");
-        ZAxis = Input.GetAxis("Vertical");
+        PJAngle();
+        HorizontalMovement();
+        Jump();
+        moveDirection *= velocidad;
+        controller.Move(moveDirection * Time.deltaTime);
 
-        if (ZAxis > 0 || ZAxis < 0)
+        if (Input.GetKey(KeyCode.Space) && controller.isGrounded)
         {
-            transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
-            anim.SetFloat("Andar", ZAxis);
-            if (!sonido.isPlaying)
-            {
-                sonido.Play();
-            }
+            salto = true;
         }
-        else
-        {
-            anim.SetFloat("Andar", 0);
-        }
+        #endregion
 
-        if (YAxis < 0 || YAxis > 0)
-        {
-            transform.Rotate(Vector3.up * velRotacion * YAxis);
-        }
+        #region MOVIMIENTO OBSOLETO  
+        /* YAxis = Input.GetAxis("Horizontal");
+          ZAxis = Input.GetAxis("Vertical");
 
-        if (YAxis == 0 && ZAxis == 0 && LAxis == 0)
-        {
-            sonido.Stop();
-        }
+          if (ZAxis > 0 || ZAxis < 0)
+          {
+              transform.Translate(0, 0f, 1f * velocidad * Time.deltaTime * ZAxis);
+              anim.SetFloat("Andar", ZAxis);
+              if (!sonido.isPlaying)
+              {
+                  sonido.Play();
+              }
+          }
+          else
+          {
+              anim.SetFloat("Andar", 0);
+          }
 
-        if (salto != 0)
-        {
-            sonido.Stop();
-        }
+          if (YAxis < 0 || YAxis > 0)
+          {
+              //transform.Rotate(Vector3.up * velRotacion * YAxis);
+             transform.Translate(1f * velocidad * Time.deltaTime * YAxis,0,0);
 
-        LAxis = Input.GetAxis("Lateral");
-        if (LAxis < 0 || LAxis > 0)
-        {
-            transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
-            if (!sonido.isPlaying)
-            {
-                sonido.Play();
-            }
-        }
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (salto == 0)
-                {
-                anim.SetTrigger("Salto");
-                GetComponent<Rigidbody>().AddForce(new Vector3(0, fSalto, 0), ForceMode.Impulse);
-                salto++;
-                sonidoBis.PlayOneShot(sonidoSalto);
-                anim.SetBool("Suelo", false);
-                    
-                }
-            }
+         }
+
+         if (YAxis == 0 && ZAxis == 0 && LAxis == 0)
+          {
+              sonido.Stop();
+          }
+
+          if (salto != 0)
+          {
+              sonido.Stop();
+          }
+
+          LAxis = Input.GetAxis("Lateral");
+          if (LAxis < 0 || LAxis > 0)
+          {
+              transform.Translate(1f * velocidad * Time.deltaTime * LAxis, 0, 0);
+              if (!sonido.isPlaying)
+              {
+                  sonido.Play();
+              }
+          }*/
         #endregion
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -106,11 +122,60 @@ public class Movimiento_Pequeño : MonoBehaviour
                 transform.position = checkpointPequeño;
                 Pausa.vecesVisto++;
             }
+    }
+
+    void Jump()
+    {
+        if (!controller.isGrounded)
+        {
+            gravity += Physics.gravity * Time.deltaTime; 
+        }
+        else
+        {
+            gravity = Vector3.zero;
+
+            if (salto)
+            {
+                anim.SetTrigger("Salto");
+                gravity.y = fSalto;
+                sonidoBis.PlayOneShot(sonidoSalto);
+                anim.SetBool("Suelo", false);
+                salto = false;
+            }
+        }   
+        moveDirection += gravity;
+    }
+
+    void HorizontalMovement()
+    {
+        input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        camForward = Vector3.Scale(CameraTransform.forward, new Vector3(1, 0, 1));
+        moveDirection = input.x * CameraTransform.right + input.y * camForward;
+        anim.SetFloat("Andar", input.sqrMagnitude);
+
+        if (!sonido.isPlaying)
+        {
+            sonido.Play();
         }
 
-    void OnCollisionEnter()
+        if (input.sqrMagnitude > 0f)
+        {
+            lookingDirection = moveDirection;
+        }
+
+        moveDirection = moveDirection.normalized;
+        moveDirection.x *= moveSpeed ;
+        moveDirection.z *= moveSpeed ;
+    }
+
+    void PJAngle()
     {
-        salto = 0;
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(lookingDirection), Time.deltaTime * rotateSpeed);
+    }
+
+    void OnControllerColliderHit()
+    {
+        salto = false;
         anim.SetBool("Suelo", true);
     }
 

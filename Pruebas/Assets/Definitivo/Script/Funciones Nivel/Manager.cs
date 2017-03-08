@@ -62,6 +62,7 @@ public class Manager : MonoBehaviour
             Caja.caja = null;
             grandeDañado.transform.parent.parent.GetComponent<Rigidbody>().useGravity = false;
             grandeDañado.transform.parent.parent.GetComponent<CapsuleCollider>().enabled = false;
+            grandeDañado.transform.parent.parent.GetComponent<CharacterController>().enabled = false;
         }
 
         if (muertoPequeño)
@@ -71,7 +72,8 @@ public class Manager : MonoBehaviour
             alma.SetActive(true);
             pequeñoDañado.transform.parent.position = Vector3.MoveTowards(pequeñoDañado.transform.parent.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
             pequeñoDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
-            pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
+           // pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
+            pequeñoDañado.transform.parent.GetComponent<CharacterController>().enabled = false;
         }
 
         if (SceneManager.GetActiveScene().buildIndex == 0)

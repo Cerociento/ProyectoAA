@@ -20,6 +20,7 @@ public class CamaraPosition : MonoBehaviour {
         }
     }
 
+
     void LateUpdate()
     {
         if (transitionP)
@@ -28,6 +29,7 @@ public class CamaraPosition : MonoBehaviour {
             Camara._sitioCamara = nuevoLugar;
             Camara.transicion = false;
             transitionP = false;
+            //Movimiento_Pequeño.mantDireccion = true;
         }
 
         if (transitionG)
