@@ -1,14 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
-[RequireComponent(typeof(CharacterController))]
+
 public class Movimiento_Grande : MonoBehaviour 
 {
     //Movimiento
     [SerializeField]
     public float velocidad = 1f;
-    /* public static float ZAxis = 0f;
-     float YAxis;
-     float LAxis;*/
     public float moveSpeed = 5f;
     public float rotateSpeed = 15f;
     Vector2 input;
@@ -72,6 +69,7 @@ public class Movimiento_Grande : MonoBehaviour
         #region MOVIMIENTO 
         PJAngle();
         HorizontalMovement();
+        Jump();
         moveDirection *= velocidad;
         controller.Move(moveDirection * Time.deltaTime);
         #endregion
@@ -191,6 +189,19 @@ public class Movimiento_Grande : MonoBehaviour
     void PJAngle()
     {
         transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(lookingDirection), Time.deltaTime * rotateSpeed);
+    }
+
+    void Jump()
+    {
+        if (!controller.isGrounded)
+        {
+            gravity += Physics.gravity * Time.deltaTime;
+        }
+        else
+        {
+            gravity = Vector3.zero;
+        }
+        moveDirection += gravity;
     }
 
     void Escondido()

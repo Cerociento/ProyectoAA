@@ -193,7 +193,7 @@ GameObject:
   m_TagString: Background
   m_Icon: {fileID: 1862873201189522682, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1000011668090452
 GameObject:
@@ -227,7 +227,7 @@ GameObject:
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1000012065556532
 GameObject:
@@ -288,9 +288,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000012750547534}
+  - 65: {fileID: 65000012971747914}
   m_Layer: 8
   m_Name: Columna
-  m_TagString: Untagged
+  m_TagString: Plataforma Movil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +605,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012540456548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1350,6 +1351,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 4, z: 0.5}
   m_Center: {x: 0, y: 2, z: 0.25}
+--- !u!65 &65000012971747914
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012540456548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0814629, y: 2.196988, z: 1.0305004}
+  m_Center: {x: -14.560331, y: 1.07517, z: -25.509872}
 --- !u!65 &65000013908713408
 BoxCollider:
   m_ObjectHideFlags: 1

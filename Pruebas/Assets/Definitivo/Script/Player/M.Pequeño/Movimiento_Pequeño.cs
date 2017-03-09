@@ -1,15 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(CharacterController))]
 public class Movimiento_Pequeño : MonoBehaviour 
 {
     //Movimiento
-     [SerializeField]
-     public float velocidad = 1f;
-    /* public static float ZAxis = 0f;
-     float YAxis;
-     float LAxis;*/
+    [SerializeField]
+    public float velocidad = 1f;
     public float moveSpeed = 5f;
     public float rotateSpeed = 15f;
     Vector2 input;
@@ -19,9 +15,6 @@ public class Movimiento_Pequeño : MonoBehaviour
     CharacterController controller;
     Vector3 moveDirection = Vector2.zero;
     Vector3 gravity = Vector3.zero;
-    public static bool mantDireccion = true;
-    [SerializeField]
-    GameObject refCamara;
 
     //Rotacion Camara
     [SerializeField]

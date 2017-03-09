@@ -4,8 +4,7 @@ using System.Collections;
 
 public class Manager : MonoBehaviour
 {
-    [SerializeField]
-    public static bool nivelMas;
+   // public static bool nivelMas;
 
     public static bool muertoGrande = false;
     public static bool muertoPequeño = false;
@@ -33,17 +32,17 @@ public class Manager : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+   /* void FixedUpdate()
     {
-          //  if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
-           // {
+          / if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2))
+            {
             if (nivelMas)
             {
                 SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
                 nivelMas = false;
             }
-       // }
-    }
+       }
+    }*/
 
     void Update()
     {       
@@ -60,8 +59,8 @@ public class Manager : MonoBehaviour
             alma.SetActive(true);
             grandeDañado.transform.parent.parent.position = Vector3.MoveTowards(grandeDañado.transform.parent.parent.position, Movimiento_Grande.checkpointGrande, 10f * Time.deltaTime);
             Caja.caja = null;
-            grandeDañado.transform.parent.parent.GetComponent<Rigidbody>().useGravity = false;
-            grandeDañado.transform.parent.parent.GetComponent<CapsuleCollider>().enabled = false;
+            //grandeDañado.transform.parent.parent.GetComponent<Rigidbody>().useGravity = false;
+            //grandeDañado.transform.parent.parent.GetComponent<CapsuleCollider>().enabled = false;
             grandeDañado.transform.parent.parent.GetComponent<CharacterController>().enabled = false;
         }
 
@@ -71,8 +70,8 @@ public class Manager : MonoBehaviour
             pequeñoDañado.SetActive(false);
             alma.SetActive(true);
             pequeñoDañado.transform.parent.position = Vector3.MoveTowards(pequeñoDañado.transform.parent.position, Movimiento_Pequeño.checkpointPequeño, 10f * Time.deltaTime);
-            pequeñoDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
-           // pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
+            //pequeñoDañado.transform.parent.GetComponent<Rigidbody>().useGravity = false;
+            //pequeñoDañado.transform.parent.GetComponent<CapsuleCollider>().enabled = false;
             pequeñoDañado.transform.parent.GetComponent<CharacterController>().enabled = false;
         }
 

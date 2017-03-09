@@ -2816,6 +2816,7 @@ GameObject:
   - 114: {fileID: 114000010014516442}
   - 82: {fileID: 82000012601492040}
   - 81: {fileID: 81000010770178964}
+  - 143: {fileID: 143000014108773942}
   m_Layer: 11
   m_Name: Grande
   m_TagString: Grande
@@ -6681,7 +6682,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012395776344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.64, y: 2.55, z: 11.55}
+  m_LocalPosition: {x: 11.64, y: 2.55, z: 10.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -7963,7 +7964,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012285667588}
   m_LocalRotation: {x: -0, y: -0.38027862, z: -0, w: 0.92487204}
-  m_LocalPosition: {x: -5.58, y: -3.152, z: -30.384}
+  m_LocalPosition: {x: -7.84, y: -3.152, z: -26.8}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_LocalEulerAnglesHint: {x: 0, y: -44.509003, z: 0}
   m_Children:
@@ -9673,7 +9674,7 @@ Rigidbody:
   m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -9718,7 +9719,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
@@ -12191,7 +12192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9629bd71ca0eeb540b43b738c7c7a3ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
+  velocidad: 1
+  moveSpeed: 5
+  rotateSpeed: 15
   velRotacion: 5
   caja: {fileID: 0}
   asignarCaja: 1
@@ -13750,6 +13753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8c2041500329d34ea4e8c4b375adf93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidad: 1
   moveSpeed: 5
   rotateSpeed: 15
   velRotacion: 5
@@ -15071,7 +15075,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000012395776344}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.39471424
   m_Height: 2.1738462
   m_Direction: 1
@@ -15084,7 +15088,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000013813015090}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 1.25
   m_Direction: 1
@@ -15922,6 +15926,23 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.4, z: 0}
+--- !u!143 &143000014108773942
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012395776344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.38
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.11, z: 0}
 --- !u!212 &212000010725484386
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -24,6 +24,8 @@ public class Final : MonoBehaviour
     bool finDelJuego;
     bool finNivel;
 
+    public static bool nivelMas;
+
     Pausa pausa;
 
     void Start()
@@ -50,8 +52,14 @@ public class Final : MonoBehaviour
                 sueloGrande.transform.Translate(Vector3.up * 2 * Time.deltaTime);
                 Timer.tiempoFunciona1 = false;
 
-            if (!finNivel)
-               {
+                if (nivelMas)
+                {
+                    SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Additive);
+                    nivelMas = false;
+                }
+
+                if (!finNivel)
+                {
                     MenuFinNivel.prueba = true;
                     finNivel = true;
                 }
@@ -69,7 +77,6 @@ public class Final : MonoBehaviour
                 {
                     other.transform.parent = transform.GetChild(1);
                     subePequeño = true;
-                    GameObject.FindWithTag("Grande").transform.Translate(Vector3.up*2);
                 }
             }
             if (other.CompareTag("Grande") || other.CompareTag("Escondido"))
@@ -78,7 +85,6 @@ public class Final : MonoBehaviour
                 {
                     other.transform.parent = transform.GetChild(1);
                     subeGrande = true;
-                    GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up*2);
                 }
             }
         }
@@ -106,7 +112,6 @@ public class Final : MonoBehaviour
             {
                 if (subePequeño)
                 {
-                    other.transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
                     subePequeño = false;
                     GameObject.FindWithTag("Grande").transform.Translate(Vector3.up*2);
                 }
@@ -115,7 +120,6 @@ public class Final : MonoBehaviour
             {
                 if (subeGrande)
                 {
-                    other.transform.parent = GameObject.Find("Manager").transform.GetChild(0).GetChild(0);
                     subeGrande = false;
                     GameObject.FindWithTag("Pequeño").transform.Translate(Vector3.up*2);
                 }
