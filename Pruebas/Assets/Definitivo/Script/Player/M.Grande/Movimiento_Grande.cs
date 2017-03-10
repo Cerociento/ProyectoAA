@@ -171,14 +171,15 @@ public class Movimiento_Grande : MonoBehaviour
         moveDirection = input.x * CameraTransform.right + input.y * camForward;
         anim.SetFloat("Andar", input.sqrMagnitude);
 
-        if (!sonido.isPlaying)
-        {
-            sonido.Play();
-        }
+        
 
         if (input.sqrMagnitude > 0f)
         {
             lookingDirection = moveDirection;
+			if (!sonido.isPlaying)
+			{
+				sonido.Play();
+			}
         }
 
         moveDirection = moveDirection.normalized;
