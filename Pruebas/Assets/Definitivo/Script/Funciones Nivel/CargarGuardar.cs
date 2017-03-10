@@ -36,11 +36,34 @@ public class CargarGuardar : MonoBehaviour
 
     void Awake()
     {
+        #region DeleteOldGame
+        if (File.Exists(Application.persistentDataPath + "/monosave.af"))
+        {
+            File.Delete(Application.persistentDataPath + "/monosave.af");
+            TTotal = 0;
+            TNivel = 0;
+            CColeccionable = 0;
+            Pausa.recogidos = 0;
+            Pausa.vecesVisto = 0;
+            Timer.tiempoFunciona1 = true;
+            for (int i = 0; i < ManagerColeccionables.listaGuardar.Length; i++)
+            {
+                ManagerColeccionables.listaGuardar[i] = true;
+
+            }
+
+            foreach (GameObject col in listaColeccionables)
+            {
+                col.SetActive(true);
+            }
+        }
+        #endregion
+
         nivel = SceneManager.GetActiveScene().buildIndex;
-        if (File.Exists(Application.persistentDataPath + "/monosave.af") && SceneManager.GetActiveScene().buildIndex == 0)
+        if (File.Exists(Application.persistentDataPath + "/bananasave.af") && SceneManager.GetActiveScene().buildIndex == 0)
         {
             BinaryFormatter load = new BinaryFormatter();
-            FileStream file = File.OpenRead(Application.persistentDataPath + "/monosave.af");
+            FileStream file = File.OpenRead(Application.persistentDataPath + "/bananasave.af");
             datos = load.Deserialize(file) as datosJuego;
             nivel = datos.nivel;
             tiempoNivel = datos.tiempoNivel;
@@ -48,7 +71,7 @@ public class CargarGuardar : MonoBehaviour
             coleccionables = datos.colecionables;
             ManagerColeccionables.listaGuardar = datos.listaGuardar;
         }
-        else if (!File.Exists(Application.persistentDataPath + "/monosave.af") && SceneManager.GetActiveScene().buildIndex == 0)
+        else if (!File.Exists(Application.persistentDataPath + "/bananasave.af") && SceneManager.GetActiveScene().buildIndex == 0)
         {
             for (int i = 0; i < ManagerColeccionables.listaGuardar.Length; i++)
             {
@@ -137,7 +160,7 @@ public class CargarGuardar : MonoBehaviour
     public void Guardar()
     {
         BinaryFormatter save = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/monosave.af");
+        FileStream file = File.Create(Application.persistentDataPath + "/bananasave.af");
         datos.posicionGrandeX = posicionGrandeX;
         datos.posicionGrandeY = posicionGrandeY;
         datos.posicionGrandeZ = posicionGrandeZ;
@@ -159,10 +182,10 @@ public class CargarGuardar : MonoBehaviour
 
     public void Cargar()
     {
-        if (File.Exists(Application.persistentDataPath + "/monosave.af"))
+        if (File.Exists(Application.persistentDataPath + "/bananasave.af"))
         {
             BinaryFormatter load = new BinaryFormatter();
-            FileStream file = File.OpenRead(Application.persistentDataPath + "/monosave.af");
+            FileStream file = File.OpenRead(Application.persistentDataPath + "/bananasave.af");
             datos = load.Deserialize(file) as datosJuego;
             posicionGrandeX = datos.posicionGrandeX;
             posicionGrandeY = datos.posicionGrandeY;
@@ -183,6 +206,7 @@ public class CargarGuardar : MonoBehaviour
             GameObject.FindWithTag("Grande").transform.position  = new Vector3(posicionGrandeX, posicionGrandeY, posicionGrandeZ);
             Pausa.vecesVisto = vecesVisto;
             Pausa.recogidos = coleccionables;
+
         }
         else
         {
@@ -193,9 +217,9 @@ public class CargarGuardar : MonoBehaviour
     [ContextMenu("Borrar")]
     public void Borrar()
     {
-        if (File.Exists(Application.persistentDataPath + "/monosave.af"))
+        if (File.Exists(Application.persistentDataPath + "/bananasave.af"))
         {
-            File.Delete(Application.persistentDataPath + "/monosave.af");
+            File.Delete(Application.persistentDataPath + "/bananasave.af");
             TTotal = 0;
             TNivel = 0;
             CColeccionable = 0;

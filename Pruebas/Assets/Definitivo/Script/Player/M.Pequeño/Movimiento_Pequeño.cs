@@ -58,7 +58,7 @@ public class Movimiento_Pequeño : MonoBehaviour
         moveDirection *= velocidad;
         controller.Move(moveDirection * Time.deltaTime);
 
-        if (Input.GetKey(KeyCode.Space) && controller.isGrounded)
+        if (Input.GetButton("Jump") && controller.isGrounded)
         {
             salto = true;
         }
@@ -126,7 +126,6 @@ public class Movimiento_Pequeño : MonoBehaviour
         else
         {
             gravity = Vector3.zero;
-
             if (salto)
             {
                 anim.SetTrigger("Salto");
@@ -137,6 +136,8 @@ public class Movimiento_Pequeño : MonoBehaviour
             }
         }   
         moveDirection += gravity;
+
+       
     }
 
     void HorizontalMovement()

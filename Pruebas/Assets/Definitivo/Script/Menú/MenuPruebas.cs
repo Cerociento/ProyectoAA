@@ -50,13 +50,13 @@ public class MenuPruebas : MonoBehaviour {
                 desactivar = false;
         }
 
-        if (File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
+        if (File.Exists(Application.persistentDataPath + "/bananasave.af") && estamosEnElMenuPrincipal)
         {
             ContinuarBoton.GetComponent<Button>().interactable = true;
             ContinuarBoton.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "Tiempo jugado " + (int)Timer.tiempoTotal / 60 + " m " + (int)Timer.tiempoTotal % 60.0f + " s";
             ContinuarBoton.transform.GetChild(0).GetChild(1).GetComponent<Text>().text = "Nivel " + CargarGuardar.NNivel;
         }
-        else if(!File.Exists(Application.persistentDataPath + "/monosave.af") && estamosEnElMenuPrincipal)
+        else if(!File.Exists(Application.persistentDataPath + "/bananasave.af") && estamosEnElMenuPrincipal)
         {
             ContinuarBoton.GetComponent<Button>().interactable = false;
             ContinuarBoton.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = null;
@@ -66,7 +66,7 @@ public class MenuPruebas : MonoBehaviour {
 
 
 	public void LoadSceneContinuar(){
-        if(File.Exists(Application.persistentDataPath + "/monosave.af"))
+        if(File.Exists(Application.persistentDataPath + "/bananasave.af"))
         {
             cargaGuarda.Cargar();
         }
@@ -113,7 +113,7 @@ public class MenuPruebas : MonoBehaviour {
 
     public void Seguro()
     {
-        if (File.Exists(Application.persistentDataPath + "/monosave.af"))
+        if (File.Exists(Application.persistentDataPath + "/bananasave.af"))
         {
             seguro.SetActive(true);
         }

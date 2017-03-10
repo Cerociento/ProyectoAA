@@ -21,6 +21,7 @@ public class Caja : MonoBehaviour
                 other.GetComponent<Rigidbody>().Sleep();
             }
         }
+
     }
 
     void OnTriggerExit(Collider other)
@@ -47,6 +48,11 @@ public class Caja : MonoBehaviour
         GetComponent<Rigidbody>().useGravity = false;
         GetComponent<Rigidbody>().isKinematic = true;
         gameObject.SetActive(false);
+    }
+
+    public void Wall()
+    {
+        GetComponent<Rigidbody>().isKinematic = true;
     }
 
     IEnumerator DesColl()
