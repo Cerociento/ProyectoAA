@@ -1,4 +1,160 @@
-﻿# ProyectoAA
+**# ProyectoAA**
+
+**~Cerociento 04/02/2017~**
+
+- El cartel de "Esto borarrá..." no aparece si no hay partida.
+- Si no hay partida "Continuar" es "Interactable"
+- Fondo blanco en extras.
+- Bajados lasers de nivel 2.
+- Asignados valores del alma.
+- Modificado quad negro conflictivo de nivel 4.
+- Modificada zona de escaleras nivel 3.
+- Nivel 4 casi modificado por completo.
+---------------------------------------------------------------------
+
+**~Cerociento 01/02/2017~**
+
+* Mejorado sistema de particulas
+* Añadidios quad negros (nivel 1, nivel 2, nivel 3)
+* Mejora de ascensor (personajes se hacen hijos)
+
+---------------------------------------------------------------------
+**~Fran 31/01/2017~**
+
+*Añadidos botones al M. Principal y al M. de pausa
+  
+---------------------------------------------------------------------
+
+**~Cerociento 27/01/2017~**
+
+*Arreglado error de muerte
+*Boton de interaccion del ratón pasa de "mouse2" a "mouse0"
+*Arreglado recogida de cajas cuando es transparente
+*Las cajas para esconderse ya no se acaban
+*Interaccion de teclado pasa de "E" a "LeftControl"
+*Añadido paso lateral (Q - E)
+*Rampas arregladas
+*Arreglado carga de nivel 4 desde nivel 3 
+
+---------------------------------------------------------------------------
+
+**~Fran 27/01/2017~**
+
+*Ahora el enemigo no debería ver a través de las paredes.
+*Ahora, al acercarse demasiado al enemigo, te detectará, aunque no estés en su cono de visión (no son TAN sordos).
+*Ahora la única pila de cajas que tiene el letrerito de 'Coger' es la primera. Y mira a cámara.
+
+---------------------------------------------------------------------------
+**~Cerociento 24/01/2017~**
+
+*Añadida informacion en nivel
+*Arreglos de script final de nivel
+*Hace dias se hicieron cambios en como se representa el daño
+
+
+          **Segunda subida 15:40**
+ 
+
+*Arreglo daño: 
+     Creado Script Alma por seguridad.
+     Retocado objeto "Alma".
+
+*Retoques en script "CargarGuardar":
+       Ya guarda el tiempo de cada nivel y el tiempo total.
+
+*Añadido boton "Reinicio" en los menús de pausa.
+*Añadida representacion del ultimo nivel y el tiempo total en "Menu Inicio".
+
+---------------------------------------------------------------------
+
+
+**~Fran 22/01/2017~**
+
+*Hecho Script que muestra estadísticas al final de cada fase. 
+   Muertes y tiempo transcurrido. 
+
+*Corregidas las cajas que se instancian en los montones de cajas.
+  
+
+---------------------------------------------------------------------
+
+**~Fran 22/01/2017~**
+
+*Hecho Script que muestra estadísticas al final de cada fase. Muertes y tiempo transcurrido. Corregidas las cajas que se instancian en los montones de cajas.
+                         
+---------------------------------------------------------------------
+
+**~Fran 20/01/2017~**
+
+*Pequeña corrección. Añadido un script para que los monos no atraviesen el suelo al subir en el ascensor. Ahora, el suelo aparece cuando ya han subido.
+                         
+---------------------------------------------------------------------
+
+
+**~Cerociento 15/01/2017~**
+
+*Diversos retoques y mejoras.
+
+*Completada union de niveles.
+
+*Creacion de script de guardado en cada checkpoint.
+            
+            **Solo para edicion (F1 Guarda, F2 Carga, F3 Borra)**
+           -Guarda:
+                         *Ultimo checkpoint.
+                         *Veces descubierto.
+                         *Ultimo nivel
+                         *Coleccionables recogidos.
+                         
+---------------------------------------------------------------------
+
+**~Fran 11/01/2017~** 
+
+* En proceso de pruebas de Diseño de Sonido. Sonido añadido a:
+* -Personajes (pasos y salto)
+* -Enemigos (pasos y alarmas)
+* -Cámaras (funcionamiento y alarmas)
+* -Trampa de pinchos (Activación y muerte)
+* -Lava (Muerte)
+* -Botones para las puertas (Activación)
+* -Cajas (Instanciado y envío de las mismas)
+* -Coleccionables (Recogida)
+* -Menú Principal (Música de fondo, interacción con los botones)
+* -Pausa (Activación e interacción con los botones)
+
+
+---------------------------------------------------------------------
+**~Fran 08/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 3 en fase de testeo. Casi definitivo.
+
+---------------------------------------------------------------------
+
+**~Cerociento 07/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 1 completo a falta de retoques e inclusion de nuevos modelos.
+* Modificada camara de seguridad.
+
+---------------------------------------------------------------------
+
+
+**~Fran 07/01/2017~**
+
+* En proceso de creacion de niveles.
+* Nivel 2 casi completado. En proceso de testeo y retoque.
+
+---------------------------------------------------------------------
+
+
+**~Cerociento 06/01/2017~**
+
+* En proceso de creacion de niveles.
+* Scripts retocados para hacerlos funcionales con los nuevos modelos.
+
+---------------------------------------------------------------------
+
 
 **~Cerociento 13/12/2016~**
  
@@ -122,4 +278,3 @@ En el proyecto que he subido a github es el del otro dia,con añadidos. Hay una 
 En esta escena, hay lineas negras en el suelo. Estas lineas son paredes que se pueden levantar a antojo para probar cosas y tener un nivel de prueba "personalizable".
 
 Tambien hay varias carpetas nuevas. Una llamada Prueba  y otra Pruebas 2. En la primera estan las cosas de la primera vez, en la segunda estan las cosas nuevas o las cosas antiguas retocadas y funcionales.
-

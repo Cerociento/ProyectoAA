@@ -1,0 +1,2971 @@
+fileFormatVersion: 2
+guid: d402b3d0115df144eb310e6b709477da
+timeCreated: 1486316179
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: cheek.L
+    100002: cheek.L_end
+    100004: cheek.R
+    100006: cheek.R_end
+    100008: chest
+    100010: //RootNode
+    100012: chimp
+    100014: chimpRIG
+    100016: ear.L
+    100018: ear.L_end
+    100020: ear.R
+    100022: ear.R_end
+    100024: eye.L
+    100026: eye.L_end
+    100028: eye.R
+    100030: eye.R_end
+    100032: eyebrow.L
+    100034: eyebrow.L_end
+    100036: eyebrow.R
+    100038: eyebrow.R_end
+    100040: f_index.01.L
+    100042: f_index.01.R
+    100044: f_index.02.L
+    100046: f_index.02.R
+    100048: f_index.03.L
+    100050: f_index.03.L_end
+    100052: f_index.03.R
+    100054: f_index.03.R_end
+    100056: f_middle.01.L
+    100058: f_middle.01.R
+    100060: f_middle.02.L
+    100062: f_middle.02.R
+    100064: f_middle.03.L
+    100066: f_middle.03.L_end
+    100068: f_middle.03.R
+    100070: f_middle.03.R_end
+    100072: f_palm.01.L
+    100074: f_palm.01.R
+    100076: f_palm.02.L
+    100078: f_palm.02.R
+    100080: f_palm.03.L
+    100082: f_palm.03.R
+    100084: f_ring.01.L
+    100086: f_ring.01.R
+    100088: f_ring.02.L
+    100090: f_ring.02.R
+    100092: f_ring.03.L
+    100094: f_ring.03.L_end
+    100096: f_ring.03.R
+    100098: f_ring.03.R_end
+    100100: foot.L
+    100102: foot.R
+    100104: footIK.L
+    100106: footIK.L_end
+    100108: footIK.R
+    100110: footIK.R_end
+    100112: forearm.L
+    100114: forearm.R
+    100116: hand.L
+    100118: hand.R
+    100120: handIK.L
+    100122: handIK.L_end
+    100124: handIK.R
+    100126: handIK.R_end
+    100128: head
+    100130: hips
+    100132: lip
+    100134: neck
+    100136: nose
+    100138: nose_end
+    100140: palm.01.L
+    100142: palm.01.R
+    100144: palm.02.L
+    100146: palm.02.R
+    100148: palm.03.L
+    100150: palm.03.R
+    100152: ROOT
+    100154: shin.L
+    100156: shin.R
+    100158: shoulder.L
+    100160: shoulder.R
+    100162: spine
+    100164: t_index.01.L
+    100166: t_index.01.R
+    100168: t_index.02.L
+    100170: t_index.02.R
+    100172: t_index.03.L
+    100174: t_index.03.L_end
+    100176: t_index.03.R
+    100178: t_index.03.R_end
+    100180: t_middle.01.L
+    100182: t_middle.01.R
+    100184: t_middle.02.L
+    100186: t_middle.02.R
+    100188: t_middle.03.L
+    100190: t_middle.03.L_end
+    100192: t_middle.03.R
+    100194: t_middle.03.R_end
+    100196: t_ring.01.L
+    100198: t_ring.01.R
+    100200: t_ring.02.L
+    100202: t_ring.02.R
+    100204: t_ring.03.L
+    100206: t_ring.03.L_end
+    100208: t_ring.03.R
+    100210: t_ring.03.R_end
+    100212: t_thumb.01.L
+    100214: t_thumb.01.R
+    100216: t_thumb.02.L
+    100218: t_thumb.02.R
+    100220: t_thumb.03.L
+    100222: t_thumb.03.L_end
+    100224: t_thumb.03.R
+    100226: t_thumb.03.R_end
+    100228: tail.001
+    100230: tail.001_end
+    100232: tail.002
+    100234: tail.003
+    100236: tail.004
+    100238: thight.L
+    100240: thight.R
+    100242: thumb.01.L
+    100244: thumb.01.R
+    100246: thumb.02.L
+    100248: thumb.02.R
+    100250: thumb.03.L
+    100252: thumb.03.L_end
+    100254: thumb.03.R
+    100256: thumb.03.R_end
+    100258: upper_arm.L
+    100260: upper_arm.R
+    100262: Plane
+    100264: Camera
+    100266: CameraTarget
+    100268: Hemi
+    400000: cheek.L
+    400002: cheek.L_end
+    400004: cheek.R
+    400006: cheek.R_end
+    400008: chest
+    400010: //RootNode
+    400012: chimp
+    400014: chimpRIG
+    400016: ear.L
+    400018: ear.L_end
+    400020: ear.R
+    400022: ear.R_end
+    400024: eye.L
+    400026: eye.L_end
+    400028: eye.R
+    400030: eye.R_end
+    400032: eyebrow.L
+    400034: eyebrow.L_end
+    400036: eyebrow.R
+    400038: eyebrow.R_end
+    400040: f_index.01.L
+    400042: f_index.01.R
+    400044: f_index.02.L
+    400046: f_index.02.R
+    400048: f_index.03.L
+    400050: f_index.03.L_end
+    400052: f_index.03.R
+    400054: f_index.03.R_end
+    400056: f_middle.01.L
+    400058: f_middle.01.R
+    400060: f_middle.02.L
+    400062: f_middle.02.R
+    400064: f_middle.03.L
+    400066: f_middle.03.L_end
+    400068: f_middle.03.R
+    400070: f_middle.03.R_end
+    400072: f_palm.01.L
+    400074: f_palm.01.R
+    400076: f_palm.02.L
+    400078: f_palm.02.R
+    400080: f_palm.03.L
+    400082: f_palm.03.R
+    400084: f_ring.01.L
+    400086: f_ring.01.R
+    400088: f_ring.02.L
+    400090: f_ring.02.R
+    400092: f_ring.03.L
+    400094: f_ring.03.L_end
+    400096: f_ring.03.R
+    400098: f_ring.03.R_end
+    400100: foot.L
+    400102: foot.R
+    400104: footIK.L
+    400106: footIK.L_end
+    400108: footIK.R
+    400110: footIK.R_end
+    400112: forearm.L
+    400114: forearm.R
+    400116: hand.L
+    400118: hand.R
+    400120: handIK.L
+    400122: handIK.L_end
+    400124: handIK.R
+    400126: handIK.R_end
+    400128: head
+    400130: hips
+    400132: lip
+    400134: neck
+    400136: nose
+    400138: nose_end
+    400140: palm.01.L
+    400142: palm.01.R
+    400144: palm.02.L
+    400146: palm.02.R
+    400148: palm.03.L
+    400150: palm.03.R
+    400152: ROOT
+    400154: shin.L
+    400156: shin.R
+    400158: shoulder.L
+    400160: shoulder.R
+    400162: spine
+    400164: t_index.01.L
+    400166: t_index.01.R
+    400168: t_index.02.L
+    400170: t_index.02.R
+    400172: t_index.03.L
+    400174: t_index.03.L_end
+    400176: t_index.03.R
+    400178: t_index.03.R_end
+    400180: t_middle.01.L
+    400182: t_middle.01.R
+    400184: t_middle.02.L
+    400186: t_middle.02.R
+    400188: t_middle.03.L
+    400190: t_middle.03.L_end
+    400192: t_middle.03.R
+    400194: t_middle.03.R_end
+    400196: t_ring.01.L
+    400198: t_ring.01.R
+    400200: t_ring.02.L
+    400202: t_ring.02.R
+    400204: t_ring.03.L
+    400206: t_ring.03.L_end
+    400208: t_ring.03.R
+    400210: t_ring.03.R_end
+    400212: t_thumb.01.L
+    400214: t_thumb.01.R
+    400216: t_thumb.02.L
+    400218: t_thumb.02.R
+    400220: t_thumb.03.L
+    400222: t_thumb.03.L_end
+    400224: t_thumb.03.R
+    400226: t_thumb.03.R_end
+    400228: tail.001
+    400230: tail.001_end
+    400232: tail.002
+    400234: tail.003
+    400236: tail.004
+    400238: thight.L
+    400240: thight.R
+    400242: thumb.01.L
+    400244: thumb.01.R
+    400246: thumb.02.L
+    400248: thumb.02.R
+    400250: thumb.03.L
+    400252: thumb.03.L_end
+    400254: thumb.03.R
+    400256: thumb.03.R_end
+    400258: upper_arm.L
+    400260: upper_arm.R
+    400262: Plane
+    400264: Camera
+    400266: CameraTarget
+    400268: Hemi
+    2300000: Plane
+    2300002: chimp
+    3300000: Plane
+    3300002: chimp
+    4300000: chimp
+    4300002: Plane
+    7400000: chimpRIG|IDLE
+    7400002: chimpRIG|Jump
+    7400004: chimpRIG|PlaneAction
+    7400006: chimpRIG|Push
+    7400008: chimpRIG|Run
+    7400010: chimpRIG|T-Pose
+    7400012: chimpRIG|StartJump
+    7400014: chimpRIG|JumpUpwards
+    7400016: chimpRIG|JumpTop
+    7400018: chimpRIG|JumpDownwards
+    7400020: chimpRIG|JumpLand
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: chimp
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 1
+    animationCompression: 0
+    animationRotationError: 0
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: chimpRIG|IDLE
+      takeName: chimpRIG|IDLE
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimp
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|Push
+      takeName: chimpRIG|Push
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimp
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|Run
+      takeName: chimpRIG|Run
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimp
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|T-Pose
+      takeName: chimpRIG|T-Pose
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimp
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|StartJump
+      takeName: chimpRIG|Jump
+      firstFrame: 0
+      lastFrame: 5
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|JumpUpwards
+      takeName: chimpRIG|Jump
+      firstFrame: 5
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|JumpTop
+      takeName: chimpRIG|Jump
+      firstFrame: 9
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|JumpDownwards
+      takeName: chimpRIG|Jump
+      firstFrame: 13
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: chimpRIG|JumpLand
+      takeName: chimpRIG|Jump
+      firstFrame: 16
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chimpRIG
+        weight: 1
+      - path: chimpRIG/ROOT
+        weight: 1
+      - path: chimpRIG/ROOT/hips
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.L/eye.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.L/eyebrow.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.L/ear.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eye.R/eye.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/eyebrow.R/eyebrow.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/ear.R/ear.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/nose/nose_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.L/cheek.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/neck/head/lip/cheek.R/cheek.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/f_index.01.L/f_index.02.L/f_index.03.L/f_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.01.L/thumb.01.L/thumb.02.L/thumb.03.L/thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.02.L/f_middle.01.L/f_middle.02.L/f_middle.03.L/f_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.L/upper_arm.L/forearm.L/hand.L/palm.03.L/f_ring.01.L/f_ring.02.L/f_ring.03.L/f_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/f_index.01.R/f_index.02.R/f_index.03.R/f_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.01.R/thumb.01.R/thumb.02.R/thumb.03.R/thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.02.R/f_middle.01.R/f_middle.02.R/f_middle.03.R/f_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/spine/chest/shoulder.R/upper_arm.R/forearm.R/hand.R/palm.03.R/f_ring.01.R/f_ring.02.R/f_ring.03.R/f_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001
+        weight: 1
+      - path: chimpRIG/ROOT/hips/tail.004/tail.003/tail.002/tail.001/tail.001_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_index.01.L/t_index.02.L/t_index.03.L/t_index.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.01.L/t_thumb.01.L/t_thumb.02.L/t_thumb.03.L/t_thumb.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.02.L/t_middle.01.L/t_middle.02.L/t_middle.03.L/t_middle.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.L/shin.L/foot.L/f_palm.03.L/t_ring.01.L/t_ring.02.L/t_ring.03.L/t_ring.03.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_index.01.R/t_index.02.R/t_index.03.R/t_index.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.01.R/t_thumb.01.R/t_thumb.02.R/t_thumb.03.R/t_thumb.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.02.R/t_middle.01.R/t_middle.02.R/t_middle.03.R/t_middle.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R
+        weight: 1
+      - path: chimpRIG/ROOT/hips/thight.R/shin.R/foot.R/f_palm.03.R/t_ring.01.R/t_ring.02.R/t_ring.03.R/t_ring.03.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.L/handIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/handIK.R/handIK.R_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.L/footIK.L_end
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R
+        weight: 1
+      - path: chimpRIG/ROOT/footIK.R/footIK.R_end
+        weight: 1
+      - path: chimp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: chimpRIG
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

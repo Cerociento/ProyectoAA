@@ -6,10 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Escenas/Menu Inicio.unity
+    path: Assets/Definitivo/Escenas/Menu Inicio.unity
   - enabled: 1
-    path: Assets/Escenas/Nivel 1.unity
+    path: Assets/Definitivo/Escenas/Nivel 1.unity
   - enabled: 1
-    path: Assets/Escenas/Pruebas.unity
+    path: Assets/Definitivo/Escenas/Nivel 2.unity
   - enabled: 1
-    path: Assets/Escenas/Tutorial.unity
+    path: Assets/Definitivo/Escenas/Nivel 3.unity
+  - enabled: 1
+    path: Assets/Definitivo/Escenas/Nivel 4.unity
