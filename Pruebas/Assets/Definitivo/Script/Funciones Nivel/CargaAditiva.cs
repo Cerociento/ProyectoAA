@@ -7,7 +7,7 @@ public class CargaAditiva : MonoBehaviour
 {
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Pequeño") || other.CompareTag("Grande"))
+        if (other.CompareTag("Pequeño") || other.CompareTag("Grande") || other.CompareTag("Escondido"))
         {
            Final.nivelMas = true;
            GetComponent<CargaAditiva>().enabled = false;
